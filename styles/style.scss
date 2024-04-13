@@ -1,0 +1,38 @@
+@use "./layout/_media.scss" as *;
+:root {
+  --neutral-black: #000c17;
+  --primary--color: #0884f7;
+  --secondary--color: #f77b08;
+  --ternary-neutrals--1: #000c17;
+  --ternary-neutrals--2: #333d45;
+  --ternary-neutrals--3: #a1a8ae;
+  --ternary-neutrals--4: #ecf0f3;
+  --ternary-neutrals--5: #f9fafa;
+  --natural--white: #ffffff;
+}
+
+.navigation-bar {
+  width: 80%;
+  margin: 30px auto;
+  height: 65px;
+  padding-left: 2.5rem;
+  display: flex;
+  // justify-content: center;
+  border-radius: 35px;
+  align-items: center;
+  background-color: var(--ternary-neutrals--4);
+  .navigation-logo {
+    margin-right: 2rem;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    gap: 2rem;
+    a {
+      color: var(--neutral-black);
+      text-decoration: none;
+    }
+  }
+}
