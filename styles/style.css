@@ -1,3 +1,23 @@
+@font-face {
+  font-family: saira-extraBold;
+  src: url(../fonts/saira/static/Saira-ExtraBold.ttf);
+}
+@font-face {
+  font-family: saira-bold;
+  src: url(../fonts/saira/static/Saira-Bold.ttf);
+}
+@font-face {
+  font-family: saira-semiBold;
+  src: url(../fonts/saira/static/Saira-SemiBold.ttf);
+}
+@font-face {
+  font-family: saira-medium;
+  src: url(../fonts/saira/static/Saira-Medium.ttf);
+}
+@font-face {
+  font-family: saira-regular;
+  src: url(../fonts/saira/static/Saira-Regular.ttf);
+}
 :root {
   --neutral-black: #000c17;
   --primary--color: #0884f7;
@@ -32,4 +52,5 @@
 .navigation-bar ul a {
   color: var(--neutral-black);
   text-decoration: none;
+  font-family: saira-regular;
 }/*# sourceMappingURL=style.css.map */

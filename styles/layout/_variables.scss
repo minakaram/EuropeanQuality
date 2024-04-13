@@ -1,0 +1,59 @@
+// saira fonts
+@font-face {
+  font-family: saira-extraBold;
+  src: url(../fonts/saira/static/Saira-ExtraBold.ttf);
+}
+@font-face {
+  font-family: saira-bold;
+  src: url(../fonts/saira/static/Saira-Bold.ttf);
+}
+@font-face {
+  font-family: saira-semiBold;
+  src: url(../fonts/saira/static/Saira-SemiBold.ttf);
+}
+@font-face {
+  font-family: saira-medium;
+  src: url(../fonts/saira/static/Saira-Medium.ttf);
+}
+@font-face {
+  font-family: saira-regular;
+  src: url(../fonts/saira/static/Saira-Regular.ttf);
+}
+
+// cairo fonts
+@font-face {
+  font-family: cairo-bold;
+  src: url(../fonts/cairo/Cairo-Bold.ttf);
+}
+@font-face {
+  font-family: cairo-semiBold;
+  src: url(../fonts/cairo/Cairo-SemiBold.ttf);
+}
+
+:root {
+  --neutral-black: #000c17;
+  --primary--color: #0884f7;
+  --secondary--color: #f77b08;
+  --ternary-neutrals--1: #000c17;
+  --ternary-neutrals--2: #333d45;
+  --ternary-neutrals--3: #a1a8ae;
+  --ternary-neutrals--4: #ecf0f3;
+  --ternary-neutrals--5: #f9fafa;
+  --natural--white: #ffffff;
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mobileXS {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
