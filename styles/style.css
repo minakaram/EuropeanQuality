@@ -25,12 +25,12 @@
   src: url(../fonts/saira/static/Saira-Regular.ttf);
 }
 @font-face {
-  font-family: cairo-bold;
-  src: url(../fonts/cairo/Cairo-Bold.ttf);
+  font-family: cairo-Bold;
+  src: url(../fonts/Cairo/Cairo-Bold.ttf);
 }
 @font-face {
   font-family: cairo-semiBold;
-  src: url(../fonts/cairo/Cairo-SemiBold.ttf);
+  src: url(../fonts/Cairo/Cairo-SemiBold.ttf);
 }
 :root {
   --neutral-black: #000c17;
@@ -44,10 +44,6 @@
   --natural--white: #ffffff;
 }
 
-body {
-  height: 2000px;
-}
-
 .navigation-bar {
   width: 80%;
   margin: 30px auto;
@@ -55,6 +51,7 @@ body {
   padding-left: 2.5rem;
   padding-right: 0.5rem;
   position: fixed;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -65,26 +62,27 @@ body {
   transition: background-color 5s ease;
   background-color: var(--natural-white);
   transition: box-shadow 0.3s ease;
+  z-index: 1000;
 }
-.navigation-bar .navigaion-left-side {
+.navigation-bar .navigation-left-side {
   display: flex;
   gap: 2rem;
 }
-.navigation-bar .navigaion-left-side .navigation-menu {
+.navigation-bar .navigation-left-side .navigation-menu {
   display: none;
 }
-.navigation-bar .navigaion-left-side .navigation-menu a {
+.navigation-bar .navigation-left-side .navigation-menu a {
   font-family: saira-semiBold;
   text-decoration: none;
 }
 @media (max-width: 1024px) {
-  .navigation-bar .navigaion-left-side .navigation-menu {
+  .navigation-bar .navigation-left-side .navigation-menu {
     align-self: center;
     display: flex;
   }
 }
 @media (max-width: 420px) {
-  .navigation-bar .navigaion-left-side {
+  .navigation-bar .navigation-left-side {
     gap: 1.5rem;
   }
 }
@@ -141,5 +139,180 @@ body {
 .navigation-bar.scrolled {
   transition: background-color 0.5s ease;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
-  background-color: var(--ternary-neutrals--4);
+  background-color: rgba(236, 240, 243, 0.945);
+}
+
+.hero-section {
+  position: relative;
+  width: 90%;
+  height: 550px;
+  overflow: hidden;
+  margin: 120px auto;
+  border-radius: 35px;
+}
+.hero-section .content-overlay {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.hero-section .content-overlay h1 {
+  color: #ffffff;
+  font-family: saira-semiBold;
+  font-size: 50px;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .hero-section .content-overlay h1 {
+    font-size: 30px;
+  }
+}
+.hero-section .content-overlay p {
+  color: #ffffff;
+  font-family: saira-semiBold;
+  font-size: 32px;
+}
+@media (max-width: 767px) {
+  .hero-section .content-overlay p {
+    font-size: 20px;
+  }
+}
+.hero-section .mySwiper {
+  width: 100%;
+  height: 100%;
+}
+.hero-section .mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+.hero-section .mySwiper .swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+.hero-section .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .mySwiper .swiper-slide .hero-slide-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-section .mySwiper .swiper-slide .hero-slide-content h3 {
+  color: var(--natural--white);
+  font-family: "Cairo";
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .hero-section .mySwiper .swiper-slide .hero-slide-content h3 {
+    font-size: 26px;
+  }
+}
+.hero-section .mySwiper .swiper-slide .hero-slide-content p {
+  font-family: "Cairo";
+  text-transform: capitalize;
+  color: var(--natural--white);
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .hero-section .mySwiper .swiper-slide .hero-slide-content p {
+    font-size: 18px;
+  }
+}
+.hero-section .mySwiper .swiper-slide .hero-slide-content button {
+  margin-top: 1rem;
+  background-color: var(--primary--color);
+  border: none;
+  border-radius: 35px;
+  color: var(--ternary-neutrals--5);
+  padding: 0.6rem 2.5rem;
+  font-family: saira-semiBold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 7px rgba(8, 131, 247, 0.315);
+}
+.hero-section .swiper-pagination {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  gap: 2px;
+}
+.hero-section .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.hero-section .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  height: 25px;
+  border-radius: 1px;
+  width: 5px !important;
+  background: var(--swiper-pagination-bullet-inactive-color, #fff);
+  margin: 0;
+}
+.hero-section .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  border-radius: 1px;
+  width: 7px !important;
+  background: var(--swiper-pagination-bullet-inactive-color, #0884f7);
+}
+.hero-section .swiper-button-prev {
+  position: absolute;
+  right: 10px !important;
+  left: unset !important;
+  bottom: unset !important;
+  top: 30% !important;
+}
+.hero-section .swiper-button-prev::after {
+  content: "";
+}
+@media (max-width: 767px) {
+  .hero-section .swiper-button-prev {
+    display: none;
+  }
+}
+.hero-section .swiper-button-next {
+  position: absolute;
+  right: 10px !important;
+  left: unset !important;
+  bottom: 23% !important;
+  top: unset !important;
+}
+.hero-section .swiper-button-next::after {
+  content: "";
+}
+@media (max-width: 767px) {
+  .hero-section .swiper-button-next {
+    display: none;
+  }
+}
+.hero-section .swiper-pagination {
+  right: 20px !important;
+}
+@media (max-width: 767px) {
+  .hero-section .swiper-pagination {
+    right: 10px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

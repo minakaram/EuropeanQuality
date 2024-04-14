@@ -8,19 +8,19 @@ Cairo is a variable font with these axes:
   wght
 
 This means all the styles are contained in a single file:
-  Cairo/Cairo-VariableFont_slnt,wght.ttf
+  Cairo-VariableFont_slnt,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Cairo:
-  Cairo/static/Cairo-ExtraLight.ttf
-  Cairo/static/Cairo-Light.ttf
-  Cairo/static/Cairo-Regular.ttf
-  Cairo/static/Cairo-Medium.ttf
-  Cairo/static/Cairo-SemiBold.ttf
-  Cairo/static/Cairo-Bold.ttf
-  Cairo/static/Cairo-ExtraBold.ttf
-  Cairo/static/Cairo-Black.ttf
+  static/Cairo-ExtraLight.ttf
+  static/Cairo-Light.ttf
+  static/Cairo-Regular.ttf
+  static/Cairo-Medium.ttf
+  static/Cairo-SemiBold.ttf
+  static/Cairo-Bold.ttf
+  static/Cairo-ExtraBold.ttf
+  static/Cairo-Black.ttf
 
 Get started
 -----------
