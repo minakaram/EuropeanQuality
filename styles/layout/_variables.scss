@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 // saira fonts
 @font-face {
   font-family: saira-extraBold;
@@ -47,13 +52,18 @@
     @content;
   }
 }
+@mixin customScreen {
+  @media (min-width: 1025px) and (max-width: 1135px) {
+    @content;
+  }
+}
 @mixin mobile {
   @media (max-width: 767px) {
     @content;
   }
 }
 @mixin mobileXS {
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     @content;
   }
 }
