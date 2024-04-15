@@ -152,7 +152,7 @@
 }
 .hero-section .content-overlay {
   position: absolute;
-  width: 95%;
+  width: 89%;
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
@@ -175,7 +175,7 @@
 }
 @media (max-width: 767px) {
   .hero-section .content-overlay h1 {
-    font-size: 30px;
+    font-size: 29px;
   }
 }
 .hero-section .content-overlay p {
@@ -213,7 +213,7 @@
      object-fit: cover;
 }
 .hero-section .mySwiper .swiper-slide .hero-slide-content {
-  width: 90%;
+  width: 89%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,7 +232,7 @@
 }
 @media (max-width: 767px) {
   .hero-section .mySwiper .swiper-slide .hero-slide-content h3 {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 .hero-section .mySwiper .swiper-slide .hero-slide-content p {

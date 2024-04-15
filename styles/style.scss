@@ -91,7 +91,7 @@
   border-radius: 35px;
   .content-overlay {
     position: absolute;
-    width: 95%;
+    width: 89%;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -109,7 +109,7 @@
       font-weight: 700;
       text-align: center;
       @include mobile {
-        font-size: 30px;
+        font-size: 29px;
       }
     }
     p {
@@ -143,7 +143,7 @@
         object-fit: cover;
       }
       .hero-slide-content {
-        width:90%;
+        width:89%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -159,7 +159,7 @@
           font-weight: 600;
           text-transform: capitalize;
           @include mobile {
-            font-size: 25px;
+            font-size: 23px;
           }
         }
         p {
