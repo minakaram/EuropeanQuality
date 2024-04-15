@@ -70,7 +70,7 @@
     padding-left: 1rem;
   }
   @include mobile {
-    width: 95%;
+    width: 93%;
     padding-left: 1.5rem;
   }
   @include mobileXS {
@@ -159,7 +159,7 @@
           font-weight: 600;
           text-transform: capitalize;
           @include mobile {
-            font-size: 26px;
+            font-size: 25px;
           }
         }
         p {
@@ -184,6 +184,9 @@
           justify-content: center;
           align-items: center;
           box-shadow: 0px 0px 10px 7px rgba(8, 131, 247, 0.315);
+        }
+        @include mobile {
+          padding-bottom: 4rem;
         }
       }
     }
@@ -257,5 +260,23 @@
     background-image: url("../assets/social-media/BG.svg");
     background-size: cover;
     padding: 0.7rem 1.5rem;
+    @include mobile {
+      flex-direction: row;
+      background-image: url("../assets/social-media/BG2.svg");
+      background-size: cover;
+      padding: 0.4rem 0rem;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      top: unset;
+      width: 80%;
+      justify-content: center;
+    }
+    @include mobileXS {
+      width: 85%;
+    }
+    @media (max-width: 380px) {
+    width: 90%;
+    }
   }
 }
