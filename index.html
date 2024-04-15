@@ -1,370 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"
-    ></script>
-    <script
-      defer
-      src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"
-    ></script>
-    <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="script.js"></script>
-  </head>
 
-  <body>
-    <!--------------------------------------------- navigation-bar ------------------------------------------------->
-    <div class="navigation-bar">
-      <div class="navigation-left-side">
-        <img class="navigation-logo" src="assets/logo.svg" alt="" />
-        <div class="navigation-menu">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 5H20"
-              stroke="#0884F7"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 12H20"
-              stroke="#0884F7"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 19H14"
-              stroke="#0884F7"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <a href="#">Home</a>
-        </div>
-      </div>
-      <ul>
-        <li><a draggable="false" href="#" class="active-link">Home</a></li>
-        <li>
-          <a href="#">Categories</a> <img src="assets/DownArrow.svg" alt="" />
-        </li>
-        <li>
-          <a href="#">Cities</a> <img src="assets/DownArrow.svg" alt="" />
-        </li>
-        <li><a href="#">Custom Courses</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-      <div class="navigation-right-side">
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="40" rx="20" fill="#0884F7" />
-          <path
-            d="M28.625 29.7715C28.7779 29.9193 28.9828 30.0012 29.1955 29.9995C29.4082 29.9977 29.6117 29.9125 29.7621 29.7621C29.9126 29.6118 29.998 29.4084 30 29.1957C30.0019 28.983 29.9202 28.778 29.7726 28.625L28.625 29.7715ZM25.1423 18.3823C25.1423 20.1752 24.4301 21.8946 23.1623 23.1623C21.8946 24.4301 20.1752 25.1423 18.3823 25.1423V26.7647C19.4831 26.7647 20.5731 26.5479 21.5901 26.1266C22.6071 25.7054 23.5312 25.0879 24.3095 24.3096C25.0879 23.5312 25.7053 22.6071 26.1266 21.5901C26.5478 20.5731 26.7647 19.4831 26.7647 18.3823H25.1423ZM18.3823 25.1423C16.5895 25.1423 14.8701 24.4301 13.6023 23.1623C12.3346 21.8946 11.6224 20.1752 11.6224 18.3823H10C10 20.6055 10.8831 22.7376 12.4551 24.3096C14.0271 25.8815 16.1592 26.7647 18.3823 26.7647V25.1423ZM11.6224 18.3823C11.6224 16.5895 12.3346 14.87 13.6023 13.6023C14.8701 12.3346 16.5895 11.6224 18.3823 11.6224V10C16.1592 10 14.0271 10.8831 12.4551 12.4551C10.8831 14.0271 10 16.1592 10 18.3823H11.6224ZM18.3823 11.6224C20.1752 11.6224 21.8946 12.3346 23.1623 13.6023C24.4301 14.87 25.1423 16.5895 25.1423 18.3823H26.7647C26.7647 17.2815 26.5478 16.1915 26.1266 15.1745C25.7053 14.1575 25.0879 13.2335 24.3095 12.4551C23.5312 11.6767 22.6071 11.0593 21.5901 10.638C20.5731 10.2168 19.4831 10 18.3823 10V11.6224ZM29.7726 28.625L24.3635 23.217L23.216 24.3636L28.625 29.7715L29.7726 28.625Z"
-            fill="white"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
+  <script defer src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!--------------------------------------------- navigation-bar ------------------------------------------------->
+  <div class="navigation-bar">
+    <div class="navigation-left-side">
+      <img class="navigation-logo" src="assets/logo.svg" alt="" />
+      <div class="navigation-menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 5H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 12H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 19H14" stroke="#0884F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        <svg
-          width="64"
-          height="48"
-          viewBox="0 0 64 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_d_527_3846)">
-            <rect x="4" y="3" width="56" height="40" rx="20" fill="white" />
-          </g>
-          <g filter="url(#filter1_i_527_3846)">
-            <rect x="6" y="4" width="52" height="38" rx="19" fill="white" />
-          </g>
-          <path
-            d="M21.4536 29L25.3896 17.992H27.7576L31.6936 29H29.8216L28.8616 26.28H24.2216L23.2776 29H21.4536ZM24.7336 24.744H28.3336L26.5736 19.736H26.4936L24.7336 24.744ZM33.5111 29V17.992H38.6471C39.3404 17.992 39.9004 18.072 40.3271 18.232C40.7537 18.392 41.0737 18.6267 41.2871 18.936C41.5004 19.2347 41.6444 19.5973 41.7191 20.024C41.7937 20.44 41.8311 20.8987 41.8311 21.4C41.8311 21.7627 41.7937 22.1627 41.7191 22.6C41.6551 23.0267 41.5057 23.4213 41.2711 23.784C41.0471 24.136 40.6897 24.392 40.1991 24.552L42.0071 29H40.0871L38.3271 24.504L38.7911 24.744C38.7164 24.776 38.6257 24.7973 38.5191 24.808C38.4231 24.808 38.3057 24.808 38.1671 24.808H35.3191V29H33.5111ZM35.3191 23.272H37.8791C38.3804 23.272 38.7751 23.24 39.0631 23.176C39.3511 23.1013 39.5644 22.9893 39.7031 22.84C39.8417 22.6907 39.9271 22.4987 39.9591 22.264C40.0017 22.0293 40.0231 21.7413 40.0231 21.4C40.0231 21.048 40.0017 20.7547 39.9591 20.52C39.9271 20.2747 39.8471 20.0827 39.7191 19.944C39.5911 19.7947 39.3831 19.688 39.0951 19.624C38.8177 19.56 38.4337 19.528 37.9431 19.528H35.3191V23.272Z"
-            fill="#000C17"
-          />
-          <defs>
-            <filter
-              id="filter0_d_527_3846"
-              x="0"
-              y="0"
-              width="64"
-              height="48"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dy="1" />
-              <feGaussianBlur stdDeviation="2" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0.18 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow_527_3846"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow_527_3846"
-                result="shape"
-              />
-            </filter>
-            <filter
-              id="filter1_i_527_3846"
-              x="6"
-              y="4"
-              width="52"
-              height="41"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dy="3" />
-              <feGaussianBlur stdDeviation="2.5" />
-              <feComposite
-                in2="hardAlpha"
-                operator="arithmetic"
-                k2="-1"
-                k3="1"
-              />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="shape"
-                result="effect1_innerShadow_527_3846"
-              />
-            </filter>
-          </defs>
-        </svg>
+        <a href="#">Home</a>
       </div>
     </div>
-    <!--------------------------------------------- hero-section --------------------------------------------------->
-    <div class="hero-section">
-      <div class="content-overlay">
-        <h1>EUROPEAN QUALITY</h1>
-        <p>Introduces</p>
-        <svg
-          width="10"
-          height="130"
-          viewBox="0 0 10 142"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4.99999 142L9.33012 134.5L0.669867 134.5L4.99999 142ZM4.25 2.53571C4.25 2.94993 4.58579 3.28571 5 3.28571C5.41421 3.28571 5.75 2.94993 5.75 2.53571L4.25 2.53571ZM5.75 7.60714C5.75 7.19293 5.41421 6.85714 5 6.85714C4.58579 6.85714 4.25 7.19293 4.25 7.60714L5.75 7.60714ZM4.25 12.6786C4.25 13.0928 4.58579 13.4286 5 13.4286C5.41421 13.4286 5.75 13.0928 5.75 12.6786L4.25 12.6786ZM5.75 17.75C5.75 17.3358 5.41421 17 5 17C4.58579 17 4.25 17.3358 4.25 17.75L5.75 17.75ZM4.25 22.8214C4.25 23.2356 4.58579 23.5714 5 23.5714C5.41421 23.5714 5.75 23.2356 5.75 22.8214L4.25 22.8214ZM5.75 27.8929C5.75 27.4786 5.41421 27.1429 5 27.1429C4.58579 27.1429 4.25 27.4786 4.25 27.8929L5.75 27.8929ZM4.25 32.9643C4.25 33.3785 4.58578 33.7143 5 33.7143C5.41421 33.7143 5.75 33.3785 5.75 32.9643L4.25 32.9643ZM5.75 38.0357C5.75 37.6215 5.41421 37.2857 5 37.2857C4.58578 37.2857 4.25 37.6215 4.25 38.0357L5.75 38.0357ZM4.25 43.1071C4.25 43.5214 4.58578 43.8571 5 43.8571C5.41421 43.8571 5.75 43.5214 5.75 43.1071L4.25 43.1071ZM5.75 48.1786C5.75 47.7644 5.41421 47.4286 5 47.4286C4.58578 47.4286 4.25 47.7644 4.25 48.1786L5.75 48.1786ZM4.25 53.25C4.25 53.6642 4.58578 54 5 54C5.41421 54 5.75 53.6642 5.75 53.25L4.25 53.25ZM5.75 58.3214C5.75 57.9072 5.41421 57.5714 5 57.5714C4.58578 57.5714 4.25 57.9072 4.25 58.3214L5.75 58.3214ZM4.25 63.3929C4.25 63.8071 4.58578 64.1429 5 64.1429C5.41421 64.1429 5.75 63.8071 5.75 63.3929L4.25 63.3929ZM5.75 68.4643C5.75 68.0501 5.41421 67.7143 5 67.7143C4.58578 67.7143 4.25 68.0501 4.25 68.4643L5.75 68.4643ZM4.25 73.5357C4.25 73.9499 4.58578 74.2857 5 74.2857C5.41421 74.2857 5.75 73.9499 5.75 73.5357L4.25 73.5357ZM5.75 78.6071C5.75 78.1929 5.41421 77.8571 5 77.8571C4.58578 77.8571 4.25 78.1929 4.25 78.6071L5.75 78.6071ZM4.25 83.6786C4.25 84.0928 4.58578 84.4286 5 84.4286C5.41421 84.4286 5.75 84.0928 5.75 83.6786L4.25 83.6786ZM5.75 88.75C5.75 88.3358 5.41421 88 5 88C4.58578 88 4.25 88.3358 4.25 88.75L5.75 88.75ZM4.25 93.8214C4.25 94.2356 4.58578 94.5714 5 94.5714C5.41421 94.5714 5.75 94.2356 5.75 93.8214L4.25 93.8214ZM5.75 98.8929C5.75 98.4786 5.41421 98.1429 5 98.1429C4.58578 98.1429 4.25 98.4786 4.25 98.8929L5.75 98.8929ZM4.25 103.964C4.25 104.378 4.58578 104.714 5 104.714C5.41421 104.714 5.75 104.378 5.75 103.964L4.25 103.964ZM5.75 109.036C5.75 108.621 5.41421 108.286 5 108.286C4.58578 108.286 4.25 108.621 4.25 109.036L5.75 109.036ZM4.25 114.107C4.24999 114.521 4.58578 114.857 4.99999 114.857C5.41421 114.857 5.74999 114.521 5.75 114.107L4.25 114.107ZM5.74999 119.179C5.74999 118.764 5.41421 118.429 4.99999 118.429C4.58578 118.429 4.24999 118.764 4.24999 119.179L5.74999 119.179ZM4.24999 124.25C4.24999 124.664 4.58578 125 4.99999 125C5.41421 125 5.74999 124.664 5.74999 124.25L4.24999 124.25ZM5.74999 129.321C5.74999 128.907 5.41421 128.571 4.99999 128.571C4.58578 128.571 4.24999 128.907 4.24999 129.321L5.74999 129.321ZM4.24999 134.393C4.24999 134.807 4.58578 135.143 4.99999 135.143C5.41421 135.143 5.74999 134.807 5.74999 134.393L4.24999 134.393ZM5.74999 139.464C5.74999 139.05 5.41421 138.714 4.99999 138.714C4.58578 138.714 4.24999 139.05 4.24999 139.464L5.74999 139.464ZM4.25 -3.27835e-08L4.25 2.53571L5.75 2.53571L5.75 3.27835e-08L4.25 -3.27835e-08ZM4.25 7.60714L4.25 12.6786L5.75 12.6786L5.75 7.60714L4.25 7.60714ZM4.25 17.75L4.25 22.8214L5.75 22.8214L5.75 17.75L4.25 17.75ZM4.25 27.8929L4.25 32.9643L5.75 32.9643L5.75 27.8929L4.25 27.8929ZM4.25 38.0357L4.25 43.1071L5.75 43.1071L5.75 38.0357L4.25 38.0357ZM4.25 48.1786L4.25 53.25L5.75 53.25L5.75 48.1786L4.25 48.1786ZM4.25 58.3214L4.25 63.3929L5.75 63.3929L5.75 58.3214L4.25 58.3214ZM4.25 68.4643L4.25 73.5357L5.75 73.5357L5.75 68.4643L4.25 68.4643ZM4.25 78.6071L4.25 83.6786L5.75 83.6786L5.75 78.6071L4.25 78.6071ZM4.25 88.75L4.25 93.8214L5.75 93.8214L5.75 88.75L4.25 88.75ZM4.25 98.8929L4.25 103.964L5.75 103.964L5.75 98.8929L4.25 98.8929ZM4.25 109.036L4.25 114.107L5.75 114.107L5.75 109.036L4.25 109.036ZM4.24999 119.179L4.24999 124.25L5.74999 124.25L5.74999 119.179L4.24999 119.179ZM4.24999 129.321L4.24999 134.393L5.74999 134.393L5.74999 129.321L4.24999 129.321Z"
-            fill="url(#paint0_linear_220_7988)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_220_7988"
-              x1="5"
-              y1="5.1018"
-              x2="5"
-              y2="156.88"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="white" stop-opacity="0" />
-              <stop offset="1" stop-color="white" stop-opacity="0.85" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <div class="mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/Img.png" alt="" />
-            <div class="hero-slide-content">
-              <h3>Leadership & Management</h3>
-              <p>training courses</p>
-              <button>
-                <span>Show Courses</span>
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.6686 20.8686C13.5592 20.9946 13.4987 21.1632 13.5 21.3382C13.5014 21.5133 13.5646 21.6807 13.676 21.8045C13.7873 21.9283 13.938 21.9985 14.0955 22C14.253 22.0015 14.4048 21.9342 14.5181 21.8126L19.3241 16.472C19.4367 16.3468 19.5 16.177 19.5 16C19.5 15.823 19.4367 15.6532 19.3241 15.528L14.5181 10.1874C14.4048 10.0658 14.253 9.9985 14.0955 10C13.938 10.0015 13.7873 10.0717 13.676 10.1955C13.5646 10.3193 13.5014 10.4867 13.5 10.6618C13.4987 10.8368 13.5592 11.0054 13.6686 11.1314L18.0499 16L13.6686 20.8686Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
+    <ul>
+      <li><a draggable="false" href="#" class="active-link">Home</a></li>
+      <li>
+        <a href="#">Categories</a> <img src="assets/DownArrow.svg" alt="" />
+      </li>
+      <li>
+        <a href="#">Cities</a> <img src="assets/DownArrow.svg" alt="" />
+      </li>
+      <li><a href="#">Custom Courses</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+    <div class="navigation-right-side">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="20" fill="#0884F7" />
+        <path
+          d="M28.625 29.7715C28.7779 29.9193 28.9828 30.0012 29.1955 29.9995C29.4082 29.9977 29.6117 29.9125 29.7621 29.7621C29.9126 29.6118 29.998 29.4084 30 29.1957C30.0019 28.983 29.9202 28.778 29.7726 28.625L28.625 29.7715ZM25.1423 18.3823C25.1423 20.1752 24.4301 21.8946 23.1623 23.1623C21.8946 24.4301 20.1752 25.1423 18.3823 25.1423V26.7647C19.4831 26.7647 20.5731 26.5479 21.5901 26.1266C22.6071 25.7054 23.5312 25.0879 24.3095 24.3096C25.0879 23.5312 25.7053 22.6071 26.1266 21.5901C26.5478 20.5731 26.7647 19.4831 26.7647 18.3823H25.1423ZM18.3823 25.1423C16.5895 25.1423 14.8701 24.4301 13.6023 23.1623C12.3346 21.8946 11.6224 20.1752 11.6224 18.3823H10C10 20.6055 10.8831 22.7376 12.4551 24.3096C14.0271 25.8815 16.1592 26.7647 18.3823 26.7647V25.1423ZM11.6224 18.3823C11.6224 16.5895 12.3346 14.87 13.6023 13.6023C14.8701 12.3346 16.5895 11.6224 18.3823 11.6224V10C16.1592 10 14.0271 10.8831 12.4551 12.4551C10.8831 14.0271 10 16.1592 10 18.3823H11.6224ZM18.3823 11.6224C20.1752 11.6224 21.8946 12.3346 23.1623 13.6023C24.4301 14.87 25.1423 16.5895 25.1423 18.3823H26.7647C26.7647 17.2815 26.5478 16.1915 26.1266 15.1745C25.7053 14.1575 25.0879 13.2335 24.3095 12.4551C23.5312 11.6767 22.6071 11.0593 21.5901 10.638C20.5731 10.2168 19.4831 10 18.3823 10V11.6224ZM29.7726 28.625L24.3635 23.217L23.216 24.3636L28.625 29.7715L29.7726 28.625Z"
+          fill="white" />
+      </svg>
+      <svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_527_3846)">
+          <rect x="4" y="3" width="56" height="40" rx="20" fill="white" />
+        </g>
+        <g filter="url(#filter1_i_527_3846)">
+          <rect x="6" y="4" width="52" height="38" rx="19" fill="white" />
+        </g>
+        <path
+          d="M21.4536 29L25.3896 17.992H27.7576L31.6936 29H29.8216L28.8616 26.28H24.2216L23.2776 29H21.4536ZM24.7336 24.744H28.3336L26.5736 19.736H26.4936L24.7336 24.744ZM33.5111 29V17.992H38.6471C39.3404 17.992 39.9004 18.072 40.3271 18.232C40.7537 18.392 41.0737 18.6267 41.2871 18.936C41.5004 19.2347 41.6444 19.5973 41.7191 20.024C41.7937 20.44 41.8311 20.8987 41.8311 21.4C41.8311 21.7627 41.7937 22.1627 41.7191 22.6C41.6551 23.0267 41.5057 23.4213 41.2711 23.784C41.0471 24.136 40.6897 24.392 40.1991 24.552L42.0071 29H40.0871L38.3271 24.504L38.7911 24.744C38.7164 24.776 38.6257 24.7973 38.5191 24.808C38.4231 24.808 38.3057 24.808 38.1671 24.808H35.3191V29H33.5111ZM35.3191 23.272H37.8791C38.3804 23.272 38.7751 23.24 39.0631 23.176C39.3511 23.1013 39.5644 22.9893 39.7031 22.84C39.8417 22.6907 39.9271 22.4987 39.9591 22.264C40.0017 22.0293 40.0231 21.7413 40.0231 21.4C40.0231 21.048 40.0017 20.7547 39.9591 20.52C39.9271 20.2747 39.8471 20.0827 39.7191 19.944C39.5911 19.7947 39.3831 19.688 39.0951 19.624C38.8177 19.56 38.4337 19.528 37.9431 19.528H35.3191V23.272Z"
+          fill="#000C17" />
+        <defs>
+          <filter id="filter0_d_527_3846" x="0" y="0" width="64" height="48" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="2" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0.18 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_527_3846" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_527_3846" result="shape" />
+          </filter>
+          <filter id="filter1_i_527_3846" x="6" y="4" width="52" height="41" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="3" />
+            <feGaussianBlur stdDeviation="2.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0" />
+            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_527_3846" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <!--------------------------------------------- hero-section --------------------------------------------------->
+  <div class="hero-section">
+    <div class="content-overlay">
+      <h1>EUROPEAN QUALITY</h1>
+      <p>Introduces</p>
+      <svg width="10" height="130" viewBox="0 0 10 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.99999 142L9.33012 134.5L0.669867 134.5L4.99999 142ZM4.25 2.53571C4.25 2.94993 4.58579 3.28571 5 3.28571C5.41421 3.28571 5.75 2.94993 5.75 2.53571L4.25 2.53571ZM5.75 7.60714C5.75 7.19293 5.41421 6.85714 5 6.85714C4.58579 6.85714 4.25 7.19293 4.25 7.60714L5.75 7.60714ZM4.25 12.6786C4.25 13.0928 4.58579 13.4286 5 13.4286C5.41421 13.4286 5.75 13.0928 5.75 12.6786L4.25 12.6786ZM5.75 17.75C5.75 17.3358 5.41421 17 5 17C4.58579 17 4.25 17.3358 4.25 17.75L5.75 17.75ZM4.25 22.8214C4.25 23.2356 4.58579 23.5714 5 23.5714C5.41421 23.5714 5.75 23.2356 5.75 22.8214L4.25 22.8214ZM5.75 27.8929C5.75 27.4786 5.41421 27.1429 5 27.1429C4.58579 27.1429 4.25 27.4786 4.25 27.8929L5.75 27.8929ZM4.25 32.9643C4.25 33.3785 4.58578 33.7143 5 33.7143C5.41421 33.7143 5.75 33.3785 5.75 32.9643L4.25 32.9643ZM5.75 38.0357C5.75 37.6215 5.41421 37.2857 5 37.2857C4.58578 37.2857 4.25 37.6215 4.25 38.0357L5.75 38.0357ZM4.25 43.1071C4.25 43.5214 4.58578 43.8571 5 43.8571C5.41421 43.8571 5.75 43.5214 5.75 43.1071L4.25 43.1071ZM5.75 48.1786C5.75 47.7644 5.41421 47.4286 5 47.4286C4.58578 47.4286 4.25 47.7644 4.25 48.1786L5.75 48.1786ZM4.25 53.25C4.25 53.6642 4.58578 54 5 54C5.41421 54 5.75 53.6642 5.75 53.25L4.25 53.25ZM5.75 58.3214C5.75 57.9072 5.41421 57.5714 5 57.5714C4.58578 57.5714 4.25 57.9072 4.25 58.3214L5.75 58.3214ZM4.25 63.3929C4.25 63.8071 4.58578 64.1429 5 64.1429C5.41421 64.1429 5.75 63.8071 5.75 63.3929L4.25 63.3929ZM5.75 68.4643C5.75 68.0501 5.41421 67.7143 5 67.7143C4.58578 67.7143 4.25 68.0501 4.25 68.4643L5.75 68.4643ZM4.25 73.5357C4.25 73.9499 4.58578 74.2857 5 74.2857C5.41421 74.2857 5.75 73.9499 5.75 73.5357L4.25 73.5357ZM5.75 78.6071C5.75 78.1929 5.41421 77.8571 5 77.8571C4.58578 77.8571 4.25 78.1929 4.25 78.6071L5.75 78.6071ZM4.25 83.6786C4.25 84.0928 4.58578 84.4286 5 84.4286C5.41421 84.4286 5.75 84.0928 5.75 83.6786L4.25 83.6786ZM5.75 88.75C5.75 88.3358 5.41421 88 5 88C4.58578 88 4.25 88.3358 4.25 88.75L5.75 88.75ZM4.25 93.8214C4.25 94.2356 4.58578 94.5714 5 94.5714C5.41421 94.5714 5.75 94.2356 5.75 93.8214L4.25 93.8214ZM5.75 98.8929C5.75 98.4786 5.41421 98.1429 5 98.1429C4.58578 98.1429 4.25 98.4786 4.25 98.8929L5.75 98.8929ZM4.25 103.964C4.25 104.378 4.58578 104.714 5 104.714C5.41421 104.714 5.75 104.378 5.75 103.964L4.25 103.964ZM5.75 109.036C5.75 108.621 5.41421 108.286 5 108.286C4.58578 108.286 4.25 108.621 4.25 109.036L5.75 109.036ZM4.25 114.107C4.24999 114.521 4.58578 114.857 4.99999 114.857C5.41421 114.857 5.74999 114.521 5.75 114.107L4.25 114.107ZM5.74999 119.179C5.74999 118.764 5.41421 118.429 4.99999 118.429C4.58578 118.429 4.24999 118.764 4.24999 119.179L5.74999 119.179ZM4.24999 124.25C4.24999 124.664 4.58578 125 4.99999 125C5.41421 125 5.74999 124.664 5.74999 124.25L4.24999 124.25ZM5.74999 129.321C5.74999 128.907 5.41421 128.571 4.99999 128.571C4.58578 128.571 4.24999 128.907 4.24999 129.321L5.74999 129.321ZM4.24999 134.393C4.24999 134.807 4.58578 135.143 4.99999 135.143C5.41421 135.143 5.74999 134.807 5.74999 134.393L4.24999 134.393ZM5.74999 139.464C5.74999 139.05 5.41421 138.714 4.99999 138.714C4.58578 138.714 4.24999 139.05 4.24999 139.464L5.74999 139.464ZM4.25 -3.27835e-08L4.25 2.53571L5.75 2.53571L5.75 3.27835e-08L4.25 -3.27835e-08ZM4.25 7.60714L4.25 12.6786L5.75 12.6786L5.75 7.60714L4.25 7.60714ZM4.25 17.75L4.25 22.8214L5.75 22.8214L5.75 17.75L4.25 17.75ZM4.25 27.8929L4.25 32.9643L5.75 32.9643L5.75 27.8929L4.25 27.8929ZM4.25 38.0357L4.25 43.1071L5.75 43.1071L5.75 38.0357L4.25 38.0357ZM4.25 48.1786L4.25 53.25L5.75 53.25L5.75 48.1786L4.25 48.1786ZM4.25 58.3214L4.25 63.3929L5.75 63.3929L5.75 58.3214L4.25 58.3214ZM4.25 68.4643L4.25 73.5357L5.75 73.5357L5.75 68.4643L4.25 68.4643ZM4.25 78.6071L4.25 83.6786L5.75 83.6786L5.75 78.6071L4.25 78.6071ZM4.25 88.75L4.25 93.8214L5.75 93.8214L5.75 88.75L4.25 88.75ZM4.25 98.8929L4.25 103.964L5.75 103.964L5.75 98.8929L4.25 98.8929ZM4.25 109.036L4.25 114.107L5.75 114.107L5.75 109.036L4.25 109.036ZM4.24999 119.179L4.24999 124.25L5.74999 124.25L5.74999 119.179L4.24999 119.179ZM4.24999 129.321L4.24999 134.393L5.74999 134.393L5.74999 129.321L4.24999 129.321Z"
+          fill="url(#paint0_linear_220_7988)" />
+        <defs>
+          <linearGradient id="paint0_linear_220_7988" x1="5" y1="5.1018" x2="5" y2="156.88"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-color="white" stop-opacity="0.85" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/Img.png" alt="" />
+          <div class="hero-slide-content">
+            <h3>Leadership & Management</h3>
+            <p>training courses</p>
+            <button>
+              <span>Show Courses</span>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.6686 20.8686C13.5592 20.9946 13.4987 21.1632 13.5 21.3382C13.5014 21.5133 13.5646 21.6807 13.676 21.8045C13.7873 21.9283 13.938 21.9985 14.0955 22C14.253 22.0015 14.4048 21.9342 14.5181 21.8126L19.3241 16.472C19.4367 16.3468 19.5 16.177 19.5 16C19.5 15.823 19.4367 15.6532 19.3241 15.528L14.5181 10.1874C14.4048 10.0658 14.253 9.9985 14.0955 10C13.938 10.0015 13.7873 10.0717 13.676 10.1955C13.5646 10.3193 13.5014 10.4867 13.5 10.6618C13.4987 10.8368 13.5592 11.0054 13.6686 11.1314L18.0499 16L13.6686 20.8686Z"
+                  fill="white" />
+              </svg>
+            </button>
           </div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
         </div>
-        <div class="swiper-button-next">
-          <svg
-            width="28"
-            height="40"
-            viewBox="0 0 28 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_b_220_7964)">
-              <rect
-                width="40"
-                height="28"
-                rx="14"
-                transform="matrix(1.19249e-08 1 1 -1.19249e-08 0 0)"
-                fill="white"
-                fill-opacity="0.14"
-              />
-              <path
-                d="M14.75 14C14.75 13.5858 14.4142 13.25 14 13.25C13.5858 13.25 13.25 13.5858 13.25 14L14.75 14ZM13.4697 26.5303C13.7626 26.8232 14.2374 26.8232 14.5303 26.5303L19.3033 21.7574C19.5962 21.4645 19.5962 20.9896 19.3033 20.6967C19.0104 20.4038 18.5355 20.4038 18.2426 20.6967L14 24.9393L9.75736 20.6967C9.46447 20.4038 8.98959 20.4038 8.6967 20.6967C8.40381 20.9896 8.40381 21.4645 8.6967 21.7574L13.4697 26.5303ZM13.25 14L13.25 26L14.75 26L14.75 14L13.25 14Z"
-                fill="white"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_b_220_7964"
-                x="-12"
-                y="-12"
-                width="52"
-                height="64"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="6" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_220_7964"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_220_7964"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev">
-          <svg
-            width="28"
-            height="40"
-            viewBox="0 0 28 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_b_220_7978)">
-              <rect
-                width="40"
-                height="28"
-                rx="14"
-                transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 28 40)"
-                fill="white"
-                fill-opacity="0.14"
-              />
-              <path
-                d="M13.25 26C13.25 26.4142 13.5858 26.75 14 26.75C14.4142 26.75 14.75 26.4142 14.75 26L13.25 26ZM14.5303 13.4697C14.2374 13.1768 13.7626 13.1768 13.4697 13.4697L8.6967 18.2426C8.40381 18.5355 8.40381 19.0104 8.6967 19.3033C8.98959 19.5962 9.46447 19.5962 9.75736 19.3033L14 15.0607L18.2426 19.3033C18.5355 19.5962 19.0104 19.5962 19.3033 19.3033C19.5962 19.0104 19.5962 18.5355 19.3033 18.2426L14.5303 13.4697ZM14.75 26L14.75 14L13.25 14L13.25 26L14.75 26Z"
-                fill="white"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_b_220_7978"
-                x="-12"
-                y="-12"
-                width="52"
-                height="64"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="6" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_220_7978"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_220_7978"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-button-next">
+        <svg width="28" height="40" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_b_220_7964)">
+            <rect width="40" height="28" rx="14" transform="matrix(1.19249e-08 1 1 -1.19249e-08 0 0)" fill="white"
+              fill-opacity="0.14" />
+            <path
+              d="M14.75 14C14.75 13.5858 14.4142 13.25 14 13.25C13.5858 13.25 13.25 13.5858 13.25 14L14.75 14ZM13.4697 26.5303C13.7626 26.8232 14.2374 26.8232 14.5303 26.5303L19.3033 21.7574C19.5962 21.4645 19.5962 20.9896 19.3033 20.6967C19.0104 20.4038 18.5355 20.4038 18.2426 20.6967L14 24.9393L9.75736 20.6967C9.46447 20.4038 8.98959 20.4038 8.6967 20.6967C8.40381 20.9896 8.40381 21.4645 8.6967 21.7574L13.4697 26.5303ZM13.25 14L13.25 26L14.75 26L14.75 14L13.25 14Z"
+              fill="white" />
+          </g>
+          <defs>
+            <filter id="filter0_b_220_7964" x="-12" y="-12" width="52" height="64" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="6" />
+              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_220_7964" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_220_7964" result="shape" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev">
+        <svg width="28" height="40" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_b_220_7978)">
+            <rect width="40" height="28" rx="14" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 28 40)" fill="white"
+              fill-opacity="0.14" />
+            <path
+              d="M13.25 26C13.25 26.4142 13.5858 26.75 14 26.75C14.4142 26.75 14.75 26.4142 14.75 26L13.25 26ZM14.5303 13.4697C14.2374 13.1768 13.7626 13.1768 13.4697 13.4697L8.6967 18.2426C8.40381 18.5355 8.40381 19.0104 8.6967 19.3033C8.98959 19.5962 9.46447 19.5962 9.75736 19.3033L14 15.0607L18.2426 19.3033C18.5355 19.5962 19.0104 19.5962 19.3033 19.3033C19.5962 19.0104 19.5962 18.5355 19.3033 18.2426L14.5303 13.4697ZM14.75 26L14.75 14L13.25 14L13.25 26L14.75 26Z"
+              fill="white" />
+          </g>
+          <defs>
+            <filter id="filter0_b_220_7978" x="-12" y="-12" width="52" height="64" filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="6" />
+              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_220_7978" />
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_220_7978" result="shape" />
+            </filter>
+          </defs>
+        </svg>
       </div>
     </div>
+    <div class="social-media">
+      <a draggable="false" href=""><svg width="35" height="35" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="12" fill="white" fill-opacity="0.11" />
+          <path
+            d="M9.32768 7.11599C9.32768 7.47809 9.2203 7.83206 9.01913 8.13314C8.81795 8.43422 8.53202 8.66888 8.19748 8.80745C7.86294 8.94602 7.49482 8.98228 7.13967 8.91164C6.78452 8.841 6.4583 8.66663 6.20225 8.41058C5.94621 8.15453 5.77184 7.82831 5.7012 7.47316C5.63055 7.11802 5.66681 6.7499 5.80538 6.41536C5.94395 6.08082 6.17861 5.79488 6.47969 5.59371C6.78077 5.39253 7.13474 5.28516 7.49685 5.28516C7.98241 5.28516 8.44809 5.47805 8.79144 5.82139C9.13479 6.16474 9.32768 6.63042 9.32768 7.11599ZM8.91269 10.1674V18.256C8.91301 18.3157 8.90154 18.3748 8.87892 18.43C8.85631 18.4852 8.82301 18.5354 8.78093 18.5778C8.73885 18.6201 8.68882 18.6536 8.63372 18.6765C8.57862 18.6995 8.51954 18.7112 8.45986 18.7112H6.53017C6.4705 18.7114 6.41138 18.6998 6.35622 18.677C6.30106 18.6543 6.25094 18.6208 6.20875 18.5786C6.16656 18.5364 6.13312 18.4863 6.11036 18.4311C6.0876 18.376 6.07596 18.3169 6.07612 18.2572V10.1674C6.07612 10.047 6.12396 9.93146 6.20911 9.84631C6.29426 9.76116 6.40975 9.71333 6.53017 9.71333H8.45986C8.58007 9.71365 8.69525 9.76163 8.78013 9.84674C8.86502 9.93186 8.91269 10.0472 8.91269 10.1674ZM18.9993 14.3783V18.2938C18.9995 18.3487 18.9888 18.403 18.9679 18.4538C18.947 18.5045 18.9162 18.5505 18.8774 18.5893C18.8387 18.6281 18.7926 18.6589 18.7419 18.6798C18.6911 18.7007 18.6368 18.7114 18.5819 18.7112H16.507C16.4521 18.7114 16.3978 18.7007 16.347 18.6798C16.2963 18.6589 16.2502 18.6281 16.2114 18.5893C16.1727 18.5505 16.1419 18.5045 16.121 18.4538C16.1001 18.403 16.0894 18.3487 16.0895 18.2938V14.4991C16.0895 13.9328 16.2555 12.019 14.609 12.019C13.3335 12.019 13.0736 13.3286 13.0223 13.9169V18.2938C13.0223 18.4035 12.9792 18.5087 12.9022 18.5868C12.8252 18.665 12.7206 18.7096 12.611 18.7112H10.6068C10.5521 18.7112 10.4978 18.7004 10.4473 18.6794C10.3967 18.6585 10.3507 18.6277 10.3121 18.5889C10.2734 18.5501 10.2428 18.5041 10.2219 18.4535C10.2011 18.4028 10.1904 18.3486 10.1906 18.2938V10.132C10.1904 10.0772 10.2011 10.023 10.2219 9.97232C10.2428 9.92169 10.2734 9.87566 10.3121 9.83688C10.3507 9.7981 10.3967 9.76734 10.4473 9.74634C10.4978 9.72535 10.5521 9.71455 10.6068 9.71455H12.611C12.7217 9.71455 12.8279 9.75852 12.9061 9.83681C12.9844 9.91509 13.0284 10.0213 13.0284 10.132V10.8375C13.502 10.1271 14.2038 9.57906 15.7014 9.57906C19.0189 9.57906 18.9993 12.6768 18.9993 14.3783Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a draggable="false" href="">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.8015 11.5913L18.2024 19.3165H15.9858L11.5786 13.0127V13.0123L10.9316 12.087L5.7832 4.72266H7.99973L12.1544 10.6659L12.8015 11.5913Z"
+            fill="white" />
+          <path
+            d="M21.4067 0L2.59325 0C1.16108 0 0 1.16108 0 2.59325L0 21.4067C0 22.8389 1.16108 24 2.59325 24H21.4067C22.8389 24 24 22.8389 24 21.4067V2.59325C24 1.16108 22.8389 0 21.4067 0ZM15.308 20.3525L10.8481 13.8617L5.26435 20.3525H3.82122L10.2073 12.9295L3.82122 3.63521H8.69203L12.9152 9.78152L18.2026 3.63521H19.6458L13.5562 10.7139H13.5558L20.1788 20.3525H15.308Z"
+            fill="white" fill-opacity="0.11" />
+        </svg>
+      </a>
+      <a href="" draggable="false"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 11.9961C24 17.006 23.9948 18.4712 23.9712 18.756C23.8857 19.7841 23.7238 20.4239 23.3767 21.1208C23.1099 21.658 22.8006 22.0816 22.3671 22.4996C21.5765 23.261 20.6039 23.7225 19.4477 23.8895C18.8865 23.9708 18.772 23.9944 15.905 23.9992C14.9494 24.001 13.6917 23.9992 12.0047 23.9992C6.99751 23.9992 5.53339 23.9936 5.24906 23.9696C4.24836 23.8866 3.61877 23.7297 2.93009 23.3974C1.61183 22.7625 0.622206 21.5498 0.252945 20.1211C0.12555 19.6265 0.0553896 19.0801 0.022156 18.3787C0.00923183 18.0815 3.91105e-07 15.0526 5.23586e-07 12.0217C6.56068e-07 8.99092 0.00369151 5.96011 0.018462 5.67032C0.0566815 4.85816 0.120013 4.38656 0.254794 3.86512C0.625901 2.42723 1.60075 1.23669 2.93748 0.588811C3.60954 0.263026 4.26313 0.0978251 5.21158 0.0230705C5.41837 0.0068275 8.71532 -6.68115e-07 12.0078 -5.24194e-07C15.3009 -3.80249e-07 18.5918 0.0073812 18.7986 0.0236242C19.7624 0.0993021 20.4104 0.264503 21.0954 0.600811C21.6561 0.876758 22.0749 1.18316 22.503 1.628C23.2615 2.42188 23.7231 3.39278 23.89 4.54973C23.971 5.1103 23.995 5.22197 24 8.09035L24 11.9961Z"
+            fill="white" fill-opacity="0.11" />
+          <path
+            d="M20.8613 12.0027C20.8613 14.4089 20.8508 14.7108 20.8078 15.6559C20.7646 16.5991 20.6152 17.2429 20.3961 17.8063C20.1697 18.389 19.8669 18.8833 19.3741 19.3757C18.8815 19.8686 18.3871 20.1713 17.8044 20.3983C17.2407 20.618 16.5965 20.7675 15.6534 20.8099C14.7081 20.8522 14.4059 20.8633 11.999 20.8633C9.59219 20.8633 9.29105 20.8526 8.34574 20.8098C7.40228 20.7664 6.75829 20.617 6.19479 20.3981C5.61191 20.1717 5.11747 19.8689 4.62487 19.3763C4.13191 18.884 3.82837 18.3897 3.60202 17.8074C3.38286 17.2437 3.23349 16.5997 3.19029 15.6566C3.14727 14.7116 3.13675 14.4098 3.13675 12.0038C3.13675 9.5974 3.14727 9.29635 3.19029 8.3513C3.23349 7.40809 3.38286 6.76353 3.60202 6.19983C3.82838 5.61729 4.13191 5.12372 4.62487 4.63144C5.11747 4.13861 5.61191 3.8359 6.19461 3.60887C6.75829 3.39106 7.40246 3.24155 8.34556 3.19725C9.29087 3.1548 9.59219 3.14372 11.999 3.14372C14.4059 3.14372 14.7079 3.1548 15.6533 3.19725C16.5967 3.24155 17.2407 3.39106 17.8042 3.60887C18.3871 3.8359 18.8815 4.13861 19.3741 4.63144C19.8671 5.12427 20.1699 5.6171 20.3961 6.20038C20.6152 6.7652 20.7646 7.40938 20.8078 8.35259C20.8508 9.29764 20.8613 9.59851 20.8613 12.0054L20.8613 12.0027ZM19.2643 12.7975C19.2646 12.5616 19.2643 12.2984 19.2643 12.0027C19.2643 9.63709 19.2558 9.35671 19.2133 8.42255C19.1738 7.55871 19.0294 7.08987 18.9081 6.77756C18.7475 6.3641 18.5555 6.06933 18.2453 5.75942C17.9351 5.44932 17.6397 5.25736 17.2261 5.0964C16.9141 4.97513 16.4451 4.83061 15.5811 4.79129C14.6468 4.74884 14.3662 4.73961 12.0011 4.73961C9.63595 4.73961 9.35531 4.74884 8.42107 4.79129C7.557 4.83079 7.08804 4.97513 6.77601 5.0964C6.36244 5.25699 6.06795 5.44932 5.75795 5.75942C5.44777 6.06951 5.25576 6.36392 5.09513 6.77756C4.97327 7.0895 4.82926 7.55871 4.78975 8.42254C4.74728 9.35652 4.73805 9.63709 4.73805 12.0027C4.73805 14.3684 4.74728 14.6488 4.78975 15.5828C4.82963 16.4466 4.97401 16.9155 5.09531 17.228C5.25594 17.6414 5.44796 17.9368 5.75814 18.2469C6.06832 18.5569 6.36299 18.7489 6.77675 18.9099C7.08877 19.0311 7.55774 19.1757 8.42181 19.215C9.35604 19.2574 9.63668 19.2659 12.0033 19.2659C14.3699 19.2659 14.649 19.2574 15.5833 19.215C16.4474 19.1755 16.9163 19.0311 17.2287 18.9099C17.6423 18.7493 17.9377 18.5569 18.2479 18.2469C18.5581 17.9368 18.7501 17.6414 18.9111 17.228C19.0329 16.9157 19.1769 16.4466 19.2166 15.5828C19.2536 14.7655 19.2646 14.4487 19.2665 12.7975L19.2643 12.7975ZM17.7928 7.27335C17.7928 7.86031 17.317 8.33653 16.7297 8.33653C16.1425 8.33653 15.6662 7.86031 15.6662 7.27335C15.6662 6.68638 16.1425 6.21016 16.7297 6.21016C17.3168 6.21016 17.7931 6.68638 17.7931 7.27335L17.7928 7.27335ZM16.5502 12.0027C16.5502 14.5154 14.5124 16.5526 11.999 16.5526C9.48566 16.5526 7.44881 14.5154 7.44881 12.0027C7.44881 9.48998 9.48566 7.4535 11.999 7.4535C14.5124 7.4535 16.5502 9.48998 16.5502 12.0027ZM14.9531 12.0027C14.9531 10.3717 13.6306 9.04938 11.999 9.04938C10.3676 9.04938 9.04494 10.3717 9.04494 12.0027C9.04494 13.6338 10.3676 14.956 11.999 14.956C13.6306 14.956 14.9531 13.6338 14.9531 12.0027Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="" draggable="false">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.4674 18.1506C23.1879 19.1845 22.3814 19.9941 21.3475 20.2706C19.9588 20.8067 6.50794 21.0694 2.60602 20.2552C1.57217 19.9756 0.762599 19.1691 0.486085 18.1353C-0.140679 15.3855 -0.188301 9.44046 0.501447 6.62924C0.781033 5.59538 1.58753 4.78581 2.62139 4.5093C5.37116 3.87639 18.4441 3.78729 21.3629 4.5093C22.3967 4.78888 23.2063 5.59538 23.4828 6.62924C24.1511 9.6248 24.1987 15.2012 23.4674 18.1506Z"
+            fill="white" fill-opacity="0.11" />
+          <path d="M15.9395 12.3897L9.67188 15.9844V8.79502L15.9395 12.3897Z" fill="white" />
+        </svg>
+      </a>
+      <a href="" draggable="false">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_220_7956)">
+            <path
+              d="M12.1437 23.4894C10.1272 23.4899 8.15831 22.9589 6.42287 21.9492L0.493378 23.5859L2.08445 17.4704C1.17076 15.779 0.692009 13.8838 0.691891 11.9579L0.691891 11.9529C0.691892 5.59522 5.82519 0.419938 12.1347 0.417221C15.1921 0.416002 18.0671 1.61488 20.23 3.79306C22.3928 5.97087 23.5845 8.86728 23.5859 11.9533C23.5859 18.3117 18.4529 23.4867 12.1437 23.4893"
+              fill="white" fill-opacity="0.11" />
+            <path
+              d="M17.1023 14.9381C17.5956 15.1618 17.6055 15.3972 17.6142 15.6099C17.6216 15.7841 17.6211 15.9833 17.6211 16.1822C17.6211 16.3813 17.5468 16.7048 17.2505 16.9783C16.9539 17.2521 16.2373 18.0234 14.7797 18.0234C13.322 18.0234 11.9134 16.9535 11.7155 16.8043C11.518 16.655 8.43113 14.7387 7.2436 11.7038C6.25671 9.18159 6.45299 8.66831 6.50248 8.12091C6.55178 7.57341 7.21895 6.35428 7.91076 6.10556C8.60248 5.85666 9.19541 5.85666 9.31932 5.93128C9.44276 6.00591 9.5169 6.20503 9.66499 6.50363C9.81318 6.80231 10.5299 8.27025 10.6288 8.54391C10.7276 8.81766 10.7769 9.01669 10.4802 9.21581C10.1841 9.41494 9.5169 9.98672 9.31932 10.161C9.12127 10.3351 9.09662 10.5094 9.24481 10.8079C9.39346 11.1067 9.70592 12.0682 10.7151 13.2091C11.5004 14.0967 12.4702 14.696 12.7669 14.8702C13.063 15.0443 13.2236 14.8888 13.3712 14.7391C13.504 14.6049 13.7172 14.4404 13.8901 14.291C14.0631 14.1421 14.1866 14.0924 14.3842 13.9928C14.5819 13.8932 14.7549 13.9431 14.9031 14.0176C15.0513 14.0924 16.5165 14.6726 17.1023 14.9381Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_220_7956">
+              <rect width="24" height="24" fill="white" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 24 24)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a href="" draggable="false">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 12C24 17.9897 19.6116 22.9542 13.875 23.8542V15.4688H16.6711L17.2031 12H13.875V9.74906C13.875 8.79984 14.34 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9703 4.6875 14.6573 4.6875C11.9166 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C4.38844 22.9542 0 17.9897 0 12C0 5.37281 5.37281 0 12 0C18.6272 0 24 5.37281 24 12Z"
+            fill="white" fill-opacity="0.11" />
+          <path
+            d="M16.6711 15.4688L17.2031 12H13.875V9.74902C13.875 8.80003 14.3399 7.875 15.8306 7.875H17.3438V4.92188C17.3438 4.92188 15.9705 4.6875 14.6576 4.6875C11.9165 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4688H10.125V23.8542C10.736 23.95 11.3621 24 12 24C12.6379 24 13.264 23.95 13.875 23.8542V15.4688H16.6711Z"
+            fill="white" />
+        </svg>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>

@@ -152,7 +152,7 @@
 }
 .hero-section .content-overlay {
   position: absolute;
-  width: 100%;
+  width: 95%;
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
@@ -252,9 +252,10 @@
   border: none;
   border-radius: 35px;
   color: var(--ternary-neutrals--5);
-  padding: 0.6rem 2.5rem;
+  padding: 0.6rem 2.4rem;
   font-family: saira-semiBold;
   display: flex;
+  gap: 0.8rem;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px 7px rgba(8, 131, 247, 0.315);
@@ -315,4 +316,20 @@
   .hero-section .swiper-pagination {
     right: 10px !important;
   }
+}
+.hero-section .social-media {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 40px;
+  background-image: url("../assets/social-media/BG.svg");
+  background-size: cover;
+  padding: 0.7rem 1.5rem;
 }/*# sourceMappingURL=style.css.map */
