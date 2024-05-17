@@ -1,4 +1,7 @@
 @use "./layout/_variables.scss" as *;
+P {
+  margin-bottom: 0 !important;
+}
 .navigation-bar {
   width: 80%;
   margin: 30px auto;
@@ -88,10 +91,11 @@
   height: 550px;
   overflow: hidden;
   margin: 120px auto;
+  margin-bottom: 2rem;
   border-radius: 35px;
   .content-overlay {
     position: absolute;
-    width: 89%;
+    width: fit-content;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -111,6 +115,9 @@
       @include mobile {
         font-size: 29px;
       }
+      @include mobileXS {
+        font-size: 28px;
+      }
     }
     p {
       color: #ffffff;
@@ -119,6 +126,10 @@
       @include mobile {
         font-size: 20px;
       }
+    }
+    @include mobile {
+      top: 40px;
+      white-space: nowrap;
     }
   }
   .mySwiper {
@@ -143,7 +154,7 @@
         object-fit: cover;
       }
       .hero-slide-content {
-        width:89%;
+        width: 89%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -158,6 +169,7 @@
           font-size: 40px;
           font-weight: 600;
           text-transform: capitalize;
+
           @include mobile {
             font-size: 23px;
           }
@@ -186,7 +198,7 @@
           box-shadow: 0px 0px 10px 7px rgba(8, 131, 247, 0.315);
         }
         @include mobile {
-          padding-bottom: 4rem;
+          padding-bottom: 3rem;
         }
       }
     }
@@ -277,7 +289,602 @@
       width: 85%;
     }
     @media (max-width: 380px) {
+      width: 90%;
+    }
+  }
+  @include mobile {
     width: 90%;
+  }
+}
+.hero-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14rem 0rem 10rem;
+  z-index: 10;
+  .circle1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    @include mobile {
+      width: 120px;
+      top: 99% !important;
+    }
+  }
+  .circle2 {
+    position: absolute;
+    top: 99%;
+    transform: rotate(-10deg);
+    left: 6%;
+    @include mobile {
+      width: 140px;
+      left: 7%;
+    }
+  }
+  position: relative;
+  @include tablet {
+    padding: 6rem 0rem;
+  }
+  .magnifier {
+    @include tablet {
+      display: none;
+    }
+  }
+  .search-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      position: static;
+      top: unset;
+      left: unset;
+      transform: none;
+      width: 90%;
+    }
+    .search-left-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      margin-bottom: 2rem;
+      @include tablet {
+        width: 100%;
+      }
+      h3 {
+        position: relative;
+        margin-bottom: 2rem;
+        img {
+          position: absolute;
+          top: 100%;
+          left: 0;
+        }
+      }
+    }
+    .search-right-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      padding-bottom: 2rem;
+      border-radius: 40px;
+      border: none;
+      @include tablet {
+        width: 100%;
+      }
+      form {
+        background-image: url(../assets/form-search/form-bg.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: fit-content;
+        width: 100%;
+        padding: 3rem 1.5rem;
+        z-index: 20;
+        @include mobile {
+          background-image: url(../assets/form-search/FilteringAreaBG.png);
+        }
+        input {
+          width: 100%;
+          margin-bottom: 1rem;
+          border: none;
+          outline: none;
+          padding: 0.8rem 1rem;
+          background-color: #f9fafa;
+          border-radius: 10px;
+        }
+        div {
+          position: relative;
+          select {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 1rem;
+            border: none;
+            outline: none;
+            padding: 0.8rem 1rem;
+            background-color: #f9fafa;
+            padding-right: 2rem;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            position: relative;
+            background-image: url("../assets/form-search/select-arrow.svg");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            border-radius: 10px;
+            // color: var(--neutral-black);
+            option {
+              background-color: #f9fafa; /* Default option background */
+              color: var(--neutral-black);
+              &:disabled:checked {
+                background-color: #f9fafa;
+                color: gray; // Disabled and selected placeholder option text color
+                color: var(--ternary-neutrals--3);
+              }
+            }
+          }
+        }
+        div.timing {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 5px;
+          .duration {
+            width: calc((100% / 3) - 5px);
+            @include mobile {
+              width: 100%;
+            }
+          }
+
+          .year,
+          .month {
+            width: calc((100% / 3) - 5px);
+            @include mobile {
+              width: calc((100% / 2) - 5px);
+            }
+          }
+        }
+      }
+      div.search {
+        background-color: #000c17;
+        height: 90px;
+        margin-top: -25px;
+        border-radius: 0px 0px 40px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 1rem;
+        button {
+          border: none;
+          background-color: #000c17;
+          color: white;
+          font-family: saira-semiBold;
+          cursor: pointer;
+          img {
+            margin-right: 0.4rem;
+            margin-bottom: 0.2rem;
+          }
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+.coming-courses {
+  background-color: #000c17;
+  padding-bottom: 10rem;
+  position: relative;
+  .upper {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    @include mobile {
+      right: 10px;
+    }
+  }
+  .down {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    @include mobile {
+      left: 10px;
+      bottom: 10px;
+    }
+  }
+  .heading-container {
+    padding: 4rem 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    .stars {
+      position: absolute;
+      top: 55%;
+      right: 20%;
+      width: 30px;
+    }
+    p:first-child {
+      font-family: saira-bold;
+      font-size: 30px;
+    }
+    p {
+      font-size: 25px;
+    }
+    .description {
+      margin-top: 3rem;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    img {
+      width: 100px;
+    }
+  }
+  .swiper-container {
+    width: 70% !important;
+    margin: auto;
+    width: 300px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    @include mobile {
+      width: 85% !important;
+    }
+    .swiper-wrapper {
+      flex-direction: row !important;
+      .swiper-box {
+        cursor: pointer;
+        width: 300px;
+        background-color: #000c17;
+        border-radius: 20px;
+        overflow: hidden;
+        .swiper-image {
+          border-radius: 20px 20px 0px 0px;
+          height: 160px;
+          overflow: hidden;
+          position: relative;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000c17a4;
+            backdrop-filter: blur(5px);
+            transition: 0.3s ease;
+            opacity: 0;
+            p {
+              font-family: saira-medium;
+            }
+          }
+        }
+        .swiper-inner {
+          padding: 1rem 1px;
+          p {
+            font-family: saira-regular;
+            font-size: 14px;
+            margin-bottom: 2rem !important;
+          }
+          .duration {
+            // margin-bottom: 0.5rem;
+            span {
+              font-size: 12px;
+              font-family: saira-regular;
+            }
+            img {
+              margin: 0 0.2rem;
+            }
+          }
+          .swiper-box-footer {
+            border-radius: 0px 0px 25px 25px;
+            overflow: hidden;
+            padding: 1rem 0rem;
+            display: flex;
+            justify-content: space-between;
+            p {
+              height: 100%;
+              flex: 1;
+              text-align: center;
+              background-color: white;
+              color: black;
+              margin-bottom: 0 !important;
+              padding: 1rem 0rem;
+              font-family: "Cairo";
+              font-weight: 500;
+            }
+            p.course-status {
+              border-radius: 0px 0px 0px 20px;
+            }
+            p.salary {
+              font-weight: 700;
+              color: var(--primary--color);
+              transition: 0.3s;
+              border-radius: 0px 0px 20px 0px;
+            }
+          }
+        }
+        &:hover .image-overlay {
+          opacity: 1;
+        }
+        &:hover p.salary {
+          color: white !important;
+          background-color: var(--primary--color);
+        }
+      }
+    }
+    .upcoming-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      span {
+        background-color: #4c555d;
+        opacity: 1;
+        width: 20px;
+        border-radius: 1px;
+        height: 4px;
+        margin: 0px 1px;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--primary--color);
+        height: 6px;
+        width: 24px;
+      }
+    }
+  }
+  .upcoming-navigation {
+    .swiper-upcoming-prev {
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      background-color: transparent;
+      border: none;
+    }
+    .swiper-upcoming-next {
+      position: absolute;
+      top: 50%;
+      right: 6%;
+      background-color: transparent;
+      border: none;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}
+.course-categories {
+  position: relative;
+  padding: 12rem 0rem 5rem;
+  z-index: 10;
+  .circle1 {
+    position: absolute;
+    bottom: 99%;
+    right: 80px;
+    transform: rotate(-8deg);
+    @include mobile {
+      width: 120px !important;
+      bottom: 98%;
+      right: 74px;
+      transform: rotate(-6deg);
+    }
+  }
+  .circle2 {
+    position: absolute;
+    bottom: 98%;
+    right: 0px;
+    @include mobile {
+      width: 130px !important;
+    }
+  }
+  .categories-navigation {
+    @include tablet {
+      display: none;
+    }
+    .swiper-categories-prev {
+      position: absolute;
+      top: 55%;
+      left: 10%;
+      border: none;
+      background-color: transparent;
+    }
+    .swiper-categories-next {
+      position: absolute;
+      top: 55%;
+      right: 10%;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  .categories-container {
+    width: 80%;
+    margin: auto;
+    @include mobile {
+      width: 95% !important;
+    }
+    .categories-heading {
+      position: relative;
+      p:first-child {
+        font-family: saira-extraBold;
+        font-weight: 900;
+        font-size: 25px;
+      }
+      p:nth-of-type(2) {
+        font-size: 27px;
+        font-family: saira-medium;
+        padding-left: 2rem;
+      }
+      img {
+        margin-left: 2rem;
+        margin-top: -15px;
+      }
+      p:nth-of-type(3) {
+        width: 70%;
+        margin: 50px auto;
+        text-align: center;
+        @include mobile {
+          width: 95% !important;
+        }
+        span {
+          color: #f77b08;
+          font-weight: 800;
+        }
+      }
+      button {
+        color: var(--primary--color);
+        border-radius: 20px;
+        padding: 0.2rem 2rem;
+        border: 1px solid var(--primary--color);
+        background-color: #fff;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+      }
+      button.lab {
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+    .swiper-categories {
+      width: 80%;
+      margin: 30px auto;
+      padding: 2rem 0rem;
+      overflow: hidden;
+      .swiper-wrapper {
+        flex-direction: row !important;
+        .swiper-slide {
+          padding: 0rem 0.5rem;
+          .swiper-slide-box {
+            box-shadow: 1px 1px 10px 2px rgba(179, 183, 184, 0.288);
+            border-radius: 25px 25px 40px 5px;
+            position: relative;
+            padding-bottom: 1rem;
+            background-color: white;
+            .back-border {
+              position: absolute;
+              top: -15px;
+              left: -17px;
+              z-index: -1;
+            }
+            .image-box {
+              height: 200px;
+              border-radius: 5px 5px 0px 0px;
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 10px 0px 0px;
+
+                object-fit: cover;
+              }
+            }
+            .swiper-inner {
+              background-color: white;
+              padding: 2rem 0rem 0rem;
+              overflow: hidden;
+              width: 90%;
+              margin: auto;
+              p:first-child {
+                font-family: saira-semiBold;
+                text-align: center;
+                color: var(--neutral-black);
+                font-size: 18px;
+              }
+              p:nth-of-type(2) {
+                text-align: center;
+                margin-top: 0.5rem;
+                color: var(--primary--color);
+                font-family: saira-semiBold;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      .categories-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+        margin-top: 3rem;
+        span {
+          width: 20px;
+          border-radius: 1px;
+          margin: 0px 1px;
+          height: 5px;
+        }
+        .swiper-pagination-bullet-active {
+          height: 7px;
+          width: 30px;
+        }
+      }
+    }
+  }
+  button.mobile {
+    margin: 20px auto;
+    border: 1px solid var(--primary--color);
+    background-color: white;
+    color: var(--primary--color);
+    padding: 0.5rem 4rem;
+    border-radius: 30px;
+    font-family: saira-semiBold;
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
+  .separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem 3rem;
+  }
+}
+.top-courses {
+  width: 80%;
+  margin: auto;
+  border: 5px solid #ECF0F3;
+  border-radius: 40px;
+  height: 500px;
+  padding: 4rem 2rem;
+  position: relative;
+  .star-border{
+    position: absolute;
+    bottom: 91%;
+    left: -25px;
+  }
+  .rectangle{
+    position: absolute;
+    top: 91%;
+    right: 0px;
+  }
+  .top-heading{
+    text-align: center;
+    p:first-child{
+      font-family: saira-extraBold;
+      font-size: 32px;
+      color: var(--neutral-black);
+    }
+    p:nth-of-type(2){
+      font-family: saira-semiBold;
+      font-size: 30px;
+      color: var(--neutral-black);
+
     }
   }
 }
