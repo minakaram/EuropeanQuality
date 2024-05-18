@@ -631,19 +631,19 @@ P {
       margin-top: 2rem;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       text-align: center;
       span {
         background-color: #4c555d;
         opacity: 1;
         width: 20px;
         border-radius: 1px;
-        height: 4px;
+        height: 5px;
         margin: 0px 1px;
       }
       .swiper-pagination-bullet-active {
         background-color: var(--primary--color);
-        height: 6px;
+        height: 7px;
         width: 24px;
       }
     }

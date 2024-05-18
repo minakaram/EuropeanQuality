@@ -130,17 +130,16 @@ const mySwiper = new Swiper(".swiper-upcoming", {
       // Check the number of pagination dots and append SVG only if there are more than 4
       if (paginationDots.length > 4) {
         const svgDots = document.createElement("p");
-        // svgDots.style.backgroundColor="#4c555d"
-        svgDots.style.paddingBottom = "4px";
+        svgDots.style.display = "flex";
         svgDots.style.marginLeft = "2px";
         svgDots.innerHTML = `
-        <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="3" height="4" rx="1" fill="white" fill-opacity="0.3"/>
-        <rect x="4" width="3" height="4" rx="1" fill="white" fill-opacity="0.3"/>
-        <rect x="8" width="3" height="4" rx="1" fill="white" fill-opacity="0.3"/>
-        <rect x="12" width="3" height="4" rx="1" fill="white" fill-opacity="0.3"/>
-        <rect x="16" width="3" height="4" rx="1" fill="white" fill-opacity="0.3"/>
-        <rect x="20" width="3" height="4" rx="1" fill="white" fill-opacity="0.3"/>
+        <svg width="23" height="5" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="4" width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="8" width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="12" width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="16" width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="20" width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
         </svg>
         
         `;
