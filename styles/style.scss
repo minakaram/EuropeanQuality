@@ -1232,3 +1232,110 @@ P {
     }
   }
 }
+.partner-ship {
+  background-image: url(../assets/partner-ship/Section-BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0rem;
+  .partner-heading {
+    text-align: center;
+    p:first-child {
+      font-family: saira-extraBold;
+      font-size: 32px;
+      font-weight: 800;
+    }
+    p:nth-of-type(2) {
+      width: 70%;
+      margin: auto;
+      margin-top: 3rem;
+      font-family: "Cairo";
+      font-weight: 500;
+      @include mobile {
+        width: 90%;
+      }
+      span {
+        color: #f77b08;
+        font-size: 18px;
+        font-weight: 900;
+      }
+    }
+  }
+  .swiper-container {
+    width: 70%;
+    margin: 100px auto;
+    height: 200px;
+    margin-bottom: 0px;
+    padding-top: 4rem;
+    background-image: url(../assets/partner-ship/swiper-bg.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include tablet {
+      width: 90%;
+    }
+    @include mobile {
+      background-image: url(../assets/partner-ship/mobile-bg.png);
+      height: 350px;
+      padding-top: 2rem;
+    }
+    .partner-navigation {
+      @include mobile {
+        position: absolute;
+        bottom : 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      button.left {
+        position: absolute;
+        left: 20px;
+        bottom: 25%;
+        border: none;
+        background-color: transparent;
+        @include mobile {
+          left:25%
+        }
+      }
+      button.right {
+        position: absolute;
+        right: 20px;
+        bottom: 25%;
+        border: none;
+        background-color: transparent;
+        @include mobile {
+          right:25%
+        }
+      }
+    }
+    .partner-swiper {
+      width: 80%;
+      margin: 0px auto;
+      overflow: hidden;
+      .swiper-wrapper {
+        flex-direction: row !important;
+        align-items: center;
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include mobile {
+              width: 80%;
+            }
+          }
+          @include mobile {
+            margin-bottom: 10px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

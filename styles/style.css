@@ -1370,4 +1370,127 @@ P {
   color: var(--primary--color);
   font-family: saira-semiBold;
   text-decoration: none;
+}
+
+.partner-ship {
+  background-image: url(../assets/partner-ship/Section-BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0rem;
+}
+.partner-ship .partner-heading {
+  text-align: center;
+}
+.partner-ship .partner-heading p:first-child {
+  font-family: saira-extraBold;
+  font-size: 32px;
+  font-weight: 800;
+}
+.partner-ship .partner-heading p:nth-of-type(2) {
+  width: 70%;
+  margin: auto;
+  margin-top: 3rem;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .partner-ship .partner-heading p:nth-of-type(2) {
+    width: 90%;
+  }
+}
+.partner-ship .partner-heading p:nth-of-type(2) span {
+  color: #f77b08;
+  font-size: 18px;
+  font-weight: 900;
+}
+.partner-ship .swiper-container {
+  width: 70%;
+  margin: 100px auto;
+  height: 200px;
+  margin-bottom: 0px;
+  padding-top: 4rem;
+  background-image: url(../assets/partner-ship/swiper-bg.png);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .partner-ship .swiper-container {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .partner-ship .swiper-container {
+    background-image: url(../assets/partner-ship/mobile-bg.png);
+    height: 350px;
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .partner-ship .swiper-container .partner-navigation {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+.partner-ship .swiper-container .partner-navigation button.left {
+  position: absolute;
+  left: 20px;
+  bottom: 25%;
+  border: none;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .partner-ship .swiper-container .partner-navigation button.left {
+    left: 25%;
+  }
+}
+.partner-ship .swiper-container .partner-navigation button.right {
+  position: absolute;
+  right: 20px;
+  bottom: 25%;
+  border: none;
+  background-color: transparent;
+}
+@media (max-width: 767px) {
+  .partner-ship .swiper-container .partner-navigation button.right {
+    right: 25%;
+  }
+}
+.partner-ship .swiper-container .partner-swiper {
+  width: 80%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.partner-ship .swiper-container .partner-swiper .swiper-wrapper {
+  flex-direction: row !important;
+  align-items: center;
+}
+.partner-ship .swiper-container .partner-swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner-ship .swiper-container .partner-swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .partner-ship .swiper-container .partner-swiper .swiper-wrapper .swiper-slide img {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .partner-ship .swiper-container .partner-swiper .swiper-wrapper .swiper-slide {
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

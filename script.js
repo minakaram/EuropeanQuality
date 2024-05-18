@@ -406,3 +406,97 @@ checkScreenSize();
 
 // Add event listener for resize
 window.addEventListener("resize", checkScreenSize);
+
+//partner-ship
+
+const partnerShipSwiper = new Swiper(".partner-swiper", {
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".partner-pagination",
+    clickable: true,
+  },
+  grid: {
+    rows: 1,
+  },
+  navigation: {
+    prevEl: ".swiper-partner-prev",
+    nextEl: ".swiper-partner-next",
+  },
+  breakpoints: {
+    1025: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    320: {
+      grid: {
+        rows: 2,
+      },
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+  on: {
+    init: function () {
+      const paginationContainer = document.querySelector(".partner-pagination");
+      const maxVisibleDots = 4;
+
+      const paginationDots = Array.from(paginationContainer.children);
+
+      paginationDots.forEach((dot, index) => {
+        if (index >= maxVisibleDots) {
+          dot.style.display = "none";
+        }
+      });
+      if (paginationDots.length > 4) {
+        const svgDots = document.createElement("div");
+        svgDots.style.display = "flex";
+        // svgDots.style.paddingBottom = "1px";
+        svgDots.style.marginLeft = "2px";
+        // svgDots.style.marginBottom ="1px !important;"
+        svgDots.innerHTML = `
+        <svg width="23" height="5" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="4" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="8" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="12" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="16" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="20" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        </svg>
+        
+        `;
+        paginationContainer.appendChild(svgDots);
+      }
+    },
+  },
+});
+
+partnerShipSwiper.on("slideChange", function () {
+  const activeSlideIndex = partnerShipSwiper.realIndex;
+  const paginationContainer = document.querySelector(".partner-pagination");
+  const maxVisibleDots = 4;
+
+  if (activeSlideIndex >= maxVisibleDots) {
+    const svgDots = paginationContainer.querySelector("svg");
+    if (svgDots) {
+      const rects = svgDots.querySelectorAll("rect");
+      rects.forEach((rect, index) => {
+        rect.style.fill = "#0884F7";
+        rect.style.fillOpacity = "1";
+      });
+    }
+  } else {
+    const svgDots = paginationContainer.querySelector("svg");
+    if (svgDots) {
+      const rects = svgDots.querySelectorAll("rect");
+      rects.forEach((rect, index) => {
+        rect.style.fill = "#CCCCCC";
+        rect.style.fillOpacity = "1";
+      });
+    }
+  }
+});
