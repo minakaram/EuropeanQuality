@@ -438,6 +438,8 @@ const partnerShipSwiper = new Swiper(".partner-swiper", {
       },
       slidesPerView: 3,
       spaceBetween: 10,
+      slidesPerGroup: 1, // Moves 3 slides at a time at this breakpoint
+
     },
   },
   on: {
