@@ -574,7 +574,7 @@ P {
           }
         }
         .swiper-inner {
-          padding: 1rem 1px;
+          padding: 1rem 1px 0rem;
           p {
             font-family: saira-regular;
             font-size: 14px;
@@ -593,7 +593,7 @@ P {
           .swiper-box-footer {
             border-radius: 0px 0px 25px 25px;
             overflow: hidden;
-            padding: 1rem 0rem;
+            padding: 1rem 0rem 0rem;
             display: flex;
             justify-content: space-between;
             p {
@@ -628,6 +628,7 @@ P {
       }
     }
     .upcoming-pagination {
+      margin-top: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -858,33 +859,376 @@ P {
 .top-courses {
   width: 80%;
   margin: auto;
-  border: 5px solid #ECF0F3;
+  border: 5px solid #ecf0f3;
   border-radius: 40px;
-  height: 500px;
   padding: 4rem 2rem;
   position: relative;
-  .star-border{
+  @include mobile {
+    width: 90% !important;
+  }
+  .star-border {
     position: absolute;
-    bottom: 91%;
+    bottom: 95%;
     left: -25px;
+    @include mobileXS {
+      width: 50px;
+      height: 50px;
+      bottom: 96%;
+      left: -13px;
+    }
   }
-  .rectangle{
+  .rectangle {
     position: absolute;
-    top: 91%;
-    right: 0px;
+    top: 94.5%;
+    right: -1px;
+    @include mobileXS {
+      top: 95%;
+    }
   }
-  .top-heading{
+  .top-heading {
     text-align: center;
-    p:first-child{
+    p:first-child {
       font-family: saira-extraBold;
       font-size: 32px;
       color: var(--neutral-black);
     }
-    p:nth-of-type(2){
+    p:nth-of-type(2) {
       font-family: saira-semiBold;
       font-size: 30px;
       color: var(--neutral-black);
+    }
+    p:nth-of-type(3) {
+      margin-top: 3rem;
+    }
+  }
+  .swiper-top-courses {
+    margin-top: 3rem;
+    width: 90%;
+    margin: 3rem auto;
+    overflow: hidden;
+    .swiper-wrapper {
+      flex-direction: row !important;
+      .swiper-box {
+        cursor: pointer;
+        width: 300px;
+        background-color: #ffffff;
+        border-radius: 30px;
+        overflow: hidden;
+        .swiper-image {
+          border-radius: 20px 20px 0px 0px;
+          height: 160px;
+          overflow: hidden;
+          position: relative;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000c17a4;
+            backdrop-filter: blur(5px);
+            transition: 0.3s ease;
+            opacity: 0;
+            color: white;
+            p {
+              font-family: saira-medium;
+            }
+          }
+        }
+        .swiper-inner {
+          padding: 1rem 3px 0.4rem;
+          color: var(--neutral-black);
 
+          p {
+            font-family: saira-medium;
+
+            font-size: 14px;
+            margin-bottom: 2rem !important;
+          }
+          .duration {
+            // margin-bottom: 0.5rem;
+            span {
+              font-size: 12px;
+              font-family: saira-regular;
+            }
+            img {
+              margin: 0 0.2rem;
+            }
+          }
+          .swiper-box-footer {
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.041);
+            border-radius: 0px 0px 25px 25px;
+            overflow: hidden;
+            margin-top: 1rem;
+            display: flex;
+
+            justify-content: space-between;
+            p {
+              height: 100%;
+              flex: 1;
+              text-align: center;
+              background-color: white;
+              color: black;
+              margin-bottom: 0 !important;
+              padding: 1rem 0rem;
+              font-family: "Cairo";
+              font-weight: 500;
+            }
+            p.course-status {
+              border-radius: 0px 0px 0px 20px;
+            }
+            p.salary {
+              font-weight: 700;
+              color: var(--primary--color);
+              transition: 0.3s;
+              border-radius: 0px 0px 20px 0px;
+            }
+          }
+        }
+        &:hover .image-overlay {
+          opacity: 1;
+        }
+        &:hover p.salary {
+          color: white !important;
+          background-color: var(--primary--color);
+        }
+      }
+    }
+    .top-courses-pagination {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+      span {
+        background-color: #cccccc;
+        opacity: 1;
+        width: 20px;
+        border-radius: 1px;
+        height: 5px;
+        margin: 0px 1px;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--primary--color);
+        height: 7px;
+        width: 30px;
+      }
+    }
+  }
+}
+.separator-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem auto;
+}
+
+.cities-venues {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 4rem;
+  @include mobile {
+    width: 90%;
+  }
+  .cities-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cities-heading-left {
+      p:first-child {
+        font-size: 30px;
+        font-family: saira-extraBold;
+        color: var(--neutral-black);
+      }
+      p:nth-of-type(2) {
+        font-family: saira-medium;
+        font-size: 28px;
+        color: var(--neutral-black);
+        padding-left: 2rem;
+      }
+      img {
+        margin-left: 2rem;
+      }
+    }
+    .cities-heading-right {
+      display: flex;
+      gap: 0.5rem;
+      @include mobile {
+        display: none;
+      }
+      button.training {
+        border: 1px solid #f77b08;
+        padding: 0.4rem 1.5rem;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        a {
+          color: #f77b08;
+          font-family: saira-semiBold;
+          text-decoration: none;
+        }
+      }
+      button.view {
+        border: 1px solid var(--primary--color);
+        padding: 0.4rem 1.5rem;
+        background-color: white;
+        border-radius: 30px;
+        a {
+          color: var(--primary--color);
+          font-family: saira-semiBold;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .cities-venues-description {
+    text-align: center;
+    width: 70%;
+    margin: 3rem auto;
+    margin-bottom: 3rem;
+    @include mobile {
+      width: 95%;
+    }
+    span {
+      color: #f77b08;
+      font-family: saira-extraBold;
+      font-size: 18px;
+    }
+  }
+  .cities-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    overflow: hidden;
+    .single-city {
+      position: relative;
+      margin-right: 1px;
+      margin-bottom: 1px;
+      height: 200px;
+      width: calc((100% / 5) - 1px);
+      @include tablet {
+        width: calc((100% / 3) - 1px);
+      }
+      @include mobile {
+        width: 100%;
+      }
+      cursor: pointer;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      img.overlay {
+        z-index: 2;
+      }
+      .city-details {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 10;
+        color: white;
+        padding-bottom: 1rem;
+        p:first-child {
+          font-family: saira-semiBold;
+          font-size: 18px;
+        }
+        p:nth-of-type(2) {
+          font-family: saira-regular;
+          font-size: 12px;
+        }
+      }
+      .view-city {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 10;
+        font-family: "Cairo";
+        font-weight: 700;
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          img {
+            width: 12px;
+            height: 12px;
+            position: relative;
+            margin-top: 2px;
+          }
+        }
+      }
+      &:hover .city-details {
+        background-color: #0883f746;
+        transition: 0.3s;
+      }
+      &:hover .view-city {
+        display: flex;
+        transition: 0.3s;
+      }
+    }
+  }
+  .cities-mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+    display: none;
+    @include mobile {
+      display: flex;
+    }
+    button.training {
+      border: 1px solid #f77b08;
+      padding: 0.4rem 1.5rem;
+      background-color: white;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 250px;
+      a {
+        color: #f77b08;
+        font-family: saira-semiBold;
+        text-decoration: none;
+      }
+    }
+    button.view {
+      border: 1px solid var(--primary--color);
+      padding: 0.4rem 1.5rem;
+      background-color: white;
+      border-radius: 30px;
+      width: 250px;
+      a {
+        color: var(--primary--color);
+        font-family: saira-semiBold;
+        text-decoration: none;
+      }
     }
   }
 }
