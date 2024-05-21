@@ -1613,4 +1613,134 @@ P {
   .training-gallery .training-right-side img {
     width: 90%;
   }
+}
+
+.certificates {
+  padding: 5rem 0rem;
+  width: 85%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .certificates {
+    width: 90%;
+  }
+}
+.certificates .certificates-left-side {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.certificates .certificates-left-side img {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .certificates .certificates-left-side {
+    display: none;
+  }
+}
+.certificates .certificates-right-side {
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .certificates .certificates-right-side {
+    width: 100%;
+  }
+}
+.certificates .certificates-right-side p:first-child {
+  font-family: saira-extraBold;
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .certificates .certificates-right-side p:first-child {
+    font-size: 22px;
+  }
+}
+.certificates .certificates-right-side img {
+  margin-bottom: 3rem;
+}
+.certificates .certificates-right-side p:nth-of-type(2) {
+  width: 90%;
+}
+@media (max-width: 767px) {
+  .certificates .certificates-right-side p:nth-of-type(2) {
+    width: 100%;
+  }
+}
+.certificates .certificates-right-side .image-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 0rem;
+}
+@media (max-width: 1024px) {
+  .certificates .certificates-right-side .image-container {
+    display: flex !important;
+  }
+}
+.certificates .certificates-right-side .search-container {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  position: relative;
+  border-radius: 14px;
+  border: 1px solid #ecf0f3;
+  margin-top: 2rem;
+}
+@media (max-width: 1024px) {
+  .certificates .certificates-right-side .search-container {
+    margin-top: 0rem !important;
+  }
+}
+.certificates .certificates-right-side .search-container .search-input {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+.certificates .certificates-right-side .search-container .search-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #f9fafa;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+  outline-color: var(--primary--color);
+}
+.certificates .certificates-right-side .search-container .search-input button {
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  height: 70%;
+  border: none;
+  background-color: var(--primary--color);
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.certificates .certificates-right-side .search-container .search-input button a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certificates .certificates-right-side .search-container .search-input button a img {
+  height: 100%;
+  width: 100%;
+  margin: 0px !important;
+}
+.certificates .certificates-right-side .search-container .rectangle1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.certificates .certificates-right-side .search-container .rectangle2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0px !important;
 }/*# sourceMappingURL=style.css.map */
