@@ -442,3 +442,227 @@ const partnerShipSwiper = new Swiper(".partner-swiper", {
     },
   },
 });
+
+// professional-crew-swiper ------------------------------------------------------------------------------
+
+const professionalCrewSwiper = new Swiper(".crew-container", {
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".crew-container-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".swiper-top-courses-prev",
+    nextEl: ".swiper-top-courses-next",
+  },
+  on: {
+    init: function () {
+      const paginationContainer = document.querySelector(
+        ".crew-container-pagination"
+      );
+      const maxVisibleDots = 4;
+
+      const paginationDots = Array.from(paginationContainer.children);
+
+      paginationDots.forEach((dot, index) => {
+        if (index >= maxVisibleDots) {
+          dot.style.display = "none";
+        }
+      });
+      if (paginationDots.length > 4) {
+        const svgDots = document.createElement("div");
+        svgDots.style.display = "flex";
+        // svgDots.style.paddingBottom = "1px";
+        svgDots.style.marginLeft = "2px";
+        // svgDots.style.marginBottom ="1px !important;"
+        svgDots.innerHTML = `
+        <svg width="23" height="5" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="4" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="8" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="12" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="16" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="20" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        </svg>
+        
+        `;
+        paginationContainer.appendChild(svgDots);
+      }
+    },
+  },
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 70,
+    },
+  },
+});
+
+professionalCrewSwiper.on("slideChange", function () {
+  const activeSlideIndex = professionalCrewSwiper.realIndex;
+  const paginationContainer = document.querySelector(
+    ".crew-container-pagination"
+  );
+  const maxVisibleDots = 4;
+
+  if (activeSlideIndex >= maxVisibleDots) {
+    const svgDots = paginationContainer.querySelector("svg");
+    if (svgDots) {
+      const rects = svgDots.querySelectorAll("rect");
+      rects.forEach((rect, index) => {
+        rect.style.fill = "#0884F7";
+        rect.style.fillOpacity = "1";
+      });
+    }
+  } else {
+    const svgDots = paginationContainer.querySelector("svg");
+    if (svgDots) {
+      const rects = svgDots.querySelectorAll("rect");
+      rects.forEach((rect, index) => {
+        rect.style.fill = "#CCCCCC";
+        rect.style.fillOpacity = "1";
+      });
+    }
+  }
+});
+
+// partners-swiper
+
+const partnersSwiper = new Swiper(".partners-swiper", {
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    // reverseDirection: true, // Set the delay to 10 seconds (in milliseconds)
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 70,
+    },
+  },
+});
+
+// testimonials    centeredSlides: true,
+
+const testimonialsSwiper = new Swiper(".testimonials-swiper", {
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: ".testimonials-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".swiper-top-courses-prev",
+    nextEl: ".swiper-top-courses-next",
+  },
+  on: {
+    init: function () {
+      const paginationContainer = document.querySelector(
+        ".testimonials-pagination"
+      );
+      const maxVisibleDots = 4;
+
+      const paginationDots = Array.from(paginationContainer.children);
+
+      paginationDots.forEach((dot, index) => {
+        if (index >= maxVisibleDots) {
+          dot.style.display = "none";
+        }
+      });
+      if (paginationDots.length > 4) {
+        const svgDots = document.createElement("div");
+        svgDots.style.display = "flex";
+        // svgDots.style.paddingBottom = "1px";
+        svgDots.style.marginLeft = "2px";
+        // svgDots.style.marginBottom ="1px !important;"
+        svgDots.innerHTML = `
+        <svg width="23" height="5" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="3" height="5" rx="1" fill="white" fill-opacity="0.3"/>
+        <rect x="4" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="8" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="12" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="16" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        <rect x="20" width="3" height="5" rx="1" fill="#cccccc" fill-opacity="1"/>
+        </svg>
+        
+        `;
+        paginationContainer.appendChild(svgDots);
+      }
+    },
+  },
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 70,
+    },
+  },
+});
+
+testimonialsSwiper.on("slideChange", function () {
+  const activeSlideIndex = testimonialsSwiper.realIndex;
+  const paginationContainer = document.querySelector(
+    ".testimonials-pagination"
+  );
+  const maxVisibleDots = 4;
+
+  if (activeSlideIndex >= maxVisibleDots) {
+    const svgDots = paginationContainer.querySelector("svg");
+    if (svgDots) {
+      const rects = svgDots.querySelectorAll("rect");
+      rects.forEach((rect, index) => {
+        rect.style.fill = "#0884F7";
+        rect.style.fillOpacity = "1";
+      });
+    }
+  } else {
+    const svgDots = paginationContainer.querySelector("svg");
+    if (svgDots) {
+      const rects = svgDots.querySelectorAll("rect");
+      rects.forEach((rect, index) => {
+        rect.style.fill = "#CCCCCC";
+        rect.style.fillOpacity = "1";
+      });
+    }
+  }
+});
