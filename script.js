@@ -574,6 +574,9 @@ const partnersSwiper = new Swiper(".partners-swiper", {
 const testimonialsSwiper = new Swiper(".testimonials-swiper", {
   spaceBetween: 30,
   loop: true,
+  // autoplay: {
+  //   delay: 5000,
+  // },
   centeredSlides: true,
   pagination: {
     el: ".testimonials-pagination",
@@ -583,15 +586,35 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
     prevEl: ".swiper-top-courses-prev",
     nextEl: ".swiper-top-courses-next",
   },
+  
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+  },
   on: {
     init: function () {
       const paginationContainer = document.querySelector(
         ".testimonials-pagination"
       );
       const maxVisibleDots = 4;
-
+  
       const paginationDots = Array.from(paginationContainer.children);
-
+  
       paginationDots.forEach((dot, index) => {
         if (index >= maxVisibleDots) {
           dot.style.display = "none";
@@ -618,25 +641,6 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
       }
     },
   },
-
-  breakpoints: {
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1025: {
-      slidesPerView: 3,
-      spaceBetween: 0,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 70,
-    },
-  },
 });
 
 testimonialsSwiper.on("slideChange", function () {
@@ -645,7 +649,7 @@ testimonialsSwiper.on("slideChange", function () {
     ".testimonials-pagination"
   );
   const maxVisibleDots = 4;
-
+  
   if (activeSlideIndex >= maxVisibleDots) {
     const svgDots = paginationContainer.querySelector("svg");
     if (svgDots) {
