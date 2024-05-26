@@ -2230,6 +2230,11 @@ P {
   opacity: 1;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  .partners .partners-right-side .partners-swiper::before {
+    opacity: 0;
+  }
+}
 .partners .partners-right-side .partners-swiper .swiper-wrapper {
   align-items: center !important;
   justify-content: center;
