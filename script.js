@@ -564,7 +564,7 @@ const partnersSwiper = new Swiper(".partners-swiper", {
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 70,
+      spaceBetween: 20,
     },
   },
 });

@@ -1956,6 +1956,9 @@ P {
   align-items: center;
   padding: 0rem 0rem 1rem 0rem;
   margin-bottom: 10rem;
+  @include mobile{
+    background-image: url(../assets/partners/Bright-bg.png);
+  }
   @include tablet {
     flex-direction: column;
     height: auto;
@@ -2025,6 +2028,9 @@ P {
       .swiper-wrapper {
         align-items: center !important;
         justify-content: center;
+        @include mobile{
+          justify-content: unset;
+        }
         .swiper-slide {
           height: 100%;
           display: flex;
@@ -2052,6 +2058,9 @@ P {
       font-family: saira-regular;
       width: 70%;
       margin: 4rem auto;
+      @include mobile{
+        width: 100% !important;
+      }
     }
   }
   .testimonials-swiper {

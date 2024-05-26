@@ -2155,6 +2155,11 @@ P {
   padding: 0rem 0rem 1rem 0rem;
   margin-bottom: 10rem;
 }
+@media (max-width: 767px) {
+  .partners {
+    background-image: url(../assets/partners/Bright-bg.png);
+  }
+}
 @media (max-width: 1024px) {
   .partners {
     flex-direction: column;
@@ -2229,6 +2234,11 @@ P {
   align-items: center !important;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .partners .partners-right-side .partners-swiper .swiper-wrapper {
+    justify-content: unset;
+  }
+}
 .partners .partners-right-side .partners-swiper .swiper-wrapper .swiper-slide {
   height: 100%;
   display: flex;
@@ -2254,6 +2264,11 @@ P {
   font-family: saira-regular;
   width: 70%;
   margin: 4rem auto;
+}
+@media (max-width: 767px) {
+  .testimoials .testimonials-heading p:nth-of-type(2) {
+    width: 100% !important;
+  }
 }
 .testimoials .testimonials-swiper {
   overflow: hidden;
