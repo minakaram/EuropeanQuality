@@ -507,6 +507,11 @@ P {
   background-color: #f9fafa;
   border-radius: 10px;
 }
+@media (max-width: 767px) {
+  .hero-search-form .search-container .search-right-side form input {
+    font-size: 14px;
+  }
+}
 .hero-search-form .search-container .search-right-side form div {
   position: relative;
 }
@@ -527,6 +532,11 @@ P {
   background-repeat: no-repeat;
   background-position: right 1rem center;
   border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .hero-search-form .search-container .search-right-side form div select {
+    font-size: 14px;
+  }
 }
 .hero-search-form .search-container .search-right-side form div select option {
   background-color: #f9fafa; /* Default option background */
@@ -585,6 +595,11 @@ P {
 .hero-search-form .search-container .search-right-side div.search button span {
   font-size: 24px;
 }
+@media (max-width: 767px) {
+  .hero-search-form .search-container .search-right-side div.search button span {
+    font-size: 16px;
+  }
+}
 
 .coming-courses {
   background-color: #000c17;
@@ -639,6 +654,12 @@ P {
   margin-top: 3rem;
   font-size: 15px;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .coming-courses .heading-container .description {
+    width: 90%;
+    margin: 30px auto;
+  }
 }
 .coming-courses .heading-container img {
   width: 100px;

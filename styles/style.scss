@@ -397,6 +397,9 @@ P {
           padding: 0.8rem 1rem;
           background-color: #f9fafa;
           border-radius: 10px;
+          @include mobile{
+            font-size: 14px;
+          }
         }
         div {
           position: relative;
@@ -417,7 +420,9 @@ P {
             background-repeat: no-repeat;
             background-position: right 1rem center;
             border-radius: 10px;
-            // color: var(--neutral-black);
+          @include mobile{
+            font-size: 14px;
+          }
             option {
               background-color: #f9fafa; /* Default option background */
               color: var(--neutral-black);
@@ -471,6 +476,9 @@ P {
           }
           span {
             font-size: 24px;
+            @include mobile{
+              font-size: 16px;
+            }
           }
         }
       }
@@ -524,6 +532,10 @@ P {
       margin-top: 3rem;
       font-size: 15px;
       font-weight: 500;
+      @include mobile{
+        width: 90%;
+        margin:30px auto;
+      }
     }
     img {
       width: 100px;
