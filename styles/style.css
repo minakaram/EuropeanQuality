@@ -2473,7 +2473,7 @@ P {
 }
 .head-quarters .quarters-swiper .navigation-pagination {
   position: relative;
-  width: 7%;
+  width: 5%;
 }
 @media (max-width: 767px) {
   .head-quarters .quarters-swiper .navigation-pagination {
@@ -2609,7 +2609,7 @@ P {
   align-items: center;
 }
 .head-quarters .quarters-swiper .swiper-wrapper {
-  width: 93%;
+  width: 95%;
   flex-direction: column;
   position: relative;
 }
@@ -2806,4 +2806,183 @@ P {
   width: 100%;
   height: 100%;
   border: 10px;
+}
+
+.footer {
+  width: 95%;
+  margin: 30px auto;
+  margin-top: 13rem;
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: var(--ternary-neutrals--1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  border-radius: 20px;
+  position: relative;
+}
+.footer .border-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.footer .footer-left-side {
+  width: 33.3333333333%;
+  position: relative;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  border-right: 1px solid #0f1b25;
+  align-self: stretch;
+}
+.footer .footer-left-side .logo {
+  width: 100px;
+}
+.footer .footer-left-side .protected {
+  position: absolute;
+  bottom: 2rem;
+  left: -0.5rem;
+}
+.footer .footer-left-side p {
+  color: #e4f1fe;
+  font-family: "Cairo";
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 2rem;
+  width: 90%;
+}
+.footer .footer-middle {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  border-right: 1px solid #0f1b25;
+  padding-right: 2rem;
+}
+.footer .footer-middle .middle-inner {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 3rem;
+}
+.footer .footer-middle .middle-inner .heading-box p {
+  font-family: saira-medium;
+  color: #e4f1fe;
+  font-size: 17px;
+}
+.footer .footer-middle .middle-inner .heading-box svg {
+  margin-top: -10px;
+}
+.footer .footer-middle .middle-inner p.page {
+  margin: 0.5rem 0rem;
+}
+.footer .footer-middle .middle-inner p.page a {
+  font-family: "Cairo";
+  font-size: 14px;
+  text-decoration: none;
+  color: #e4f1fe;
+  font-weight: normal;
+}
+.footer .footer-middle .middle-inner p.page a:hover {
+  color: var(--primary--color);
+}
+.footer .footer-right-side {
+  width: 33.3333333333%;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+}
+.footer .footer-right-side .inner-box {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  color: #e4f1fe;
+  border-bottom: 1px solid #19242e;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.footer .footer-right-side .inner-box .inner-right-box .heading-box p {
+  font-family: saira-medium;
+  color: #e4f1fe;
+}
+.footer .footer-right-side .inner-box .inner-right-box .heading-box svg {
+  margin-top: -10px;
+}
+.footer .footer-right-side .inner-box .inner-right-box p.description {
+  margin-top: 2rem;
+}
+.footer .footer-right-side .inner-box .inner-right-box .email-box {
+  margin-top: 2.5rem;
+  position: relative;
+}
+.footer .footer-right-side .inner-box .inner-right-box .email-box input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  border: 1px solid #19242e;
+  outline: none;
+  font-family: "Cairo";
+  background-color: #19242e;
+  color: white;
+}
+.footer .footer-right-side .inner-box .inner-right-box .email-box input::-moz-placeholder {
+  color: #697177;
+}
+.footer .footer-right-side .inner-box .inner-right-box .email-box input::placeholder {
+  color: #697177;
+}
+.footer .footer-right-side .inner-box .inner-right-box .email-box button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  border-radius: 20px;
+  background-color: var(--primary--color);
+  border: 1px solid var(--primary--color);
+  padding: 0.2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+.footer .footer-right-side .contact-us {
+  color: #e4f1fe;
+  border-bottom: 1px solid #19242e;
+  padding-bottom: 2rem;
+}
+.footer .footer-right-side .contact-us .heading {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.footer .footer-right-side .contact-us .heading .contact-head p {
+  font-family: saira-medium;
+  color: #e4f1fe;
+}
+.footer .footer-right-side .contact-us .heading .contact-head svg {
+  margin-top: -10px;
+}
+.footer .footer-right-side .contact-us .contact-row {
+  margin-bottom: 1rem !important;
+  display: flex;
+  font-family: "Cairo";
+  font-size: 14px;
+  gap: 0.5rem;
+}
+.footer .footer-right-side .contact-us .contact-row a {
+  text-decoration: none;
+  color: #e4f1fe;
+}
+.footer .footer-right-side .contact-us .contact-row span {
+  display: block;
+}
+.footer .footer-right-side .contact-us .contact-row svg {
+  width: 40px;
+}
+.footer .footer-right-side .contact-us .social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+}
+.footer .footer-right-side .contact-us .social svg {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
