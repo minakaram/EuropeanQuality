@@ -83,7 +83,16 @@ navigationMenuBtn.addEventListener("click", () => {
     navigationMenuBtn.classList.remove("rotated");
   }
 });
-
+document.addEventListener("click", (event) => {
+  if (
+    !navigationMenuDropdown.contains(event.target) &&
+    !navigationMenuBtn.contains(event.target)
+  ) {
+    navigationMenuDropdown.style.visibility = "hidden";
+    navigationMenuDropdown.style.opacity = "0";
+    navigationMenuBtn.classList.remove("rotated");
+  }
+});
 // navigation bar scroll -----------------------------------------------------------------------------------
 window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navigation-bar");
