@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Categories.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
+    <script defer src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!--------------------------------------------- navigation-bar ------------------------------------------------->
+    <div class="navigation-bar">
+        <div class="navigation-left-side">
+            <img class="navigation-logo" src="assets/logo.svg" alt="" />
+            <div class="navigation-menu">
+                <svg id="navigation-menu-btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 19H14" stroke="#0884F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <a href="#">Categories</a>
+
+                <div id="navigation-menu-dropdown">
+                    <p><a href="../index.html">Home</a></p>
+                    <p><a href="">Cities</a></p>
+                    <p><a href="">Custom Courses</a></p>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">Careers</a></p>
+                </div>
+            </div>
+
+        </div>
+        <ul class="ul-nav">
+            <li><a draggable="false" href="../index.html">Home</a></li>
+            <li>
+                <a href="#" class="active-link">Categories</a>
+                <svg id="categories-dropdown-arrow" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
+                        fill="#0884f7" />
+                    <path
+                        d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
+                        fill="#0884f7" />
+                </svg>
+            </li>
+            <li>
+                <a href="#">Cities</a>
+                <svg id="cities-dropdown-arrow" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
+                        fill="#000C17" />
+                    <path
+                        d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
+                        fill="#000C17" />
+                </svg>
+            </li>
+            <li><a href="#">Custom Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+        <div class="navigation-right-side">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#0884F7" />
+                <path
+                    d="M28.625 29.7715C28.7779 29.9193 28.9828 30.0012 29.1955 29.9995C29.4082 29.9977 29.6117 29.9125 29.7621 29.7621C29.9126 29.6118 29.998 29.4084 30 29.1957C30.0019 28.983 29.9202 28.778 29.7726 28.625L28.625 29.7715ZM25.1423 18.3823C25.1423 20.1752 24.4301 21.8946 23.1623 23.1623C21.8946 24.4301 20.1752 25.1423 18.3823 25.1423V26.7647C19.4831 26.7647 20.5731 26.5479 21.5901 26.1266C22.6071 25.7054 23.5312 25.0879 24.3095 24.3096C25.0879 23.5312 25.7053 22.6071 26.1266 21.5901C26.5478 20.5731 26.7647 19.4831 26.7647 18.3823H25.1423ZM18.3823 25.1423C16.5895 25.1423 14.8701 24.4301 13.6023 23.1623C12.3346 21.8946 11.6224 20.1752 11.6224 18.3823H10C10 20.6055 10.8831 22.7376 12.4551 24.3096C14.0271 25.8815 16.1592 26.7647 18.3823 26.7647V25.1423ZM11.6224 18.3823C11.6224 16.5895 12.3346 14.87 13.6023 13.6023C14.8701 12.3346 16.5895 11.6224 18.3823 11.6224V10C16.1592 10 14.0271 10.8831 12.4551 12.4551C10.8831 14.0271 10 16.1592 10 18.3823H11.6224ZM18.3823 11.6224C20.1752 11.6224 21.8946 12.3346 23.1623 13.6023C24.4301 14.87 25.1423 16.5895 25.1423 18.3823H26.7647C26.7647 17.2815 26.5478 16.1915 26.1266 15.1745C25.7053 14.1575 25.0879 13.2335 24.3095 12.4551C23.5312 11.6767 22.6071 11.0593 21.5901 10.638C20.5731 10.2168 19.4831 10 18.3823 10V11.6224ZM29.7726 28.625L24.3635 23.217L23.216 24.3636L28.625 29.7715L29.7726 28.625Z"
+                    fill="white" />
+            </svg>
+            <svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_527_3846)">
+                    <rect x="4" y="3" width="56" height="40" rx="20" fill="white" />
+                </g>
+                <g filter="url(#filter1_i_527_3846)">
+                    <rect x="6" y="4" width="52" height="38" rx="19" fill="white" />
+                </g>
+                <path
+                    d="M21.4536 29L25.3896 17.992H27.7576L31.6936 29H29.8216L28.8616 26.28H24.2216L23.2776 29H21.4536ZM24.7336 24.744H28.3336L26.5736 19.736H26.4936L24.7336 24.744ZM33.5111 29V17.992H38.6471C39.3404 17.992 39.9004 18.072 40.3271 18.232C40.7537 18.392 41.0737 18.6267 41.2871 18.936C41.5004 19.2347 41.6444 19.5973 41.7191 20.024C41.7937 20.44 41.8311 20.8987 41.8311 21.4C41.8311 21.7627 41.7937 22.1627 41.7191 22.6C41.6551 23.0267 41.5057 23.4213 41.2711 23.784C41.0471 24.136 40.6897 24.392 40.1991 24.552L42.0071 29H40.0871L38.3271 24.504L38.7911 24.744C38.7164 24.776 38.6257 24.7973 38.5191 24.808C38.4231 24.808 38.3057 24.808 38.1671 24.808H35.3191V29H33.5111ZM35.3191 23.272H37.8791C38.3804 23.272 38.7751 23.24 39.0631 23.176C39.3511 23.1013 39.5644 22.9893 39.7031 22.84C39.8417 22.6907 39.9271 22.4987 39.9591 22.264C40.0017 22.0293 40.0231 21.7413 40.0231 21.4C40.0231 21.048 40.0017 20.7547 39.9591 20.52C39.9271 20.2747 39.8471 20.0827 39.7191 19.944C39.5911 19.7947 39.3831 19.688 39.0951 19.624C38.8177 19.56 38.4337 19.528 37.9431 19.528H35.3191V23.272Z"
+                    fill="#000C17" />
+                <defs>
+                    <filter id="filter0_d_527_3846" x="0" y="0" width="64" height="48" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                        <feOffset dy="1" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0.18 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_527_3846" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_527_3846" result="shape" />
+                    </filter>
+                    <filter id="filter1_i_527_3846" x="6" y="4" width="52" height="41" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                        <feOffset dy="3" />
+                        <feGaussianBlur stdDeviation="2.5" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_527_3846" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <div id="cities-dropdown">
+            <div class="city-row">
+                <img src="assets/Ireland.png" alt="">
+                <p>Jordan</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/moscow.png" alt="">
+                <p>Moscow</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+        </div>
+        <div id="categories-dropdown">
+            <div class="categories-row">
+                <p>Data management and analytics</p>
+            </div>
+            <div class="categories-row">
+                <p>Mechanical & Electrical Engineering</p>
+            </div>
+            <div class="categories-row">
+                <p>Strategy Management</p>
+            </div>
+            <div class="categories-row">
+                <p>Leadership</p>
+            </div>
+            <div class="categories-row">
+                <p>HRM</p>
+            </div>
+            <div class="categories-row">
+                <p>Oil and Gas</p>
+            </div>
+            <div class="categories-row">
+                <p>Health, Safety and Environment</p>
+            </div>
+            <div class="categories-row">
+                <p>Business Intelligence</p>
+            </div>
+            <div class="categories-row">
+                <p>Data management and analytics</p>
+            </div>
+            <div class="categories-row">
+                <p>Mechanical & Electrical Engineering</p>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------- head-section---------------------------------------------------->
+    <div class="head-section">
+        <div class="heading-box">
+            <p class="head-title">Training</p>
+            <p class="sub-title">Courses Categories</p>
+            <svg width="80" height="6" viewBox="0 0 80 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="12" y1="5" x2="68" y2="5" stroke="#000C17" stroke-width="2" />
+                <line y1="1" x2="80" y2="1" stroke="#000C17" stroke-width="2" />
+            </svg>
+        </div>
+        <p class="head-description">Our academy offers a wide range of courses in a variety of subjects, including
+            leadership, management, IT,
+            finance, and many more with over <span>27</span> of the available courses categories to enhance your career.
+        </p>
+        <div class="download-buttons">
+            <a href="categories-list.pdf" class="download-btn" download>
+                <span><span class="mobile-span">Download</span> categories list PDF</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 20H18" stroke="#333D45" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M12 16V4" stroke="#333D45" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M16 12C16 12 13.054 16 12 16C10.9459 16 8 12 8 12" stroke="#333D45" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <a href="categories-list.xlsx" class="download-btn" download>
+                <span><span class="mobile-span">Download</span> categories list Excel</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 20H18" stroke="#333D45" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M12 16V4" stroke="#333D45" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M16 12C16 12 13.054 16 12 16C10.9459 16 8 12 8 12" stroke="#333D45" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!--------------------------------------------- middle-section ------------------------------------------------->
+    <div class="middle-section">
+        <p>We care also with trainee who can't attend our classroom trainings, so we offer too the same trainings in its
+            online form, click and check our online training courses
+        </p>
+        <button>
+            <a href="">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.99977 5.83336C9.91316 5.83339 9.82748 5.81552 9.74811 5.78086L4.53977 3.48919C4.42909 3.43992 4.33506 3.35962 4.26908 3.25801C4.20309 3.1564 4.16797 3.03785 4.16797 2.91669C4.16797 2.79554 4.20309 2.67698 4.26908 2.57537C4.33506 2.47377 4.42909 2.39347 4.53977 2.34419L9.74811 0.0525259C9.82749 0.0178819 9.91316 0 9.99977 0C10.0864 0 10.1721 0.0178819 10.2514 0.0525259L15.4598 2.34419C15.5705 2.39347 15.6645 2.47377 15.7305 2.57537C15.7965 2.67698 15.8316 2.79554 15.8316 2.91669C15.8316 3.03785 15.7965 3.1564 15.7305 3.25801C15.6645 3.35962 15.5705 3.43992 15.4598 3.48919L10.2514 5.78086C10.1721 5.81552 10.0864 5.83339 9.99977 5.83336Z"
+                        fill="white" />
+                    <path
+                        d="M10.7557 6.92354C10.5183 7.02825 10.2619 7.08247 10.0025 7.08275C9.74312 7.08304 9.48652 7.02939 9.24898 6.92521L5.83398 5.42188V5.99521C5.83398 6.50354 6.09982 6.98187 6.52732 7.24104C7.72815 7.97021 8.86482 8.33437 10.0007 8.33437C11.1365 8.33437 12.2732 7.96937 13.474 7.24104C13.9015 6.98187 14.1673 6.50437 14.1673 5.99521V5.42188L10.7557 6.92354Z"
+                        fill="white" />
+                    <path
+                        d="M18.5417 3.33594H17.4583C17.325 4.06927 16.8417 4.69427 16.15 5.0026H18.3333V14.1693H1.66667V5.0026H3.85C3.51253 4.85257 3.21689 4.62226 2.98884 4.33176C2.7608 4.04126 2.60728 3.69938 2.54167 3.33594H1.45833C0.658333 3.33594 0 3.99427 0 4.79427V16.0443C0 16.8443 0.658333 17.5026 1.45833 17.5026H7.84167C7.74167 17.9193 7.48333 17.5943 6.79167 18.2943C6.66667 18.4109 6.63333 18.5859 6.7 18.7443C6.76667 18.9026 6.91667 19.0026 7.08333 19.0026H12.9167C13.0833 19.0026 13.2333 18.9026 13.3 18.7443C13.3667 18.5859 13.3333 18.4109 13.2083 18.2943C12.5167 17.6026 12.25 17.9193 12.15 17.5026H18.5417C19.3417 17.5026 20 16.8443 20 16.0443V4.79427C20 3.99427 19.3417 3.33594 18.5417 3.33594Z"
+                        fill="white" />
+                </svg>
+                <span>View online training courses</span>
+            </a>
+        </button>
+    </div>
+    <div class="spliter">
+        <!-- <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.6686 20.8686C13.5592 20.9946 13.4987 21.1632 13.5 21.3382C13.5014 21.5133 13.5646 21.6807 13.676 21.8045C13.7873 21.9283 13.938 21.9985 14.0955 22C14.253 22.0015 14.4048 21.9342 14.5181 21.8126L19.3241 16.472C19.4367 16.3468 19.5 16.177 19.5 16C19.5 15.823 19.4367 15.6532 19.3241 15.528L14.5181 10.1874C14.4048 10.0658 14.253 9.9985 14.0955 10C13.938 10.0015 13.7873 10.0717 13.676 10.1955C13.5646 10.3193 13.5014 10.4867 13.5 10.6618C13.4987 10.8368 13.5592 11.0054 13.6686 11.1314L18.0499 16L13.6686 20.8686Z"
+                fill="white" />
+        </svg> -->
+        <img src="Assets/spliter.png" alt="">
+    </div>
+    <script src="Categories.js"></script>
+</body>
+
+</html>

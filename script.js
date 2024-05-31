@@ -32,7 +32,7 @@ function toggleVisibility(dropdown, otherDropdown) {
 // Event listener for categories arrow
 categoriesArrow.addEventListener("click", (event) => {
   event.stopPropagation();
-  console.log("Categories Arrow clicked");
+
   toggleVisibility(categoriesDropDown, citiesDropDown);
 });
 
@@ -45,7 +45,6 @@ citiesArrow.addEventListener("click", (event) => {
 
 // Close dropdowns when clicking outside
 document.addEventListener("click", (event) => {
-  console.log("Document clicked");
   if (
     !categoriesDropDown.contains(event.target) &&
     !categoriesArrow.contains(event.target)
