@@ -260,12 +260,136 @@
         </button>
     </div>
     <div class="spliter">
-        <!-- <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M13.6686 20.8686C13.5592 20.9946 13.4987 21.1632 13.5 21.3382C13.5014 21.5133 13.5646 21.6807 13.676 21.8045C13.7873 21.9283 13.938 21.9985 14.0955 22C14.253 22.0015 14.4048 21.9342 14.5181 21.8126L19.3241 16.472C19.4367 16.3468 19.5 16.177 19.5 16C19.5 15.823 19.4367 15.6532 19.3241 15.528L14.5181 10.1874C14.4048 10.0658 14.253 9.9985 14.0955 10C13.938 10.0015 13.7873 10.0717 13.676 10.1955C13.5646 10.3193 13.5014 10.4867 13.5 10.6618C13.4987 10.8368 13.5592 11.0054 13.6686 11.1314L18.0499 16L13.6686 20.8686Z"
-                fill="white" />
-        </svg> -->
         <img src="Assets/spliter.png" alt="">
+    </div>
+    <!--------------------------------------------- categories-section --------------------------------------------->
+    <div class="categories-section">
+        <div class="categories-head-container">
+            <div class="categories-head-left">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="56" height="56" rx="8" fill="#E4F1FE" />
+                    <path
+                        d="M10 13C10 12.4477 10.4477 12 11 12H19C19.5523 12 20 12.4477 20 13V25C20 25.5523 19.5523 26 19 26H11C10.4477 26 10 25.5523 10 25V13Z"
+                        fill="#0884F7" />
+                    <path
+                        d="M10 31C10 30.4477 10.4477 30 11 30H19C19.5523 30 20 30.4477 20 31V43C20 43.5523 19.5523 44 19 44H11C10.4477 44 10 43.5523 10 43V31Z"
+                        fill="#0884F7" />
+                    <path
+                        d="M23 13C23 12.4477 23.4477 12 24 12H32C32.5523 12 33 12.4477 33 13V25C33 25.5523 32.5523 26 32 26H24C23.4477 26 23 25.5523 23 25V13Z"
+                        fill="#0884F7" />
+                    <path
+                        d="M23 31C23 30.4477 23.4477 30 24 30H32C32.5523 30 33 30.4477 33 31V43C33 43.5523 32.5523 44 32 44H24C23.4477 44 23 43.5523 23 43V31Z"
+                        fill="#0884F7" />
+                    <path
+                        d="M36 13C36 12.4477 36.4477 12 37 12H45C45.5523 12 46 12.4477 46 13V25C46 25.5523 45.5523 26 45 26H37C36.4477 26 36 25.5523 36 25V13Z"
+                        fill="#0884F7" />
+                    <path
+                        d="M36 31C36 30.4477 36.4477 30 37 30H45C45.5523 30 46 30.4477 46 31V43C46 43.5523 45.5523 44 45 44H37C36.4477 44 36 43.5523 36 43V31Z"
+                        fill="#0884F7" />
+                </svg>
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 13C10 12.7239 10.2239 12.5 10.5 12.5H45.5C45.7761 12.5 46 12.7239 46 13V16C46 16.2761 45.7761 16.5 45.5 16.5H10.5C10.2239 16.5 10 16.2761 10 16V13Z"
+                        fill="#A1A8AE" />
+                    <path
+                        d="M10 22C10 21.7239 10.2239 21.5 10.5 21.5H45.5C45.7761 21.5 46 21.7239 46 22V25C46 25.2761 45.7761 25.5 45.5 25.5H10.5C10.2239 25.5 10 25.2761 10 25V22Z"
+                        fill="#A1A8AE" />
+                    <path
+                        d="M10 31C10 30.7239 10.2239 30.5 10.5 30.5H45.5C45.7761 30.5 46 30.7239 46 31V34C46 34.2761 45.7761 34.5 45.5 34.5H10.5C10.2239 34.5 10 34.2761 10 34V31Z"
+                        fill="#A1A8AE" />
+                    <path
+                        d="M10 40C10 39.7239 10.2239 39.5 10.5 39.5H45.5C45.7761 39.5 46 39.7239 46 40V43C46 43.2761 45.7761 43.5 45.5 43.5H10.5C10.2239 43.5 10 43.2761 10 43V40Z"
+                        fill="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="categories-head-right">
+                <input type="text" placeholder="Search among 27 training categories">
+                <button class="category-search-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.625 19.7715C18.7779 19.9193 18.9828 20.0012 19.1955 19.9995C19.4082 19.9977 19.6117 19.9125 19.7621 19.7621C19.9126 19.6118 19.998 19.4084 20 19.1957C20.0019 18.983 19.9202 18.778 19.7726 18.625L18.625 19.7715ZM15.1423 8.38233C15.1423 10.1752 14.4301 11.8946 13.1623 13.1623C11.8946 14.4301 10.1752 15.1423 8.38233 15.1423V16.7647C9.48311 16.7647 10.5731 16.5479 11.5901 16.1266C12.6071 15.7054 13.5312 15.0879 14.3095 14.3096C15.0879 13.5312 15.7053 12.6071 16.1266 11.5901C16.5478 10.5731 16.7647 9.48311 16.7647 8.38233H15.1423ZM8.38233 15.1423C6.58948 15.1423 4.87006 14.4301 3.60233 13.1623C2.33459 11.8946 1.62239 10.1752 1.62239 8.38233H0C0 10.6055 0.883137 12.7376 2.45513 14.3096C4.02712 15.8815 6.15919 16.7647 8.38233 16.7647V15.1423ZM1.62239 8.38233C1.62239 6.58948 2.33459 4.87004 3.60233 3.60231C4.87006 2.33457 6.58948 1.62239 8.38233 1.62239V0C6.15919 0 4.02712 0.883108 2.45513 2.4551C0.883137 4.02709 0 6.15919 0 8.38233H1.62239ZM8.38233 1.62239C10.1752 1.62239 11.8946 2.33457 13.1623 3.60231C14.4301 4.87004 15.1423 6.58948 15.1423 8.38233H16.7647C16.7647 7.28154 16.5478 6.19151 16.1266 5.17452C15.7053 4.15753 15.0879 3.23347 14.3095 2.4551C13.5312 1.67673 12.6071 1.05929 11.5901 0.638035C10.5731 0.216784 9.48311 0 8.38233 0V1.62239ZM19.7726 18.625L14.3635 13.217L13.216 14.3636L18.625 19.7715L19.7726 18.625Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="categories-cards-container">
+            <div class="category-item">
+                <div class="category-slide-box">
+                    <img src="assets/course-categories/back-border.svg" class="back-border" alt="">
+                    <div class="image-box">
+                        <img src="../assets/upcoming-courses/image1.png" alt="">
+                    </div>
+                    <div class="category-inner">
+                        <p>Category Name</p>
+                        <p>7 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-slide-box">
+                    <img src="assets/course-categories/back-border.svg" class="back-border" alt="">
+                    <div class="image-box">
+                        <img src="../assets/upcoming-courses/image1.png" alt="">
+                    </div>
+                    <div class="category-inner">
+                        <p>Category Name</p>
+                        <p>7 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-slide-box">
+                    <img src="assets/course-categories/back-border.svg" class="back-border" alt="">
+                    <div class="image-box">
+                        <img src="../assets/upcoming-courses/image1.png" alt="">
+                    </div>
+                    <div class="category-inner">
+                        <p>Category Name</p>
+                        <p>7 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-slide-box">
+                    <img src="assets/course-categories/back-border.svg" class="back-border" alt="">
+                    <div class="image-box">
+                        <img src="../assets/upcoming-courses/image1.png" alt="">
+                    </div>
+                    <div class="category-inner">
+                        <p>Category Name</p>
+                        <p>7 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-slide-box">
+                    <img src="assets/course-categories/back-border.svg" class="back-border" alt="">
+                    <div class="image-box">
+                        <img src="../assets/upcoming-courses/image1.png" alt="">
+                    </div>
+                    <div class="category-inner">
+                        <p>Category Name</p>
+                        <p>7 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-slide-box">
+                    <img src="assets/course-categories/back-border.svg" class="back-border" alt="">
+                    <div class="image-box">
+                        <img src="../assets/upcoming-courses/image1.png" alt="">
+                    </div>
+                    <div class="category-inner">
+                        <p>Category Name</p>
+                        <p>7 courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories-rows-container">
+
+        </div>
     </div>
     <script src="Categories.js"></script>
 </body>

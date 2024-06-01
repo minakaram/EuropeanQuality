@@ -420,4 +420,142 @@ P {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.categories-section {
+  width: 85%;
+  margin: 100px auto;
+}
+.categories-section .categories-head-container {
+  margin: 3rem 0rem 5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.categories-section .categories-head-container .categories-head-left {
+  width: 30%;
+}
+@media (max-width: 767px) {
+  .categories-section .categories-head-container .categories-head-left svg {
+    height: 35px;
+    width: 35px;
+  }
+}
+.categories-section .categories-head-container .categories-head-right {
+  width: 80%;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+.categories-section .categories-head-container .categories-head-right input {
+  width: 60%;
+  background-color: #f9fafa;
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-family: "Cairo";
+  font-size: 14px;
+  outline-color: var(--primary--color);
+}
+@media (max-width: 767px) {
+  .categories-section .categories-head-container .categories-head-right input {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 12px;
+    padding-left: 0.4rem;
+  }
+}
+.categories-section .categories-head-container .categories-head-right .category-search-btn {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--primary--color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--primary--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .categories-section .categories-head-container .categories-head-right .category-search-btn {
+    padding: 0.3rem;
+    right: 0.3rem;
+    border-radius: 7px;
+  }
+  .categories-section .categories-head-container .categories-head-right .category-search-btn svg {
+    height: 15px;
+    width: 15px;
+  }
+}
+.categories-section .categories-cards-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+}
+.categories-section .categories-cards-container .category-item {
+  width: calc(33.3333333333% - 1.875rem);
+  padding: 0rem 0.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+  .categories-section .categories-cards-container .category-item {
+    width: calc(50% - 1.875rem);
+  }
+}
+@media (max-width: 767px) {
+  .categories-section .categories-cards-container .category-item {
+    width: 100%;
+  }
+}
+.categories-section .categories-cards-container .category-item .category-slide-box {
+  box-shadow: 1px 1px 10px 2px rgba(179, 183, 184, 0.288);
+  border-radius: 25px 25px 40px 5px;
+  position: relative;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+.categories-section .categories-cards-container .category-item .category-slide-box .back-border {
+  position: absolute;
+  top: -15px;
+  left: -17px;
+  z-index: -1;
+}
+.categories-section .categories-cards-container .category-item .category-slide-box .image-box {
+  height: 200px;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+.categories-section .categories-cards-container .category-item .category-slide-box .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.categories-section .categories-cards-container .category-item .category-slide-box .category-inner {
+  background-color: white;
+  padding: 2rem 0rem 0rem;
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+}
+.categories-section .categories-cards-container .category-item .category-slide-box .category-inner p:first-child {
+  font-family: saira-semiBold;
+  text-align: center;
+  color: var(--neutral-black);
+  font-size: 18px;
+}
+.categories-section .categories-cards-container .category-item .category-slide-box .category-inner p:nth-of-type(2) {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--primary--color);
+  font-family: saira-semiBold;
+  font-size: 15px;
 }/*# sourceMappingURL=Categories.css.map */
