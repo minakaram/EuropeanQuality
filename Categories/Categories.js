@@ -106,3 +106,56 @@ window.addEventListener("scroll", function () {
     }
   });
   
+
+// swapping between rows and cards ----------------------------------------------------------------------
+
+const categoriesCards = document.querySelector(".categories-cards-container");
+const categoriesRows = document.querySelector(".categories-rows-container");
+
+const cardsBtn = document.querySelector(".cards-svgs");
+const rowsBtn = document.querySelector(".rows-svgs");
+
+const cardsSvgOn = document.querySelector(".cards-on");
+const cardSvgOff = document.querySelector(".cards-off");
+
+const rowsSvgOn = document.querySelector(".rows-on");
+const rowsSvgOff = document.querySelector(".rows-off");
+
+// Initialize the display state
+categoriesCards.style.display = "flex";
+categoriesRows.style.display = "none";
+
+
+categoriesCards.classList.add('active');
+categoriesRows.classList.remove('active');
+
+
+// Event listener for rows button
+rowsBtn.addEventListener("click", () => {
+  categoriesCards.style.display = "none";
+  categoriesRows.style.display = "flex";
+
+  cardsSvgOn.style.opacity = "0";
+  cardSvgOff.style.opacity = "1";
+  rowsSvgOn.style.opacity = "1";
+  rowsSvgOff.style.opacity = "0";
+
+  categoriesCards.classList.remove('active');
+  categoriesRows.classList.add('active');
+});
+
+// Event listener for cards button
+cardsBtn.addEventListener("click", () => {
+  categoriesCards.style.display = "flex";
+  categoriesRows.style.display = "none";
+
+  cardsSvgOn.style.opacity = "1";
+  cardSvgOff.style.opacity = "0";
+  rowsSvgOn.style.opacity = "0";
+  rowsSvgOff.style.opacity = "1";
+
+  categoriesCards.classList.add('active');
+  categoriesRows.classList.remove('active');
+});
+
+
