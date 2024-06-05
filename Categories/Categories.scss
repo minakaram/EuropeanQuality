@@ -40,7 +40,7 @@ P {
     }
     p {
       width: 50%;
-      padding: 1rem 2rem;
+      padding: 1rem 1rem 1rem 2rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -329,7 +329,7 @@ P {
 .categories-section {
   width: 85%;
   margin: 100px auto;
-  border-bottom: 1px solid #a1a8ae;
+  // border-bottom: 1px solid #a1a8ae;
   padding-bottom: 3rem;
   @include mobile {
     width: 90%;
@@ -442,6 +442,8 @@ P {
     justify-content: center;
     align-items: center;
     gap: 1.875rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #a1a8ae;
     .category-card-item {
       width: calc((100% / 3) - 1.875rem);
       padding: 0rem 0.5rem;
@@ -507,6 +509,8 @@ P {
     justify-content: flex-start;
     align-items: center;
     gap: 1.875rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #a1a8ae;
     .category-row-item {
       width: calc((100% / 2) - 1.875rem);
       border: 1px solid #a1a8ae;
@@ -522,6 +526,38 @@ P {
       }
       p {
         font-family: saira-medium;
+      }
+    }
+  }
+  .categories-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 30px auto;
+    .first-page,
+    .last-page {
+      background-color: #f3f5f7;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .previous-page,
+    .next-page {
+      background-color: #f3f5f7;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .navigation-inner{
+      color: #a1a8ae;
+      margin: 0rem 2rem;
+      font-family: "Cairo";
+      .active{
+        color: #000;
+        font-weight: 700;
       }
     }
   }

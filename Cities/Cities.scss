@@ -1,0 +1,180 @@
+@use "../styles/layout/variables.scss" as *;
+
+P {
+  margin-bottom: 0 !important;
+}
+.navigation-bar {
+  width: 80%;
+  margin: 30px auto;
+  height: 65px;
+  padding-left: 2.5rem;
+  padding-right: 0.5rem;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 35px;
+  align-items: center;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
+  transition: background-color 05s ease;
+  background-color: var(--natural-white);
+  transition: box-shadow 0.3s ease;
+  z-index: 1000;
+  #navigation-menu-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
+    @include mobile {
+      width: 100%;
+    }
+    p {
+      width: 50%;
+      padding: 1rem 1rem 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: saira-regular;
+      }
+    }
+  }
+  #cities-dropdown,
+  #categories-dropdown {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    border: 1px solid #a1a8ae;
+    overflow: hidden;
+    height: 350px;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 3px;
+      border-radius: 10px;
+      overflow: hidden;
+      @include mobile {
+        width: 2px;
+      }
+    }
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      padding: 1rem 0rem;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-block: 0.3rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #a1a8ae;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #f1f1f1;
+    }
+    .city-row {
+      display: flex;
+      padding-left: 10px;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid #ecf0f3;
+      padding: 0.5rem 10px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      P {
+        font-family: "Cairo";
+        font-weight: 600;
+      }
+    }
+    .categories-row {
+      border: 1px solid #ecf0f3;
+      padding: 0.5rem 10px;
+      padding-left: 10px;
+    }
+  }
+  .navigation-left-side {
+    display: flex;
+    gap: 2rem;
+    .navigation-menu {
+      display: none;
+      a {
+        font-family: saira-semiBold;
+        text-decoration: none;
+      }
+      svg {
+        transition: 0.3s;
+        margin-right: 0.7rem;
+      }
+      #navigation-menu-btn.rotated {
+        transform: rotate(90deg);
+      }
+      @include tablet {
+        align-self: center;
+        display: flex;
+      }
+    }
+    @include mobileXS {
+      gap: 1.5rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 65px;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    .active-link {
+      color: var(--primary--color);
+      font-family: saira-semiBold;
+      border-bottom: 2px solid var(--primary--color);
+    }
+    a {
+      color: var(--neutral-black);
+      text-decoration: none;
+      font-family: saira-regular;
+      padding: 1rem 0rem;
+    }
+    @include customScreen {
+      gap: 1.5rem;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  svg {
+    cursor: pointer;
+  }
+  @include customScreen {
+    padding-left: 1rem;
+  }
+  @include mobile {
+    width: 93%;
+    padding-left: 1.5rem;
+  }
+  @include mobileXS {
+    padding-left: 1rem;
+  }
+}

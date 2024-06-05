@@ -89,7 +89,7 @@ P {
 }
 .navigation-bar #navigation-menu-dropdown p {
   width: 50%;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -425,7 +425,6 @@ P {
 .categories-section {
   width: 85%;
   margin: 100px auto;
-  border-bottom: 1px solid #a1a8ae;
   padding-bottom: 3rem;
 }
 @media (max-width: 767px) {
@@ -546,6 +545,8 @@ P {
   justify-content: center;
   align-items: center;
   gap: 1.875rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #a1a8ae;
 }
 .categories-section .categories-cards-container .category-card-item {
   width: calc(33.3333333333% - 1.875rem);
@@ -615,6 +616,8 @@ P {
   justify-content: flex-start;
   align-items: center;
   gap: 1.875rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #a1a8ae;
 }
 .categories-section .categories-rows-container .category-row-item {
   width: calc(50% - 1.875rem);
@@ -636,6 +639,38 @@ P {
 }
 .categories-section .categories-rows-container .category-row-item p {
   font-family: saira-medium;
+}
+.categories-section .categories-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 30px auto;
+}
+.categories-section .categories-navigation .first-page,
+.categories-section .categories-navigation .last-page {
+  background-color: #f3f5f7;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.categories-section .categories-navigation .previous-page,
+.categories-section .categories-navigation .next-page {
+  background-color: #f3f5f7;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.categories-section .categories-navigation .navigation-inner {
+  color: #a1a8ae;
+  margin: 0rem 2rem;
+  font-family: "Cairo";
+}
+.categories-section .categories-navigation .navigation-inner .active {
+  color: #000;
+  font-weight: 700;
 }
 .categories-section .categories-cards-container.active,
 .categories-section .categories-rows-container.active {
