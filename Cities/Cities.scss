@@ -178,3 +178,721 @@ P {
     padding-left: 1rem;
   }
 }
+.navigation-bar.scrolled {
+  transition: background-color 0.5s ease;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
+  background-color: rgba(236, 240, 243, 0.945);
+}
+.head-section {
+  margin: 200px 0px 0px;
+  @include mobile {
+    margin: 170px 0px 0px;
+  }
+  .heading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .head-title {
+      font-family: saira-extraBold;
+      font-size: 32px;
+      width: 100%;
+      text-align: center;
+    }
+    .sub-title {
+      width: 100%;
+      font-family: saira-medium;
+      font-size: 32px;
+      margin-bottom: 10px !important;
+      text-align: center;
+    }
+  }
+  .head-description {
+    width: 65%;
+    margin: 100px auto;
+    text-align: center;
+    color: #333d45;
+    font-family: "Cairo";
+    span {
+      color: #f77b08;
+      font-weight: bolder;
+      font-size: 17px;
+    }
+    @include mobile {
+      width: 90%;
+    }
+  }
+  .download-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    @include mobile {
+      gap: 0.6rem;
+    }
+    @media (max-width: 360px) {
+      flex-direction: column;
+    }
+    .download-btn {
+      border: 1px solid #333d45;
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
+      background-color: #fff;
+      text-decoration: none;
+      color: #333d45;
+      @media (max-width: 360px) {
+        width: 70%;
+        text-align: center;
+      }
+      @include mobile {
+        padding: 0.5rem 0.7rem;
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+      .mobile-span {
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.middle-section {
+  margin: 60px auto;
+  width: 80%;
+  padding: 3rem 0rem;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.466)),
+    url(./Assets/earth.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 1;
+  border-radius: 15px;
+  @include mobile {
+    width: 90%;
+  }
+  p {
+    text-align: center;
+    color: white;
+    width: 70%;
+    margin: auto;
+    font-family: "Cairo";
+    line-height: 28px;
+    margin-top: 1rem;
+    @include tablet {
+      width: 80%;
+    }
+    @include mobile {
+      width: 90%;
+    }
+  }
+  button {
+    background-color: #f77b08;
+    padding: 0.7rem 2rem;
+    border: 1px solid #f77b08;
+    border-radius: 35px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px 7px rgba(247, 124, 8, 0.336);
+    @include mobile {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-family: saira-semiBold;
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
+.cities-section {
+  width: 85%;
+  margin: 100px auto;
+  // border-bottom: 1px solid #a1a8ae;
+  padding-bottom: 3rem;
+  @include mobile {
+    width: 90%;
+  }
+  .cities-head-container {
+    margin: 3rem 0rem 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .cities-head-left {
+      width: 30%;
+      height: 100%;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+      gap: 0.6rem;
+      @include mobile {
+        gap: 0rem;
+        width: 100%;
+      }
+      .cards-svgs {
+        height: 100%;
+        width: calc((100% / 3) - 0.6rem);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.3s;
+        }
+        svg.cards-off {
+          opacity: 0;
+        }
+      }
+      .rows-svgs {
+        height: 100%;
+        width: calc((100% / 3) - 0.6rem);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.3s;
+        }
+        svg.rows-on {
+          opacity: 0;
+        }
+      }
+      .sorting-btns {
+        display: flex;
+        border-radius: 30px;
+        overflow: hidden;
+        width: calc((100% / 3) - 0.6rem);
+        @include mobile {
+          width: auto;
+        }
+        .a-to-z,
+        .z-to-a {
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          svg{
+            @include mobile{
+              width: 20px;
+            }
+          }
+        }
+        .a-to-z {
+          // background-color: #e4f1fe;
+          border: 30px 0px 0px 30px;
+        }
+      }
+      .sort-buttons > div.active {
+        background-color: #e4f1fe;
+      }
+
+      .sort-buttons > div.active svg path {
+        fill: #0884f7;
+      }
+
+      .sort-buttons > div svg path {
+        fill: #a1a8ae;
+      }
+      @include mobile {
+        svg {
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+    .cities-head-right {
+      width: 70%;
+      display: flex;
+      position: relative;
+      justify-content: flex-end;
+      @include mobile {
+        width: 100%;
+      }
+      input {
+        width: 60%;
+        background-color: #f9fafa;
+        border: none;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        font-family: "Cairo";
+        font-size: 14px;
+        outline-color: var(--primary--color);
+        @include mobile {
+          width: 100%;
+          padding: 0.7rem;
+          font-size: 12px;
+          padding-left: 0.4rem;
+        }
+      }
+      .cities-search-btn {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: var(--primary--color);
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: 1px solid var(--primary--color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        @include mobile {
+          padding: 0.3rem;
+          right: 0.3rem;
+          border-radius: 7px;
+          svg {
+            height: 15px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+  .cities-cards-container {
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+
+    .cities-card-item {
+      width: calc((100% / 5) - 1px);
+      position: relative;
+      height: 200px;
+      @include tablet{
+        width: calc((100% / 3) - 1px);
+      }
+      @include mobile{
+        width:100%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+      }
+      .city-info {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 1.5rem;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+        p {
+          font-family: saira-semiBold;
+          color: #fff;
+          line-height: 20px;
+        }
+        span {
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .splitter {
+    margin: 50px auto;
+    border-bottom: 1px solid #a1a8ae;
+    height: 5px;
+    margin-bottom: 0rem;
+  }
+  .cities-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 30px auto;
+    .first-page,
+    .last-page {
+      background-color: #f3f5f7;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    .previous-page,
+    .next-page {
+      background-color: #f3f5f7;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .navigation-inner {
+      color: #a1a8ae;
+      margin: 0rem 2rem;
+      font-family: "Cairo";
+      .active {
+        color: #000;
+        font-weight: 700;
+      }
+    }
+  }
+  .cities-cards-container.active,
+  .cities-rows-container.active {
+    display: flex;
+    -webkit-animation: fadeIn 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fadeIn 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.footer {
+  width: 95%;
+  margin: 30px auto;
+  margin-top: 13rem;
+  padding: 2rem 2rem 0rem 2rem;
+  background-color: var(--ternary-neutrals--1);
+  border-radius: 20px;
+  position: relative;
+  @include mobile {
+    padding: 1rem 1rem 0rem 1rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .border-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .footer-upper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    @include tablet {
+      flex-direction: column;
+    }
+    .footer-left-side {
+      width: calc(100% / 3);
+      position: relative;
+      padding-left: 1rem;
+      padding-top: 2rem;
+      border-right: 1px solid #0f1b25;
+      align-self: stretch;
+      @include tablet {
+        width: 100%;
+      }
+      .logo {
+        width: 100px;
+      }
+      .protected {
+        position: absolute;
+        bottom: 2rem;
+        left: -0.5rem;
+        @include tablet {
+          right: 1rem;
+          top: 1rem;
+          left: unset;
+        }
+      }
+      p {
+        color: #e4f1fe;
+        font-family: "Cairo";
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 2rem;
+        width: 90%;
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+    .footer-middle {
+      padding-left: 2rem;
+      padding-top: 0.5rem;
+      border-right: 1px solid #0f1b25;
+      padding-right: 2rem;
+      display: flex;
+      flex-direction: column;
+      @include tablet {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+      }
+      @include mobile {
+        padding-left: 0px;
+      }
+      .middle-inner {
+        display: flex;
+        gap: 0.7rem;
+        margin-bottom: 3rem;
+        @include tablet {
+          width: 50%;
+        }
+        @include mobile {
+          width: 100%;
+        }
+        .heading-box {
+          p {
+            font-family: saira-medium;
+            color: #e4f1fe;
+            font-size: 17px;
+          }
+          svg {
+            margin-top: -10px;
+          }
+        }
+        p.page {
+          margin: 0.5rem 0rem;
+          a {
+            font-family: "Cairo";
+            font-size: 14px;
+            text-decoration: none;
+            color: #e4f1fe;
+            font-weight: normal;
+            &:hover {
+              color: var(--primary--color);
+            }
+          }
+        }
+      }
+    }
+    .footer-right-side {
+      width: calc(100% / 3);
+      padding-left: 2rem;
+      padding-top: 0.5rem;
+      padding-right: 2rem;
+      @include mobile {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      @include tablet {
+        width: 100%;
+      }
+      .inner-box {
+        display: flex;
+        gap: 0.7rem;
+        align-items: flex-start;
+        color: #e4f1fe;
+        border-bottom: 1px solid #19242e;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        .inner-right-box {
+          .heading-box {
+            @include mobile {
+              display: flex;
+              gap: 0.5rem;
+              align-items: flex-start;
+            }
+            p {
+              font-family: saira-medium;
+              color: #e4f1fe;
+            }
+            svg {
+              margin-top: -10px;
+            }
+            .mobile-recieve-svg {
+              display: none;
+              @include mobile {
+                display: block;
+                margin-top: 0px;
+              }
+            }
+          }
+          p.description {
+            margin-top: 2rem;
+            font-family: "Cairo";
+            font-size: 14px;
+            font-weight: 400;
+          }
+          .email-box {
+            margin-top: 2.5rem;
+            position: relative;
+            input {
+              width: 100%;
+              padding: 0.6rem 1rem;
+              border-radius: 30px;
+              border: 1px solid #19242e;
+              outline: none;
+              font-family: "Cairo";
+              background-color: #19242e;
+              color: white;
+              &::placeholder {
+                color: #697177;
+              }
+              @include mobile {
+                font-size: 12px;
+              }
+            }
+            button {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 0.5rem;
+              border-radius: 20px;
+              background-color: var(--primary--color);
+              border: 1px solid var(--primary--color);
+              padding: 0.2rem 1rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
+              color: white;
+              @include mobile {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .inner-left-box {
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+      .contact-us {
+        color: #e4f1fe;
+        border-bottom: 1px solid #19242e;
+        padding-bottom: 2rem;
+        padding-top: 1.5rem;
+        .heading {
+          display: flex;
+          gap: 0.5rem;
+          align-items: flex-start;
+          margin-bottom: 1rem;
+          .contact-head {
+            p {
+              font-family: saira-medium;
+              color: #e4f1fe;
+            }
+            svg {
+              margin-top: -10px;
+            }
+          }
+        }
+        .contact-row {
+          margin-bottom: 1rem !important;
+          display: flex;
+          font-family: "Cairo";
+          font-size: 14px;
+          gap: 0.5rem;
+          a {
+            text-decoration: none;
+            color: #e4f1fe;
+          }
+          span {
+            display: block;
+          }
+          svg {
+            width: 40px;
+          }
+        }
+        .social {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          margin-top: 2.5rem;
+          margin-left: 1rem;
+          @include mobile {
+            justify-content: center;
+            gap: 2rem;
+            margin-left: 0px;
+          }
+          svg {
+            cursor: pointer;
+          }
+        }
+      }
+      .payment-method {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: #e4f1fe;
+        @include tablet {
+          display: flex;
+          justify-content: space-between;
+        }
+        @include mobile {
+          display: block;
+        }
+        .payment-heading {
+          display: flex;
+          gap: 0.5rem;
+          @include tablet {
+            align-items: end;
+            width: 45%;
+          }
+          @include mobile {
+            width: 100%;
+            align-items: flex-start;
+          }
+          .payment-heading-text {
+            p {
+              font-family: saira-medium;
+              color: #e4f1fe;
+            }
+          }
+        }
+        .payment-ways {
+          margin-top: 2rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          @include tablet {
+            justify-content: center;
+            gap: 2rem;
+          }
+          @include mobile {
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #0f1b25;
+    color: #e4f1fe;
+    margin-top: 1rem;
+    font-family: "Cairo";
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

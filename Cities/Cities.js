@@ -106,3 +106,54 @@ window.addEventListener("scroll", function () {
     }
   });
   
+
+  // sorting
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.cities-cards-container');
+    const items = Array.from(container.querySelectorAll('.cities-card-item'));
+    const aToZButton = document.querySelector('.a-to-z');
+    const zToAButton = document.querySelector('.z-to-a');
+    
+    // Initial setup: make "A to Z" button active
+    aToZButton.style.backgroundColor = '#e4f1fe';
+    aToZButton.querySelector('path').setAttribute('fill', '#0884F7');
+    zToAButton.style.backgroundColor = 'transparent';
+    zToAButton.querySelector('path').setAttribute('fill', '#A1A8AE');
+
+    function sortItems(container, items, order) {
+        items.sort((a, b) => {
+            const cityA = a.querySelector('.city-info p').textContent.trim();
+            const cityB = b.querySelector('.city-info p').textContent.trim();
+
+            return order === 'asc' ? cityA.localeCompare(cityB) : cityB.localeCompare(cityA);
+        });
+
+        items.forEach(item => container.appendChild(item));
+    }
+
+    function setActiveButton(activeButton, inactiveButton) {
+      // Set background color and SVG fill color of active button
+      activeButton.style.backgroundColor = '#e4f1fe';
+      activeButton.querySelectorAll('path').forEach(path => {
+          path.setAttribute('fill', '#0884F7');
+      });
+  
+      // Reset background color and SVG fill color of inactive button
+      inactiveButton.style.backgroundColor = 'transparent';
+      inactiveButton.querySelectorAll('path').forEach(path => {
+          path.setAttribute('fill', '#A1A8AE');
+      });
+  }
+  
+
+    aToZButton.addEventListener('click', function () {
+        sortItems(container, items, 'asc');
+        setActiveButton(aToZButton, zToAButton);
+    });
+
+    zToAButton.addEventListener('click', function () {
+        sortItems(container, items, 'desc');
+        setActiveButton(zToAButton, aToZButton);
+    });
+});
