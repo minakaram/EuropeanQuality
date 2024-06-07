@@ -339,7 +339,7 @@ P {
       justify-content: flex-start;
       display: flex;
       gap: 0.6rem;
-      @include tablet{
+      @include tablet {
         width: 50%;
       }
       @include mobile {
@@ -395,13 +395,14 @@ P {
         height: 50px;
         @include mobile {
           width: 105px;
+          height: 35px;
         }
         .cards-sorting-btns {
           position: absolute;
-          top:0;
-          left:0;
-          width:100%;
-          height:100%;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
           display: flex;
           align-items: center;
           border-radius: 30px;
@@ -417,6 +418,7 @@ P {
             svg {
               @include mobile {
                 width: 20px;
+                height: 20px;
               }
             }
           }
@@ -426,10 +428,10 @@ P {
         }
         .rows-sorting-btns {
           position: absolute;
-          top:0;
-          left:0;
-          width:100%;
-          height:100%;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
           display: none;
           align-items: center;
           border-radius: 30px;
@@ -447,7 +449,6 @@ P {
               }
             }
           }
-    
         }
       }
 
@@ -463,13 +464,13 @@ P {
       display: flex;
       position: relative;
       justify-content: flex-end;
-      @include tablet{
+      @include tablet {
         width: 50%;
       }
       @include mobile {
         width: 100%;
       }
- 
+
       input {
         width: 60%;
         background-color: #f9fafa;
@@ -479,7 +480,7 @@ P {
         font-family: "Cairo";
         font-size: 14px;
         outline-color: var(--primary--color);
-        @include tablet{
+        @include tablet {
           width: 100%;
         }
         @include mobile {
@@ -488,7 +489,6 @@ P {
           font-size: 12px;
           padding-left: 0.4rem;
         }
-   
       }
       .cities-search-btn {
         position: absolute;
@@ -573,30 +573,30 @@ P {
       }
     }
   }
-  .cities-rows-container{
+  .cities-rows-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    .cities-rows-item{
+    .cities-rows-item {
       width: calc((100% / 3) - 1rem);
       border: 1px solid #a1a8ae;
       border-radius: 8px;
       padding: 1rem 1rem 1rem 0.5rem;
       background-color: #fcfcfc;
       cursor: pointer;
-      @include tablet{
+      @include tablet {
         width: calc((100% / 2) - 1rem);
       }
-      @include mobile{
+      @include mobile {
         width: 100%;
       }
-      span{
+      span {
         font-family: saira-medium;
         text-transform: capitalize;
       }
-      img{
+      img {
         width: 30px;
         height: 30px;
       }

@@ -502,6 +502,7 @@ P {
 @media (max-width: 767px) {
   .cities-section .cities-head-container .cities-head-left .sorting-btns {
     width: 105px;
+    height: 35px;
   }
 }
 .cities-section .cities-head-container .cities-head-left .sorting-btns .cards-sorting-btns {
@@ -528,6 +529,7 @@ P {
   .cities-section .cities-head-container .cities-head-left .sorting-btns .cards-sorting-btns .a-to-z svg,
   .cities-section .cities-head-container .cities-head-left .sorting-btns .cards-sorting-btns .z-to-a svg {
     width: 20px;
+    height: 20px;
   }
 }
 .cities-section .cities-head-container .cities-head-left .sorting-btns .cards-sorting-btns .a-to-z {
