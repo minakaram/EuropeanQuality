@@ -1,3 +1,47 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopButton = document.querySelector(".top-arrow-icon");
+  
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 150) {
+      scrollToTopButton.classList.add("show");
+    } else {
+      scrollToTopButton.classList.remove("show");
+    }
+  });
+
+  scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
+// search-navbar --------------------------------------------------------------------------------------------
+$(document).ready(function() {
+  $("#search-icon-nav").click(function(event) {
+    event.stopPropagation(); // Prevent click event from reaching document level
+    $(".search-absolute-box").fadeToggle();
+    $("#search-icon-nav").hide();
+  });
+
+  $("#search-icon-absolute").click(function(event) {
+    event.stopPropagation(); // Prevent click event from reaching document level
+    $(".search-absolute-box").fadeToggle();
+    $("#search-icon-nav").show();
+  });
+
+  // Hide search box when clicking outside .navbar-search-box
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.navbar-search-box').length) {
+      $(".search-absolute-box").fadeOut();
+      $("#search-icon-nav").show();
+    }
+  });
+});
+
+
+
 // Elements for categories dropdown
 const categoriesArrow = document.getElementById("categories-dropdown-arrow");
 const categoriesDropDown = document.getElementById("categories-dropdown");
