@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+    <link rel="stylesheet" href="./CustomCourses.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
+    <script defer src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <svg class="chat-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="30" fill="#E4F1FE" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M30 16C33.7395 16 37.2552 17.4563 39.8995 20.1005C42.5437 22.7448 44 26.2605 44 30C44 33.7395 42.5437 37.2552 39.8995 39.8995C37.2552 42.5437 33.7395 44 30 44C27.6143 44 25.2699 43.3916 23.197 42.2376L16.7402 43.9863L16.0137 43.2598L17.7624 36.803C16.6084 34.7301 16 32.3857 16 30C16 26.2605 17.4563 22.7448 20.1005 20.1005C22.7448 17.4563 26.2605 16 30 16ZM37.3066 38.6257C37.5374 38.2143 37.6562 37.7734 37.6562 37.3281H28.4688C28.4688 37.7734 28.5876 38.2143 28.8184 38.6257C29.0493 39.037 29.3877 39.4108 29.8142 39.7257C30.2408 40.0405 30.7472 40.2903 31.3045 40.4607C31.8619 40.6311 32.4592 40.7188 33.0625 40.7188C33.6658 40.7188 34.2631 40.6311 34.8205 40.4607C35.3778 40.2903 35.8842 40.0405 36.3108 39.7257C36.7373 39.4108 37.0757 39.037 37.3066 38.6257Z"
+            fill="#0884F7" />
+    </svg>
+    <svg class="top-arrow-icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x="1.25" y="1.25" width="41.5" height="41.5" rx="8.75" fill="#FEF2E6" />
+        <rect x="1.25" y="1.25" width="41.5" height="41.5" rx="8.75" stroke="url(#paint0_linear_220_7991)"
+            stroke-width="1.5" />
+        <path
+            d="M21.25 30C21.25 30.4142 21.5858 30.75 22 30.75C22.4142 30.75 22.75 30.4142 22.75 30L21.25 30ZM22.5303 13.4697C22.2374 13.1768 21.7626 13.1768 21.4697 13.4697L16.6967 18.2426C16.4038 18.5355 16.4038 19.0104 16.6967 19.3033C16.9896 19.5962 17.4645 19.5962 17.7574 19.3033L22 15.0607L26.2426 19.3033C26.5355 19.5962 27.0104 19.5962 27.3033 19.3033C27.5962 19.0104 27.5962 18.5355 27.3033 18.2426L22.5303 13.4697ZM22.75 30L22.75 14L21.25 14L21.25 30L22.75 30Z"
+            fill="#F77B08" />
+        <defs>
+            <linearGradient id="paint0_linear_220_7991" x1="2" y1="4" x2="41" y2="41" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F77B08" />
+                <stop offset="0.122598" stop-color="white" />
+                <stop offset="0.889858" stop-color="white" />
+                <stop offset="1" stop-color="#F77B08" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <!--------------------------------------------- navigation-bar ------------------------------------------------->
+    <div class="navigation-bar">
+        <div class="navigation-left-side">
+            <a href="../index.html"><img class="navigation-logo" src="../assets/logo.svg" alt="" /></a>
+            <div class="navigation-menu">
+                <svg id="navigation-menu-btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 5H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M4 19H14" stroke="#0884F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <a href="#">Custom Courses</a>
+
+                <div id="navigation-menu-dropdown">
+                    <p><a href="../index.html">Home</a></p>
+                    <p><a href="../Categories/Categories.html">Categories</a></p>
+                    <p><a href="../Cities/Cities.html">Cities</a></p>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">Careers</a></p>
+                </div>
+            </div>
+        </div>
+        <ul class="ul-nav">
+            <li><a draggable="false" href="../index.html">Home</a></li>
+            <li>
+                <a href="#">Categories</a>
+                <svg id="categories-dropdown-arrow" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
+                        fill="#000C17" />
+                    <path
+                        d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
+                        fill="#000C17" />
+                </svg>
+            </li>
+            <li>
+                <a href="../Cities/Cities.html">Cities</a>
+                <svg id="cities-dropdown-arrow" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
+                        fill="#000C17" />
+                    <path
+                        d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
+                        fill="#000C17" />
+                </svg>
+            </li>
+            <li><a class="active-link" href="#">Custom Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+        <div class="navigation-right-side">
+            <div class="navbar-search-box">
+                <svg id="search-icon-nav" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#0884F7" />
+                    <path
+                        d="M28.625 29.7715C28.7779 29.9193 28.9828 30.0012 29.1955 29.9995C29.4082 29.9977 29.6117 29.9125 29.7621 29.7621C29.9126 29.6118 29.998 29.4084 30 29.1957C30.0019 28.983 29.9202 28.778 29.7726 28.625L28.625 29.7715ZM25.1423 18.3823C25.1423 20.1752 24.4301 21.8946 23.1623 23.1623C21.8946 24.4301 20.1752 25.1423 18.3823 25.1423V26.7647C19.4831 26.7647 20.5731 26.5479 21.5901 26.1266C22.6071 25.7054 23.5312 25.0879 24.3095 24.3096C25.0879 23.5312 25.7053 22.6071 26.1266 21.5901C26.5478 20.5731 26.7647 19.4831 26.7647 18.3823H25.1423ZM18.3823 25.1423C16.5895 25.1423 14.8701 24.4301 13.6023 23.1623C12.3346 21.8946 11.6224 20.1752 11.6224 18.3823H10C10 20.6055 10.8831 22.7376 12.4551 24.3096C14.0271 25.8815 16.1592 26.7647 18.3823 26.7647V25.1423ZM11.6224 18.3823C11.6224 16.5895 12.3346 14.87 13.6023 13.6023C14.8701 12.3346 16.5895 11.6224 18.3823 11.6224V10C16.1592 10 14.0271 10.8831 12.4551 12.4551C10.8831 14.0271 10 16.1592 10 18.3823H11.6224ZM18.3823 11.6224C20.1752 11.6224 21.8946 12.3346 23.1623 13.6023C24.4301 14.87 25.1423 16.5895 25.1423 18.3823H26.7647C26.7647 17.2815 26.5478 16.1915 26.1266 15.1745C25.7053 14.1575 25.0879 13.2335 24.3095 12.4551C23.5312 11.6767 22.6071 11.0593 21.5901 10.638C20.5731 10.2168 19.4831 10 18.3823 10V11.6224ZM29.7726 28.625L24.3635 23.217L23.216 24.3636L28.625 29.7715L29.7726 28.625Z"
+                        fill="white" />
+                </svg>
+                <div class="search-absolute-box">
+                    <input placeholder="Search by course name or code" type="text" name="navbar-search-input"
+                        id="navbar-search-input">
+                    <svg id="search-icon-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.625 19.7715C18.7779 19.9193 18.9828 20.0012 19.1955 19.9995C19.4082 19.9977 19.6117 19.9125 19.7621 19.7621C19.9126 19.6118 19.998 19.4084 20 19.1957C20.0019 18.983 19.9202 18.778 19.7726 18.625L18.625 19.7715ZM15.1423 8.38233C15.1423 10.1752 14.4301 11.8946 13.1623 13.1623C11.8946 14.4301 10.1752 15.1423 8.38233 15.1423V16.7647C9.48311 16.7647 10.5731 16.5479 11.5901 16.1266C12.6071 15.7054 13.5312 15.0879 14.3095 14.3096C15.0879 13.5312 15.7053 12.6071 16.1266 11.5901C16.5478 10.5731 16.7647 9.48311 16.7647 8.38233H15.1423ZM8.38233 15.1423C6.58948 15.1423 4.87006 14.4301 3.60233 13.1623C2.33459 11.8946 1.62239 10.1752 1.62239 8.38233H0C0 10.6055 0.883137 12.7376 2.45513 14.3096C4.02712 15.8815 6.15919 16.7647 8.38233 16.7647V15.1423ZM1.62239 8.38233C1.62239 6.58948 2.33459 4.87004 3.60233 3.60231C4.87006 2.33457 6.58948 1.62239 8.38233 1.62239V0C6.15919 0 4.02712 0.883108 2.45513 2.4551C0.883137 4.02709 0 6.15919 0 8.38233H1.62239ZM8.38233 1.62239C10.1752 1.62239 11.8946 2.33457 13.1623 3.60231C14.4301 4.87004 15.1423 6.58948 15.1423 8.38233H16.7647C16.7647 7.28154 16.5478 6.19151 16.1266 5.17452C15.7053 4.15753 15.0879 3.23347 14.3095 2.4551C13.5312 1.67673 12.6071 1.05929 11.5901 0.638035C10.5731 0.216784 9.48311 0 8.38233 0V1.62239ZM19.7726 18.625L14.3635 13.217L13.216 14.3636L18.625 19.7715L19.7726 18.625Z"
+                            fill="#0884F7" />
+                    </svg>
+                </div>
+            </div>
+            <svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_527_3846)">
+                    <rect x="4" y="3" width="56" height="40" rx="20" fill="white" />
+                </g>
+                <g filter="url(#filter1_i_527_3846)">
+                    <rect x="6" y="4" width="52" height="38" rx="19" fill="white" />
+                </g>
+                <path
+                    d="M21.4536 29L25.3896 17.992H27.7576L31.6936 29H29.8216L28.8616 26.28H24.2216L23.2776 29H21.4536ZM24.7336 24.744H28.3336L26.5736 19.736H26.4936L24.7336 24.744ZM33.5111 29V17.992H38.6471C39.3404 17.992 39.9004 18.072 40.3271 18.232C40.7537 18.392 41.0737 18.6267 41.2871 18.936C41.5004 19.2347 41.6444 19.5973 41.7191 20.024C41.7937 20.44 41.8311 20.8987 41.8311 21.4C41.8311 21.7627 41.7937 22.1627 41.7191 22.6C41.6551 23.0267 41.5057 23.4213 41.2711 23.784C41.0471 24.136 40.6897 24.392 40.1991 24.552L42.0071 29H40.0871L38.3271 24.504L38.7911 24.744C38.7164 24.776 38.6257 24.7973 38.5191 24.808C38.4231 24.808 38.3057 24.808 38.1671 24.808H35.3191V29H33.5111ZM35.3191 23.272H37.8791C38.3804 23.272 38.7751 23.24 39.0631 23.176C39.3511 23.1013 39.5644 22.9893 39.7031 22.84C39.8417 22.6907 39.9271 22.4987 39.9591 22.264C40.0017 22.0293 40.0231 21.7413 40.0231 21.4C40.0231 21.048 40.0017 20.7547 39.9591 20.52C39.9271 20.2747 39.8471 20.0827 39.7191 19.944C39.5911 19.7947 39.3831 19.688 39.0951 19.624C38.8177 19.56 38.4337 19.528 37.9431 19.528H35.3191V23.272Z"
+                    fill="#000C17" />
+                <defs>
+                    <filter id="filter0_d_527_3846" x="0" y="0" width="64" height="48" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                        <feOffset dy="1" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0.18 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_527_3846" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_527_3846" result="shape" />
+                    </filter>
+                    <filter id="filter1_i_527_3846" x="6" y="4" width="52" height="41" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                        <feOffset dy="3" />
+                        <feGaussianBlur stdDeviation="2.5" />
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0" />
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_527_3846" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <div id="cities-dropdown">
+            <div class="city-row">
+                <img src="assets/Ireland.png" alt="">
+                <p>Jordan</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/moscow.png" alt="">
+                <p>Moscow</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+            <div class="city-row">
+                <img src="assets/Lebanon.png" alt="">
+                <p>Lebanon</p>
+            </div>
+        </div>
+        <div id="categories-dropdown">
+            <div class="categories-row">
+                <p>Data management and analytics</p>
+            </div>
+            <div class="categories-row">
+                <p>Mechanical & Electrical Engineering</p>
+            </div>
+            <div class="categories-row">
+                <p>Strategy Management</p>
+            </div>
+            <div class="categories-row">
+                <p>Leadership</p>
+            </div>
+            <div class="categories-row">
+                <p>HRM</p>
+            </div>
+            <div class="categories-row">
+                <p>Oil and Gas</p>
+            </div>
+            <div class="categories-row">
+                <p>Health, Safety and Environment</p>
+            </div>
+            <div class="categories-row">
+                <p>Business Intelligence</p>
+            </div>
+            <div class="categories-row">
+                <p>Data management and analytics</p>
+            </div>
+            <div class="categories-row">
+                <p>Mechanical & Electrical Engineering</p>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------- head-section---------------------------------------------------->
+    <div class="head-section">
+        <div class="heading-box">
+            <p class="head-title">Custom Courses</p>
+            <svg width="80" height="6" viewBox="0 0 80 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="12" y1="5" x2="68" y2="5" stroke="#000C17" stroke-width="2" />
+                <line y1="1" x2="80" y2="1" stroke="#000C17" stroke-width="2" />
+            </svg>
+        </div>
+        <p class="head-description">We, at <span>European Quality</span>, are focusing on providing all training
+            services to our
+            clients in this category, so you can tailor and customize suitable training courses for you that meet your
+            requirements and needs, which in turn will help in developing yourselves and your businesses.
+        </p>
+    </div>
+    <div class="splitter">
+        <img src="./Assets/separator.png" alt="">
+    </div>
+    <p class="form-head">Please fill the next form out to request custom courses</p>
+    <!------------------------------------------------- Form ------------------------------------------------------->
+    <div class="form-container">
+        <form action="">
+            <div class="form-heading">
+                <p>Contacts Details</p>
+                <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
+                    <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="user-details">
+                <div class="user-details-box">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18 18C20.7614 18 23 15.7614 23 13C23 10.2386 20.7614 8 18 8C15.2386 8 13 10.2386 13 13C13 15.7614 15.2386 18 18 18Z"
+                            fill="#333D45" />
+                        <path
+                            d="M18.0002 20.5C12.9902 20.5 8.91016 23.86 8.91016 28C8.91016 28.28 9.13016 28.5 9.41016 28.5H26.5902C26.8702 28.5 27.0902 28.28 27.0902 28C27.0902 23.86 23.0102 20.5 18.0002 20.5Z"
+                            fill="#333D45" />
+                    </svg>
+                    <input type="text" placeholder="Enter your full triple name">
+                </div>
+                <div class="user-details-box">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23 9.5H13C10 9.5 8 11 8 14.5V21.5C8 25 10 26.5 13 26.5H23C26 26.5 28 25 28 21.5V14.5C28 11 26 9.5 23 9.5ZM23.47 15.59L20.34 18.09C19.68 18.62 18.84 18.88 18 18.88C17.16 18.88 16.31 18.62 15.66 18.09L12.53 15.59C12.21 15.33 12.16 14.85 12.41 14.53C12.67 14.21 13.14 14.15 13.46 14.41L16.59 16.91C17.35 17.52 18.64 17.52 19.4 16.91L22.53 14.41C22.85 14.15 23.33 14.2 23.58 14.53C23.84 14.85 23.79 15.33 23.47 15.59Z"
+                            fill="#333D45" />
+                    </svg>
+
+                    <input type="email" placeholder="Enter your email">
+                </div>
+                <div class="user-details-box">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.05 20.95L15.2 22.8C14.81 23.19 14.19 23.19 13.79 22.81C13.68 22.7 13.57 22.6 13.46 22.49C12.43 21.45 11.5 20.36 10.67 19.22C9.85 18.08 9.19 16.94 8.71 15.81C8.24 14.67 8 13.58 8 12.54C8 11.86 8.12 11.21 8.36 10.61C8.6 10 8.98 9.44 9.51 8.94C10.15 8.31 10.85 8 11.59 8C11.87 8 12.15 8.06 12.4 8.18C12.66 8.3 12.89 8.48 13.07 8.74L15.39 12.01C15.57 12.26 15.7 12.49 15.79 12.71C15.88 12.92 15.93 13.13 15.93 13.32C15.93 13.56 15.86 13.8 15.72 14.03C15.59 14.26 15.4 14.5 15.16 14.74L14.4 15.53C14.29 15.64 14.24 15.77 14.24 15.93C14.24 16.01 14.25 16.08 14.27 16.16C14.3 16.24 14.33 16.3 14.35 16.36C14.53 16.69 14.84 17.12 15.28 17.64C15.73 18.16 16.21 18.69 16.73 19.22C16.83 19.32 16.94 19.42 17.04 19.52C17.44 19.91 17.45 20.55 17.05 20.95Z"
+                            fill="#333D45" />
+                        <path
+                            d="M27.9696 24.3291C27.9696 24.6091 27.9196 24.8991 27.8196 25.1791C27.7896 25.2591 27.7596 25.3391 27.7196 25.4191C27.5496 25.7791 27.3296 26.1191 27.0396 26.4391C26.5496 26.9791 26.0096 27.3691 25.3996 27.6191C25.3896 27.6191 25.3796 27.6291 25.3696 27.6291C24.7796 27.8691 24.1396 27.9991 23.4496 27.9991C22.4296 27.9991 21.3396 27.7591 20.1896 27.2691C19.0396 26.7791 17.8896 26.1191 16.7496 25.2891C16.3596 24.9991 15.9696 24.7091 15.5996 24.3991L18.8696 21.1291C19.1496 21.3391 19.3996 21.4991 19.6096 21.6091C19.6596 21.6291 19.7196 21.6591 19.7896 21.6891C19.8696 21.7191 19.9496 21.7291 20.0396 21.7291C20.2096 21.7291 20.3396 21.6691 20.4496 21.5591L21.2096 20.8091C21.4596 20.5591 21.6996 20.3691 21.9296 20.2491C22.1596 20.1091 22.3896 20.0391 22.6396 20.0391C22.8296 20.0391 23.0296 20.0791 23.2496 20.1691C23.4696 20.2591 23.6996 20.3891 23.9496 20.5591L27.2596 22.9091C27.5196 23.0891 27.6996 23.2991 27.8096 23.5491C27.9096 23.7991 27.9696 24.0491 27.9696 24.3291Z"
+                            fill="#333D45" />
+                    </svg>
+
+
+                    <input type="number" placeholder="Enter your mobile number">
+                </div>
+                <div class="user-details-box">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_365_17327)">
+                            <path
+                                d="M13.6505 26.9098C13.6205 26.9098 13.5805 26.9298 13.5505 26.9298C11.6105 25.9698 10.0305 24.3798 9.06055 22.4398C9.06055 22.4098 9.08055 22.3698 9.08055 22.3398C10.3005 22.6998 11.5605 22.9698 12.8105 23.1798C13.0305 24.4398 13.2905 25.6898 13.6505 26.9098Z"
+                                fill="#333D45" />
+                            <path
+                                d="M26.9391 22.4498C25.9491 24.4398 24.2991 26.0498 22.2891 27.0198C22.6691 25.7498 22.9891 24.4698 23.1991 23.1798C24.4591 22.9698 25.6991 22.6998 26.9191 22.3398C26.9091 22.3798 26.9391 22.4198 26.9391 22.4498Z"
+                                fill="#333D45" />
+                            <path
+                                d="M27.0191 13.7105C25.7591 13.3305 24.4891 13.0205 23.1991 12.8005C22.9891 11.5105 22.6791 10.2305 22.2891 8.98047C24.3591 9.97047 26.0291 11.6405 27.0191 13.7105Z"
+                                fill="#333D45" />
+                            <path
+                                d="M13.6505 9.08859C13.2905 10.3086 13.0305 11.5486 12.8205 12.8086C11.5305 13.0086 10.2505 13.3286 8.98047 13.7086C9.95047 11.6986 11.5605 10.0486 13.5505 9.05859C13.5805 9.05859 13.6205 9.08859 13.6505 9.08859Z"
+                                fill="#333D45" />
+                            <path
+                                d="M21.4898 12.59C19.1698 12.33 16.8298 12.33 14.5098 12.59C14.7598 11.22 15.0798 9.85 15.5298 8.53C15.5498 8.45 15.5398 8.39 15.5498 8.31C16.3398 8.12 17.1498 8 17.9998 8C18.8398 8 19.6598 8.12 20.4398 8.31C20.4498 8.39 20.4498 8.45 20.4698 8.53C20.9198 9.86 21.2398 11.22 21.4898 12.59Z"
+                                fill="#333D45" />
+                            <path
+                                d="M12.59 21.4917C11.21 21.2417 9.85 20.9217 8.53 20.4717C8.45 20.4517 8.39 20.4617 8.31 20.4517C8.12 19.6617 8 18.8517 8 18.0017C8 17.1617 8.12 16.3417 8.31 15.5617C8.39 15.5517 8.45 15.5517 8.53 15.5317C9.86 15.0917 11.21 14.7617 12.59 14.5117C12.34 16.8317 12.34 19.1717 12.59 21.4917Z"
+                                fill="#333D45" />
+                            <path
+                                d="M28.0002 18.0017C28.0002 18.8517 27.8802 19.6617 27.6902 20.4517C27.6102 20.4617 27.5502 20.4517 27.4702 20.4717C26.1402 20.9117 24.7802 21.2417 23.4102 21.4917C23.6702 19.1717 23.6702 16.8317 23.4102 14.5117C24.7802 14.7617 26.1502 15.0817 27.4702 15.5317C27.5502 15.5517 27.6102 15.5617 27.6902 15.5617C27.8802 16.3517 28.0002 17.1617 28.0002 18.0017Z"
+                                fill="#333D45" />
+                            <path
+                                d="M21.4898 23.4102C21.2398 24.7902 20.9198 26.1502 20.4698 27.4702C20.4498 27.5502 20.4498 27.6102 20.4398 27.6902C19.6598 27.8802 18.8398 28.0002 17.9998 28.0002C17.1498 28.0002 16.3398 27.8802 15.5498 27.6902C15.5398 27.6102 15.5498 27.5502 15.5298 27.4702C15.0898 26.1402 14.7598 24.7902 14.5098 23.4102C15.6698 23.5402 16.8298 23.6302 17.9998 23.6302C19.1698 23.6302 20.3398 23.5402 21.4898 23.4102Z"
+                                fill="#333D45" />
+                            <path
+                                d="M21.7633 21.7633C19.2622 22.0789 16.7378 22.0789 14.2367 21.7633C13.9211 19.2622 13.9211 16.7378 14.2367 14.2367C16.7378 13.9211 19.2622 13.9211 21.7633 14.2367C22.0789 16.7378 22.0789 19.2622 21.7633 21.7633Z"
+                                fill="#333D45" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_365_17327">
+                                <rect width="24" height="24" fill="white" transform="translate(6 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+
+                    <input type="text" placeholder="Enter country + city names">
+                </div>
+            </div>
+            <div class="form-heading">
+                <p>Your Request</p>
+                <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
+                    <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="user-request">
+                <textarea placeholder="Enter your request details here" name="" id=""></textarea>
+            </div>
+            <div class="form-heading">
+                <p>Reference course or training </p>
+                <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
+                    <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="reference-course">
+                <div class="reference-box">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.5022 24.25H20.9922C20.5822 24.25 20.2422 23.91 20.2422 23.5C20.2422 23.09 20.5822 22.75 20.9922 22.75H22.5022C25.1222 22.75 27.2522 20.62 27.2522 18C27.2522 15.38 25.1222 13.25 22.5022 13.25H21.0022C20.5922 13.25 20.2522 12.91 20.2522 12.5C20.2522 12.09 20.5822 11.75 21.0022 11.75H22.5022C25.9522 11.75 28.7522 14.55 28.7522 18C28.7522 21.45 25.9522 24.25 22.5022 24.25Z"
+                            fill="#333D45" />
+                        <path
+                            d="M15.002 24.25H13.502C10.052 24.25 7.25195 21.45 7.25195 18C7.25195 14.55 10.052 11.75 13.502 11.75H15.002C15.412 11.75 15.752 12.09 15.752 12.5C15.752 12.91 15.412 13.25 15.002 13.25H13.502C10.882 13.25 8.75195 15.38 8.75195 18C8.75195 20.62 10.882 22.75 13.502 22.75H15.002C15.412 22.75 15.752 23.09 15.752 23.5C15.752 23.91 15.412 24.25 15.002 24.25Z"
+                            fill="#333D45" />
+                        <path
+                            d="M22.002 18.75H14.002C13.592 18.75 13.252 18.41 13.252 18C13.252 17.59 13.592 17.25 14.002 17.25H22.002C22.412 17.25 22.752 17.59 22.752 18C22.752 18.41 22.412 18.75 22.002 18.75Z"
+                            fill="#333D45" />
+                    </svg>
+                    <input type="text" placeholder="Leave us a reference link or course code of the needed training">
+                    <small>Optional</small>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./CustomCourses.js"></script>
+</body>
+
+</html>

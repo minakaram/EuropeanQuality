@@ -132,11 +132,11 @@ $(document).ready(function() {
     $("#search-icon-nav").hide();
   });
 
-  $("#search-icon-absolute").click(function(event) {
-    event.stopPropagation(); // Prevent click event from reaching document level
-    $(".search-absolute-box").fadeToggle();
-    $("#search-icon-nav").show();
-  });
+  // $("#search-icon-absolute").click(function(event) {
+  //   event.stopPropagation(); // Prevent click event from reaching document level
+  //   $(".search-absolute-box").fadeToggle();
+  //   $("#search-icon-nav").show();
+  // });
 
   // Hide search box when clicking outside .navbar-search-box
   $(document).click(function(event) {
