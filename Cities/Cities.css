@@ -55,6 +55,12 @@ P {
   left: 1rem;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .chat-icon {
+    height: 50px;
+    left: 5px;
+  }
+}
 
 .top-arrow-icon {
   position: fixed;
@@ -63,6 +69,11 @@ P {
   bottom: 2rem;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transform: translateY(100px);
+}
+@media (max-width: 767px) {
+  .top-arrow-icon {
+    right: 1rem;
+  }
 }
 
 .top-arrow-icon.show {
@@ -856,8 +867,9 @@ P {
 @media (max-width: 767px) {
   .footer {
     padding: 1rem 1rem 0rem 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 0;
+    width: 100%;
   }
 }
 .footer .border-icon {

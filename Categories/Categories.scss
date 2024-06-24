@@ -4,22 +4,22 @@ P {
   margin-bottom: 0 !important;
 }
 
-.chat-icon{
+.chat-icon {
   position: fixed;
   z-index: 4000;
-  bottom:2rem;
-  left:1rem;
+  bottom: 2rem;
+  left: 1rem;
   cursor: pointer;
 }
-.top-arrow-icon{
+.top-arrow-icon {
   position: fixed;
   z-index: 4000;
-  right:2rem;
-  bottom : 2rem;
+  right: 2rem;
+  bottom: 2rem;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transform: translateY(100px);
 }
-.top-arrow-icon.show{
+.top-arrow-icon.show {
   opacity: 1;
   transform: translateY(0);
 }
@@ -169,11 +169,11 @@ P {
         top: 50%;
         transform: translateY(-50%);
         width: 350px;
-        height:40px;
+        height: 40px;
         display: none;
         border-radius: 40px;
         border: 1px solid #ecf0f3;
-        @include mobile{
+        @include mobile {
           width: 220px;
         }
         input {
@@ -610,11 +610,11 @@ P {
       padding: 0.5rem 1rem;
       cursor: pointer;
     }
-    .navigation-inner{
+    .navigation-inner {
       color: #a1a8ae;
       margin: 0rem 2rem;
       font-family: "Cairo";
-      .active{
+      .active {
         color: #000;
         font-weight: 700;
       }
@@ -648,8 +648,9 @@ P {
   position: relative;
   @include mobile {
     padding: 1rem 1rem 0rem 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 0;
+    width: 100%;
   }
   .border-icon {
     position: absolute;

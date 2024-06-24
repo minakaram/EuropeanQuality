@@ -765,8 +765,9 @@ P {
 @media (max-width: 767px) {
   .footer {
     padding: 1rem 1rem 0rem 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 0;
+    width: 100%;
   }
 }
 .footer .border-icon {
