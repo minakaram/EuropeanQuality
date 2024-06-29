@@ -185,6 +185,7 @@ P {
   gap: 0.5rem;
   border: 1px solid #ecf0f3;
   padding: 0.5rem 10px;
+  cursor: pointer;
 }
 .navigation-bar #cities-dropdown .city-row img,
 .navigation-bar #categories-dropdown .city-row img {
@@ -201,6 +202,7 @@ P {
   border: 1px solid #ecf0f3;
   padding: 0.5rem 10px;
   padding-left: 10px;
+  cursor: pointer;
 }
 .navigation-bar .navigation-left-side {
   display: flex;

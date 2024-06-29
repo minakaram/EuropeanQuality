@@ -104,6 +104,13 @@ P {
   border-radius: 10px;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
 }
+@media (max-width: 1024px) {
+  .navigation-bar #navigation-menu-dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+  }
+}
 @media (max-width: 767px) {
   .navigation-bar #navigation-menu-dropdown {
     width: 100%;
@@ -174,6 +181,7 @@ P {
   gap: 0.5rem;
   border: 1px solid #ecf0f3;
   padding: 0.5rem 10px;
+  cursor: pointer;
 }
 .navigation-bar #cities-dropdown .city-row img,
 .navigation-bar #categories-dropdown .city-row img {
@@ -190,6 +198,7 @@ P {
   border: 1px solid #ecf0f3;
   padding: 0.5rem 10px;
   padding-left: 10px;
+  cursor: pointer;
 }
 .navigation-bar .navigation-left-side {
   display: flex;
@@ -311,6 +320,11 @@ P {
 @media (max-width: 420px) {
   .navigation-bar {
     padding-left: 1rem;
+  }
+}
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .navigation-bar {
+    width: 90%;
   }
 }
 
