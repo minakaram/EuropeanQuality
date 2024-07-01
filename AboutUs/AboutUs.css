@@ -665,6 +665,103 @@ P {
   }
 }
 
+.approach-instructors {
+  width: 85%;
+  margin: 15rem auto;
+  position: relative;
+  background-image: url(./Assets/overlay-lg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+}
+@media (max-width: 1024px) {
+  .approach-instructors {
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .approach-instructors {
+    background-image: url(./Assets/overlay-sm.png);
+    margin-top: 5rem;
+  }
+}
+.approach-instructors .approach-box {
+  width: 40%;
+}
+@media (max-width: 1024px) {
+  .approach-instructors .approach-box {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .approach-instructors .approach-box {
+    width: 98%;
+  }
+}
+.approach-instructors .approach-box .heading {
+  font-family: saira-bold;
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .approach-instructors .approach-box .heading {
+    font-size: 22px;
+  }
+}
+.approach-instructors .approach-box .description {
+  margin-top: 1.5rem;
+  line-height: 28px;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .approach-instructors .approach-box .description {
+    font-size: 14px;
+  }
+}
+.approach-instructors .approach-box .description span {
+  font-weight: bold;
+}
+.approach-instructors .instructors-box {
+  width: 40%;
+}
+@media (max-width: 1024px) {
+  .approach-instructors .instructors-box {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .approach-instructors .instructors-box {
+    width: 98%;
+  }
+}
+.approach-instructors .instructors-box .heading {
+  font-family: saira-bold;
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .approach-instructors .instructors-box .heading {
+    font-size: 22px;
+  }
+}
+.approach-instructors .instructors-box .description {
+  margin-top: 1.5rem;
+  line-height: 28px;
+  font-family: "Cairo";
+}
+@media (max-width: 767px) {
+  .approach-instructors .instructors-box .description {
+    font-size: 14px;
+  }
+}
+
 .footer {
   width: 95%;
   margin: 30px auto;

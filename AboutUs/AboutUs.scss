@@ -300,7 +300,7 @@ P {
     font-family: saira-semiBold;
     z-index: 2;
     text-align: center;
-    @include mobile{
+    @include mobile {
       font-size: 35px;
     }
     @include mobileXS {
@@ -363,7 +363,7 @@ P {
     .heading {
       font-size: 24px;
       font-family: saira-semiBold;
-      @include mobile{
+      @include mobile {
         font-family: saira-bold;
       }
     }
@@ -396,7 +396,7 @@ P {
     .heading {
       font-size: 24px;
       font-family: saira-semiBold;
-      @include mobile{
+      @include mobile {
         font-family: saira-bold;
       }
     }
@@ -457,7 +457,7 @@ P {
   @include tablet {
     flex-direction: column;
     gap: 3rem;
-    padding: 7rem 0rem 10rem; 
+    padding: 7rem 0rem 10rem;
   }
   .policy-left-side {
     width: 50%;
@@ -492,7 +492,7 @@ P {
       p {
         font-family: saira-extraBold;
         font-size: 32px;
-        @include mobile{
+        @include mobile {
           font-size: 26px;
         }
       }
@@ -524,7 +524,82 @@ P {
     }
   }
 }
-
+.approach-instructors {
+  width: 85%;
+  margin: 15rem auto;
+  position: relative;
+  background-image: url(./Assets/overlay-lg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  @include tablet{
+    flex-direction:column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @include mobile{
+    background-image: url(./Assets/overlay-sm.png);
+    margin-top: 5rem;
+  }
+  .approach-box {
+    width: 40%;
+    @include tablet{
+      width: 90%;
+    }
+    @include mobile{
+      width: 98%;
+    }
+    .heading {
+      font-family: saira-bold;
+      font-size: 32px;
+      margin-bottom: 2rem;
+      @include mobile{
+        font-size:22px;
+      }
+    }
+    .description {
+      margin-top: 1.5rem;
+      line-height: 28px;
+      font-family:"Cairo";
+      font-weight: 500;
+      @include mobile{
+        font-size:14px;
+      }
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+  .instructors-box {
+    width: 40%;
+    @include tablet{
+      width: 90%;
+    }
+    @include mobile{
+      width: 98%;
+    }
+    .heading {
+      font-family: saira-bold;
+      font-size: 32px;
+      margin-bottom: 2rem;
+      @include mobile{
+        font-size:22px;
+      }
+    }
+    .description {
+      margin-top: 1.5rem;
+      line-height: 28px;
+      font-family:"Cairo";
+      @include mobile{
+        font-size:14px;
+      }
+    }
+  }
+}
 .footer {
   width: 95%;
   margin: 30px auto;
