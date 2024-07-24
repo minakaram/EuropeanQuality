@@ -311,7 +311,7 @@ P {
       margin-top: 2rem;
       width: 100%;
     }
-@include mobile {
+    @include mobile {
       width: 90%;
       p:first-child {
         font-size: 24px;
@@ -322,7 +322,7 @@ P {
         margin-top: 1rem;
         font-weight: 700;
       }
-}
+    }
     @include mobileXS {
       font-size: 30px;
     }
@@ -675,12 +675,25 @@ P {
           width: 95%;
           justify-content: space-between;
         }
+        @include mobile {
+          width: 85%;
+        }
       }
       .inputBox3 {
+        position: relative;
+
         @include tablet {
           width: 93%;
           display: flex;
           flex-direction: row;
+        }
+        @include mobile {
+          width: 85%;
+          .optional {
+            position: absolute;
+  
+            right: 10px;
+          }
         }
       }
       .formIconsForUploads3 {
@@ -693,15 +706,24 @@ P {
           width: 100%;
           padding-inline: 2%;
         }
+        @include mobile {
+          width: 77%;
+        }
       }
       .optional3 {
         @include tablet {
           width: 8%;
         }
+        @include mobile {
+          width: 10%;
+        }
       }
       .uploadBox3 {
         @include tablet {
           width: 6%;
+        }
+        @include mobile {
+          width: 13%;
         }
       }
 
@@ -841,7 +863,6 @@ P {
   }
 }
 
-
 .footer {
   width: 95%;
   margin: 30px auto;
@@ -854,7 +875,7 @@ P {
     padding: 1rem 1rem 0rem 1rem;
     margin-bottom: 0px;
     margin-top: 0;
-    width:100%;
+    width: 100%;
   }
   .border-icon {
     position: absolute;

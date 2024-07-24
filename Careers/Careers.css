@@ -792,11 +792,28 @@ P {
     justify-content: space-between;
   }
 }
+@media (max-width: 767px) {
+  .career .formContainer form .uploadContainer3 {
+    width: 85%;
+  }
+}
+.career .formContainer form .inputBox3 {
+  position: relative;
+}
 @media (max-width: 1024px) {
   .career .formContainer form .inputBox3 {
     width: 93%;
     display: flex;
     flex-direction: row;
+  }
+}
+@media (max-width: 767px) {
+  .career .formContainer form .inputBox3 {
+    width: 85%;
+  }
+  .career .formContainer form .inputBox3 .optional {
+    position: absolute;
+    right: 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -810,14 +827,29 @@ P {
     padding-inline: 2%;
   }
 }
+@media (max-width: 767px) {
+  .career .formContainer form .inputField3 {
+    width: 77%;
+  }
+}
 @media (max-width: 1024px) {
   .career .formContainer form .optional3 {
     width: 8%;
   }
 }
+@media (max-width: 767px) {
+  .career .formContainer form .optional3 {
+    width: 10%;
+  }
+}
 @media (max-width: 1024px) {
   .career .formContainer form .uploadBox3 {
     width: 6%;
+  }
+}
+@media (max-width: 767px) {
+  .career .formContainer form .uploadBox3 {
+    width: 13%;
   }
 }
 .career .formContainer form .msgBox {
