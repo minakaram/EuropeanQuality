@@ -400,6 +400,18 @@ P {
   margin-top: 2rem;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .hero-section .hero-inner {
+    width: 90%;
+  }
+  .hero-section .hero-inner p:first-child {
+    font-size: 24px;
+  }
+  .hero-section .hero-inner p:nth-of-type(2) {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+}
 @media (max-width: 420px) {
   .hero-section .hero-inner {
     font-size: 30px;
