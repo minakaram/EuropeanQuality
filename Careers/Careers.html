@@ -1,462 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Careers.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"
-    ></script>
-    <script
-      defer
-      src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"
-    ></script>
-    <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 
-    <title>Careers</title>
-  </head>
-  <body>
-    <svg
-      class="chat-icon"
-      width="60"
-      height="60"
-      viewBox="0 0 60 60"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle cx="30" cy="30" r="30" fill="#E4F1FE" />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M30 16C33.7395 16 37.2552 17.4563 39.8995 20.1005C42.5437 22.7448 44 26.2605 44 30C44 33.7395 42.5437 37.2552 39.8995 39.8995C37.2552 42.5437 33.7395 44 30 44C27.6143 44 25.2699 43.3916 23.197 42.2376L16.7402 43.9863L16.0137 43.2598L17.7624 36.803C16.6084 34.7301 16 32.3857 16 30C16 26.2605 17.4563 22.7448 20.1005 20.1005C22.7448 17.4563 26.2605 16 30 16ZM37.3066 38.6257C37.5374 38.2143 37.6562 37.7734 37.6562 37.3281H28.4688C28.4688 37.7734 28.5876 38.2143 28.8184 38.6257C29.0493 39.037 29.3877 39.4108 29.8142 39.7257C30.2408 40.0405 30.7472 40.2903 31.3045 40.4607C31.8619 40.6311 32.4592 40.7188 33.0625 40.7188C33.6658 40.7188 34.2631 40.6311 34.8205 40.4607C35.3778 40.2903 35.8842 40.0405 36.3108 39.7257C36.7373 39.4108 37.0757 39.037 37.3066 38.6257Z"
-        fill="#0884F7"
-      />
-    </svg>
-    <svg
-      class="top-arrow-icon"
-      width="44"
-      height="44"
-      viewBox="0 0 44 44"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect
-        x="1.25"
-        y="1.25"
-        width="41.5"
-        height="41.5"
-        rx="8.75"
-        fill="#FEF2E6"
-      />
-      <rect
-        x="1.25"
-        y="1.25"
-        width="41.5"
-        height="41.5"
-        rx="8.75"
-        stroke="url(#paint0_linear_220_7991)"
-        stroke-width="1.5"
-      />
-      <path
-        d="M21.25 30C21.25 30.4142 21.5858 30.75 22 30.75C22.4142 30.75 22.75 30.4142 22.75 30L21.25 30ZM22.5303 13.4697C22.2374 13.1768 21.7626 13.1768 21.4697 13.4697L16.6967 18.2426C16.4038 18.5355 16.4038 19.0104 16.6967 19.3033C16.9896 19.5962 17.4645 19.5962 17.7574 19.3033L22 15.0607L26.2426 19.3033C26.5355 19.5962 27.0104 19.5962 27.3033 19.3033C27.5962 19.0104 27.5962 18.5355 27.3033 18.2426L22.5303 13.4697ZM22.75 30L22.75 14L21.25 14L21.25 30L22.75 30Z"
-        fill="#F77B08"
-      />
-      <defs>
-        <linearGradient
-          id="paint0_linear_220_7991"
-          x1="2"
-          y1="4"
-          x2="41"
-          y2="41"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#F77B08" />
-          <stop offset="0.122598" stop-color="white" />
-          <stop offset="0.889858" stop-color="white" />
-          <stop offset="1" stop-color="#F77B08" />
-        </linearGradient>
-      </defs>
-    </svg>
-    <!--------------------------------------------- navigation-bar ------------------------------------------------->
-    <div class="navigation-bar">
-      <div class="navigation-left-side">
-        <a href="../index.html"><img class="navigation-logo" src="../assets/logo.svg" alt="" /></a>
-        <div class="navigation-menu">
-          <svg
-            id="navigation-menu-btn"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Careers.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
+  <script defer src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+  <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Careers</title>
+</head>
+
+<body>
+  <svg class="chat-icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="30" cy="30" r="30" fill="#E4F1FE" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M30 16C33.7395 16 37.2552 17.4563 39.8995 20.1005C42.5437 22.7448 44 26.2605 44 30C44 33.7395 42.5437 37.2552 39.8995 39.8995C37.2552 42.5437 33.7395 44 30 44C27.6143 44 25.2699 43.3916 23.197 42.2376L16.7402 43.9863L16.0137 43.2598L17.7624 36.803C16.6084 34.7301 16 32.3857 16 30C16 26.2605 17.4563 22.7448 20.1005 20.1005C22.7448 17.4563 26.2605 16 30 16ZM37.3066 38.6257C37.5374 38.2143 37.6562 37.7734 37.6562 37.3281H28.4688C28.4688 37.7734 28.5876 38.2143 28.8184 38.6257C29.0493 39.037 29.3877 39.4108 29.8142 39.7257C30.2408 40.0405 30.7472 40.2903 31.3045 40.4607C31.8619 40.6311 32.4592 40.7188 33.0625 40.7188C33.6658 40.7188 34.2631 40.6311 34.8205 40.4607C35.3778 40.2903 35.8842 40.0405 36.3108 39.7257C36.7373 39.4108 37.0757 39.037 37.3066 38.6257Z"
+      fill="#0884F7" />
+  </svg>
+  <svg class="top-arrow-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1.25" y="1.25" width="41.5" height="41.5" rx="8.75" fill="#FEF2E6" />
+    <rect x="1.25" y="1.25" width="41.5" height="41.5" rx="8.75" stroke="url(#paint0_linear_220_7991)"
+      stroke-width="1.5" />
+    <path
+      d="M21.25 30C21.25 30.4142 21.5858 30.75 22 30.75C22.4142 30.75 22.75 30.4142 22.75 30L21.25 30ZM22.5303 13.4697C22.2374 13.1768 21.7626 13.1768 21.4697 13.4697L16.6967 18.2426C16.4038 18.5355 16.4038 19.0104 16.6967 19.3033C16.9896 19.5962 17.4645 19.5962 17.7574 19.3033L22 15.0607L26.2426 19.3033C26.5355 19.5962 27.0104 19.5962 27.3033 19.3033C27.5962 19.0104 27.5962 18.5355 27.3033 18.2426L22.5303 13.4697ZM22.75 30L22.75 14L21.25 14L21.25 30L22.75 30Z"
+      fill="#F77B08" />
+    <defs>
+      <linearGradient id="paint0_linear_220_7991" x1="2" y1="4" x2="41" y2="41" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F77B08" />
+        <stop offset="0.122598" stop-color="white" />
+        <stop offset="0.889858" stop-color="white" />
+        <stop offset="1" stop-color="#F77B08" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <!--------------------------------------------- navigation-bar ------------------------------------------------->
+  <div class="navigation-bar">
+    <div class="navigation-left-side">
+      <a href="../index.html"><img class="navigation-logo" src="../assets/logo.svg" alt="" /></a>
+      <div class="navigation-menu">
+        <svg id="navigation-menu-btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 5H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 12H20" stroke="#0884F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 19H14" stroke="#0884F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <a href="#">Contact Us</a>
+
+        <div id="navigation-menu-dropdown">
+          <p><a href="../index.html">Home</a></p>
+          <p><a href="../Categories/Categories.html">Categories</a></p>
+          <p><a href="../Cities/Cities.html">Cities</a></p>
+          <p><a href="../Categories/Categories.html">Custom Courses</a></p>
+          <p><a href="../AboutUs/AboutUs.html"></a>About Us</p>
+          <p><a href="">Careers</a></p>
+        </div>
+      </div>
+    </div>
+    <ul class="ul-nav">
+      <li><a draggable="false" href="../index.html">Home</a></li>
+      <li>
+        <a href="../Categories/Categories.html">Categories</a>
+        <svg id="categories-dropdown-arrow" width="17" height="16" viewBox="0 0 17 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
+            fill="#000C17" />
+          <path
+            d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
+            fill="#000C17" />
+        </svg>
+      </li>
+      <li>
+        <a href="../Cities/Cities.html">Cities</a>
+        <svg id="cities-dropdown-arrow" width="17" height="16" viewBox="0 0 17 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
+            fill="#000C17" />
+          <path
+            d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
+            fill="#000C17" />
+        </svg>
+      </li>
+      <li>
+        <a href="../CustomCourses/CustomCourses.html">Custom Courses</a>
+      </li>
+      <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+      <li><a class="active-link" href="./ContactUs.html">Contact Us</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+    <div class="navigation-right-side">
+      <div class="navbar-search-box">
+        <svg id="search-icon-nav" width="40" height="40" viewBox="0 0 40 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="20" fill="#0884F7" />
+          <path
+            d="M28.625 29.7715C28.7779 29.9193 28.9828 30.0012 29.1955 29.9995C29.4082 29.9977 29.6117 29.9125 29.7621 29.7621C29.9126 29.6118 29.998 29.4084 30 29.1957C30.0019 28.983 29.9202 28.778 29.7726 28.625L28.625 29.7715ZM25.1423 18.3823C25.1423 20.1752 24.4301 21.8946 23.1623 23.1623C21.8946 24.4301 20.1752 25.1423 18.3823 25.1423V26.7647C19.4831 26.7647 20.5731 26.5479 21.5901 26.1266C22.6071 25.7054 23.5312 25.0879 24.3095 24.3096C25.0879 23.5312 25.7053 22.6071 26.1266 21.5901C26.5478 20.5731 26.7647 19.4831 26.7647 18.3823H25.1423ZM18.3823 25.1423C16.5895 25.1423 14.8701 24.4301 13.6023 23.1623C12.3346 21.8946 11.6224 20.1752 11.6224 18.3823H10C10 20.6055 10.8831 22.7376 12.4551 24.3096C14.0271 25.8815 16.1592 26.7647 18.3823 26.7647V25.1423ZM11.6224 18.3823C11.6224 16.5895 12.3346 14.87 13.6023 13.6023C14.8701 12.3346 16.5895 11.6224 18.3823 11.6224V10C16.1592 10 14.0271 10.8831 12.4551 12.4551C10.8831 14.0271 10 16.1592 10 18.3823H11.6224ZM18.3823 11.6224C20.1752 11.6224 21.8946 12.3346 23.1623 13.6023C24.4301 14.87 25.1423 16.5895 25.1423 18.3823H26.7647C26.7647 17.2815 26.5478 16.1915 26.1266 15.1745C25.7053 14.1575 25.0879 13.2335 24.3095 12.4551C23.5312 11.6767 22.6071 11.0593 21.5901 10.638C20.5731 10.2168 19.4831 10 18.3823 10V11.6224ZM29.7726 28.625L24.3635 23.217L23.216 24.3636L28.625 29.7715L29.7726 28.625Z"
+            fill="white" />
+        </svg>
+        <div class="search-absolute-box">
+          <input placeholder="Search by course name or code" type="text" name="navbar-search-input"
+            id="navbar-search-input" />
+          <svg id="search-icon-absolute" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M10 5H20"
-              stroke="#0884F7"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 12H20"
-              stroke="#0884F7"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 19H14"
-              stroke="#0884F7"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+              d="M18.625 19.7715C18.7779 19.9193 18.9828 20.0012 19.1955 19.9995C19.4082 19.9977 19.6117 19.9125 19.7621 19.7621C19.9126 19.6118 19.998 19.4084 20 19.1957C20.0019 18.983 19.9202 18.778 19.7726 18.625L18.625 19.7715ZM15.1423 8.38233C15.1423 10.1752 14.4301 11.8946 13.1623 13.1623C11.8946 14.4301 10.1752 15.1423 8.38233 15.1423V16.7647C9.48311 16.7647 10.5731 16.5479 11.5901 16.1266C12.6071 15.7054 13.5312 15.0879 14.3095 14.3096C15.0879 13.5312 15.7053 12.6071 16.1266 11.5901C16.5478 10.5731 16.7647 9.48311 16.7647 8.38233H15.1423ZM8.38233 15.1423C6.58948 15.1423 4.87006 14.4301 3.60233 13.1623C2.33459 11.8946 1.62239 10.1752 1.62239 8.38233H0C0 10.6055 0.883137 12.7376 2.45513 14.3096C4.02712 15.8815 6.15919 16.7647 8.38233 16.7647V15.1423ZM1.62239 8.38233C1.62239 6.58948 2.33459 4.87004 3.60233 3.60231C4.87006 2.33457 6.58948 1.62239 8.38233 1.62239V0C6.15919 0 4.02712 0.883108 2.45513 2.4551C0.883137 4.02709 0 6.15919 0 8.38233H1.62239ZM8.38233 1.62239C10.1752 1.62239 11.8946 2.33457 13.1623 3.60231C14.4301 4.87004 15.1423 6.58948 15.1423 8.38233H16.7647C16.7647 7.28154 16.5478 6.19151 16.1266 5.17452C15.7053 4.15753 15.0879 3.23347 14.3095 2.4551C13.5312 1.67673 12.6071 1.05929 11.5901 0.638035C10.5731 0.216784 9.48311 0 8.38233 0V1.62239ZM19.7726 18.625L14.3635 13.217L13.216 14.3636L18.625 19.7715L19.7726 18.625Z"
+              fill="#0884F7" />
           </svg>
-          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_527_3846)">
+          <rect x="4" y="3" width="56" height="40" rx="20" fill="white" />
+        </g>
+        <g filter="url(#filter1_i_527_3846)">
+          <rect x="6" y="4" width="52" height="38" rx="19" fill="white" />
+        </g>
+        <path
+          d="M21.4536 29L25.3896 17.992H27.7576L31.6936 29H29.8216L28.8616 26.28H24.2216L23.2776 29H21.4536ZM24.7336 24.744H28.3336L26.5736 19.736H26.4936L24.7336 24.744ZM33.5111 29V17.992H38.6471C39.3404 17.992 39.9004 18.072 40.3271 18.232C40.7537 18.392 41.0737 18.6267 41.2871 18.936C41.5004 19.2347 41.6444 19.5973 41.7191 20.024C41.7937 20.44 41.8311 20.8987 41.8311 21.4C41.8311 21.7627 41.7937 22.1627 41.7191 22.6C41.6551 23.0267 41.5057 23.4213 41.2711 23.784C41.0471 24.136 40.6897 24.392 40.1991 24.552L42.0071 29H40.0871L38.3271 24.504L38.7911 24.744C38.7164 24.776 38.6257 24.7973 38.5191 24.808C38.4231 24.808 38.3057 24.808 38.1671 24.808H35.3191V29H33.5111ZM35.3191 23.272H37.8791C38.3804 23.272 38.7751 23.24 39.0631 23.176C39.3511 23.1013 39.5644 22.9893 39.7031 22.84C39.8417 22.6907 39.9271 22.4987 39.9591 22.264C40.0017 22.0293 40.0231 21.7413 40.0231 21.4C40.0231 21.048 40.0017 20.7547 39.9591 20.52C39.9271 20.2747 39.8471 20.0827 39.7191 19.944C39.5911 19.7947 39.3831 19.688 39.0951 19.624C38.8177 19.56 38.4337 19.528 37.9431 19.528H35.3191V23.272Z"
+          fill="#000C17" />
+        <defs>
+          <filter id="filter0_d_527_3846" x="0" y="0" width="64" height="48" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="1" />
+            <feGaussianBlur stdDeviation="2" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0.18 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_527_3846" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_527_3846" result="shape" />
+          </filter>
+          <filter id="filter1_i_527_3846" x="6" y="4" width="52" height="41" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="3" />
+            <feGaussianBlur stdDeviation="2.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0" />
+            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_527_3846" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <div id="cities-dropdown">
+      <div class="city-row">
+        <img src="assets/Ireland.png" alt="" />
+        <p>Jordan</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/moscow.png" alt="" />
+        <p>Moscow</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+      <div class="city-row">
+        <img src="assets/Lebanon.png" alt="" />
+        <p>Lebanon</p>
+      </div>
+    </div>
+    <div id="categories-dropdown">
+      <div class="categories-row">
+        <p>Data management and analytics</p>
+      </div>
+      <div class="categories-row">
+        <p>Mechanical & Electrical Engineering</p>
+      </div>
+      <div class="categories-row">
+        <p>Strategy Management</p>
+      </div>
+      <div class="categories-row">
+        <p>Leadership</p>
+      </div>
+      <div class="categories-row">
+        <p>HRM</p>
+      </div>
+      <div class="categories-row">
+        <p>Oil and Gas</p>
+      </div>
+      <div class="categories-row">
+        <p>Health, Safety and Environment</p>
+      </div>
+      <div class="categories-row">
+        <p>Business Intelligence</p>
+      </div>
+      <div class="categories-row">
+        <p>Data management and analytics</p>
+      </div>
+      <div class="categories-row">
+        <p>Mechanical & Electrical Engineering</p>
+      </div>
+    </div>
+  </div>
 
-          <div id="navigation-menu-dropdown">
-            <p><a href="../index.html">Home</a></p>
-            <p><a href="../Categories/Categories.html">Categories</a></p>
-            <p><a href="../Cities/Cities.html">Cities</a></p>
-            <p><a href="../Categories/Categories.html">Custom Courses</a></p>
-            <p><a href="../AboutUs/AboutUs.html"></a>About Us</p>
-            <p><a href="">Careers</a></p>
+  <!---------------------------------------------  hero-section -------------------------------------------------->
+  <div class="hero-section">
+    <img src="Assets/sectionImage.png" alt="" />
+    <div class="hero-inner">
+      <p>Join our team</p>
+      <p>
+        Here are we show our
+        <span style="font-weight: bold">European Quality</span> success team,
+        not only just a professional working staff or a university professors
+        and doctors and PHD holders, they are the crew of our organization,
+        and the success partners, with over than
+        <span style="color: #e47107; font-weight: bolder">34</span>
+        experienced tutor we can provide a distinguish training services.
+      </p>
+    </div>
+    <div class="members">
+      <div class="member">
+        <img src="Assets/member1.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member2.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member3.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member4.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member5.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member6.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member7.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member8.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member9.png" alt="" />
+      </div>
+      <div class="member">
+        <img src="Assets/member10.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Career Section -->
+
+  <div class="sectionHeader">
+    <p class="title1">Be our new crew member</p>
+    <p class="title2">View all of our new available career opportunities and apply and be our new power in the
+      <span style="color: #0884F7;">European Quality</span>, or offer us your experience and qualifications for future vacancies.</p>
+  </div>
+
+  <div class="career">
+
+    <div class="opportunities">
+
+      <div>
+        <p id="availableOpportunity"><span style="color: #f77b08;font-weight: 800;">16</span> Available Opportunities
+        </p>
+        <svg width="216" height="7" viewBox="0 0 216 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1 1L4.37868 4.37868C5.55025 5.55025 7.44975 5.55025 8.62132 4.37868L9.87868 3.12132C11.0503 1.94975 12.9497 1.94975 14.1213 3.12132L15.3787 4.37868C16.5503 5.55025 18.4497 5.55025 19.6213 4.37868L20.8787 3.12132C22.0503 1.94975 23.9497 1.94975 25.1213 3.12132L26.3787 4.37868C27.5503 5.55025 29.4497 5.55025 30.6213 4.37868L31.8787 3.12132C33.0503 1.94975 34.9497 1.94975 36.1213 3.12132L37.3787 4.37868C38.5503 5.55025 40.4497 5.55025 41.6213 4.37868L42.8787 3.12132C44.0503 1.94975 45.9497 1.94975 47.1213 3.12132L48.3787 4.37868C49.5503 5.55025 51.4497 5.55025 52.6213 4.37868L53.8787 3.12132C55.0503 1.94975 56.9497 1.94975 58.1213 3.12132L59.3787 4.37868C60.5503 5.55025 62.4497 5.55025 63.6213 4.37868L64.8787 3.12132C66.0503 1.94975 67.9497 1.94975 69.1213 3.12132L70.3787 4.37868C71.5503 5.55025 73.4497 5.55025 74.6213 4.37868L75.8787 3.12132C77.0503 1.94975 78.9497 1.94975 80.1213 3.12132L81.3787 4.37868C82.5503 5.55025 84.4497 5.55025 85.6213 4.37868L86.8787 3.12132C88.0503 1.94975 89.9497 1.94975 91.1213 3.12132L92.3787 4.37868C93.5503 5.55025 95.4497 5.55025 96.6213 4.37868L97.8787 3.12132C99.0503 1.94975 100.95 1.94975 102.121 3.12132L103.379 4.37868C104.55 5.55025 106.45 5.55025 107.621 4.37868L108.879 3.12132C110.05 1.94975 111.95 1.94975 113.121 3.12132L114.379 4.37868C115.55 5.55025 117.45 5.55025 118.621 4.37868L119.879 3.12132C121.05 1.94975 122.95 1.94975 124.121 3.12132L125.379 4.37868C126.55 5.55025 128.45 5.55025 129.621 4.37868L130.879 3.12132C132.05 1.94975 133.95 1.94975 135.121 3.12132L136.379 4.37868C137.55 5.55025 139.45 5.55025 140.621 4.37868L141.879 3.12132C143.05 1.94975 144.95 1.94975 146.121 3.12132L147.379 4.37868C148.55 5.55025 150.45 5.55025 151.621 4.37868L152.879 3.12132C154.05 1.94975 155.95 1.94975 157.121 3.12132L158.379 4.37868C159.55 5.55025 161.45 5.55025 162.621 4.37868L163.879 3.12132C165.05 1.94975 166.95 1.94975 168.121 3.12132L169.379 4.37868C170.55 5.55025 172.45 5.55025 173.621 4.37868L174.879 3.12132C176.05 1.94975 177.95 1.94975 179.121 3.12132L180.379 4.37868C181.55 5.55025 183.45 5.55025 184.621 4.37868L185.879 3.12132C187.05 1.94975 188.95 1.94975 190.121 3.12132L191.379 4.37868C192.55 5.55025 194.45 5.55025 195.621 4.37868L196.879 3.12132C198.05 1.94975 199.95 1.94975 201.121 3.12132L202.379 4.37868C203.55 5.55025 205.45 5.55025 206.621 4.37868L207.879 3.12132C209.05 1.94975 210.95 1.94975 212.121 3.12132L215.5 6.5"
+            stroke="#000C17" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="positionContainer">
+        <div class="position">
+          <p class="title">Learning and Development Specialist</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Instructional Designer</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Effective Communication and Interpersonal Skills Tutor</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Conflict Resolution and Negotiation Trainer</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Business Ethics and Corporate Social Responsibility Tutor</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Learning and Development Specialist</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Learning and Development Specialist</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Instructional Designer</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Conflict Resolution and Negotiation Trainer</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Business Ethics and Corporate Social Responsibility Tutor</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Instructional Designer</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
+          </div>
+        </div>
+        <div class="position">
+          <p class="title">Conflict Resolution and Negotiation Trainer</p>
+          <div class="subTitle">
+            <p class="subTitleText"><span style="font-weight: 700;">2</span> Vacancies</p>
+            <p class="subTitleText">12 Aug, 2024</p>
           </div>
         </div>
       </div>
-      <ul class="ul-nav">
-        <li><a draggable="false" href="../index.html">Home</a></li>
-        <li>
-          <a href="../Categories/Categories.html">Categories</a>
-          <svg
-            id="categories-dropdown-arrow"
-            width="17"
-            height="16"
-            viewBox="0 0 17 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+
+      <hr style="color: #A1A8AE;" />
+
+      <div class="pagination">
+        <div class="arrow"
+          style="border-top-left-radius: 4px; border-bottom-left-radius: 4px; width: 28px; height: 32px;">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
-              fill="#000C17"
-            />
+              d="M9.83136 10.4629C9.94079 10.5783 10.0013 10.7329 9.99998 10.8934C9.99861 11.0538 9.93543 11.2073 9.82404 11.3208C9.71266 11.4342 9.56198 11.4986 9.40447 11.5C9.24695 11.5014 9.0952 11.4397 8.9819 11.3282L4.17589 6.43265C4.06327 6.31789 4 6.16227 4 6C4 5.83773 4.06327 5.68211 4.17589 5.56735L8.9819 0.671779C9.0952 0.560308 9.24695 0.498629 9.40447 0.500023C9.56198 0.501417 9.71266 0.56577 9.82404 0.67923C9.93543 0.79269 9.99861 0.946179 9.99998 1.10663C10.0013 1.26708 9.94079 1.42166 9.83136 1.53707L5.45008 6L9.83136 10.4629Z"
+              fill="#A1A8AE" fill-opacity="0.3" />
             <path
-              d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
-              fill="#000C17"
-            />
+              d="M5.83136 10.4629C5.94079 10.5783 6.00135 10.7329 5.99998 10.8934C5.99861 11.0538 5.93543 11.2073 5.82404 11.3208C5.71266 11.4342 5.56198 11.4986 5.40447 11.5C5.24695 11.5014 5.0952 11.4397 4.9819 11.3282L0.175891 6.43265C0.0632682 6.31789 -7.08561e-09 6.16227 0 6C7.10016e-09 5.83773 0.0632682 5.68211 0.175891 5.56735L4.9819 0.671779C5.0952 0.560308 5.24695 0.498629 5.40447 0.500023C5.56198 0.501417 5.71266 0.56577 5.82404 0.67923C5.93543 0.79269 5.99861 0.946179 5.99998 1.10663C6.00135 1.26708 5.94079 1.42166 5.83136 1.53707L1.45008 6L5.83136 10.4629Z"
+              fill="#A1A8AE" fill-opacity="0.3" />
           </svg>
-        </li>
-        <li>
-          <a href="../Cities/Cities.html">Cities</a>
-          <svg
-            id="cities-dropdown-arrow"
-            width="17"
-            height="16"
-            viewBox="0 0 17 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        </div>
+        <div class="arrow" style="width: 40px; height: 32px;">
+          <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M2.56306 6.25779C2.47898 6.17523 2.47898 6.04138 2.56306 5.95882L3.47643 5.06194C3.56051 4.97938 3.69682 4.97938 3.78089 5.06194L9.56562 10.7422C9.64969 10.8248 9.64969 10.9586 9.56562 11.0412L8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L2.56306 6.25779Z"
-              fill="#000C17"
-            />
-            <path
-              d="M8.65224 11.9381C8.56817 12.0206 8.43185 12.0206 8.34778 11.9381L7.43438 11.0412C7.35031 10.9586 7.35031 10.8248 7.43438 10.7422L13.2191 5.06192C13.3032 4.97936 13.4395 4.97936 13.5236 5.06192L14.4369 5.95881C14.521 6.04136 14.521 6.17521 14.4369 6.25777L8.65224 11.9381Z"
-              fill="#000C17"
-            />
+              d="M5.83136 10.4629C5.94079 10.5783 6.00135 10.7329 5.99998 10.8934C5.99861 11.0538 5.93543 11.2073 5.82404 11.3208C5.71266 11.4342 5.56198 11.4986 5.40447 11.5C5.24695 11.5014 5.0952 11.4397 4.9819 11.3282L0.175891 6.43265C0.0632679 6.31789 -2.43517e-07 6.16227 -2.36425e-07 6C-2.29332e-07 5.83773 0.063268 5.68211 0.175891 5.56735L4.9819 0.671779C5.0952 0.560307 5.24695 0.498629 5.40447 0.500023C5.56198 0.501417 5.71266 0.56577 5.82404 0.67923C5.93543 0.792689 5.99861 0.946178 5.99998 1.10663C6.00135 1.26708 5.94079 1.42166 5.83136 1.53707L1.45008 6L5.83136 10.4629Z"
+              fill="#A1A8AE" fill-opacity="0.3" />
           </svg>
-        </li>
-        <li>
-          <a href="../CustomCourses/CustomCourses.html">Custom Courses</a>
-        </li>
-        <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
-        <li><a class="active-link" href="./ContactUs.html">Contact Us</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-      <div class="navigation-right-side">
-        <div class="navbar-search-box">
-          <svg
-            id="search-icon-nav"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="40" height="40" rx="20" fill="#0884F7" />
+        </div>
+        <p style="font-family: Cairo; font-size: 14px; font-weight: 700; margin-inline: 35px;">1 <span
+            style="color: #A1A8AE; font-weight: 600;">/ 2</span>
+        </p>
+        <div class="arrow" style="width: 40px; height: 32px;">
+          <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M28.625 29.7715C28.7779 29.9193 28.9828 30.0012 29.1955 29.9995C29.4082 29.9977 29.6117 29.9125 29.7621 29.7621C29.9126 29.6118 29.998 29.4084 30 29.1957C30.0019 28.983 29.9202 28.778 29.7726 28.625L28.625 29.7715ZM25.1423 18.3823C25.1423 20.1752 24.4301 21.8946 23.1623 23.1623C21.8946 24.4301 20.1752 25.1423 18.3823 25.1423V26.7647C19.4831 26.7647 20.5731 26.5479 21.5901 26.1266C22.6071 25.7054 23.5312 25.0879 24.3095 24.3096C25.0879 23.5312 25.7053 22.6071 26.1266 21.5901C26.5478 20.5731 26.7647 19.4831 26.7647 18.3823H25.1423ZM18.3823 25.1423C16.5895 25.1423 14.8701 24.4301 13.6023 23.1623C12.3346 21.8946 11.6224 20.1752 11.6224 18.3823H10C10 20.6055 10.8831 22.7376 12.4551 24.3096C14.0271 25.8815 16.1592 26.7647 18.3823 26.7647V25.1423ZM11.6224 18.3823C11.6224 16.5895 12.3346 14.87 13.6023 13.6023C14.8701 12.3346 16.5895 11.6224 18.3823 11.6224V10C16.1592 10 14.0271 10.8831 12.4551 12.4551C10.8831 14.0271 10 16.1592 10 18.3823H11.6224ZM18.3823 11.6224C20.1752 11.6224 21.8946 12.3346 23.1623 13.6023C24.4301 14.87 25.1423 16.5895 25.1423 18.3823H26.7647C26.7647 17.2815 26.5478 16.1915 26.1266 15.1745C25.7053 14.1575 25.0879 13.2335 24.3095 12.4551C23.5312 11.6767 22.6071 11.0593 21.5901 10.638C20.5731 10.2168 19.4831 10 18.3823 10V11.6224ZM29.7726 28.625L24.3635 23.217L23.216 24.3636L28.625 29.7715L29.7726 28.625Z"
-              fill="white"
-            />
+              d="M0.168638 10.4629C0.0592065 10.5783 -0.00134609 10.7329 2.26834e-05 10.8934C0.00139145 11.0538 0.064572 11.2073 0.175956 11.3208C0.28734 11.4342 0.438016 11.4986 0.595531 11.5C0.753046 11.5014 0.904797 11.4397 1.0181 11.3282L5.82411 6.43265C5.93673 6.31789 6 6.16227 6 6C6 5.83773 5.93673 5.68211 5.82411 5.56735L1.0181 0.671779C0.904797 0.560307 0.753046 0.498629 0.595531 0.500023C0.438016 0.501417 0.28734 0.56577 0.175956 0.67923C0.0645715 0.792689 0.00139101 0.946178 2.22556e-05 1.10663C-0.0013465 1.26708 0.0592061 1.42166 0.168638 1.53707L4.54992 6L0.168638 10.4629Z"
+              fill="#333D45" />
           </svg>
-          <div class="search-absolute-box">
-            <input
-              placeholder="Search by course name or code"
-              type="text"
-              name="navbar-search-input"
-              id="navbar-search-input"
-            />
-            <svg
-              id="search-icon-absolute"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+        </div>
+        <div class="arrow"
+          style="border-top-right-radius: 4px; border-bottom-right-radius: 4px; width: 28px; height: 32px;">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.168639 10.4629C0.0592069 10.5783 -0.00134563 10.7329 2.31374e-05 10.8934C0.00139191 11.0538 0.0645724 11.2073 0.175957 11.3208C0.287341 11.4342 0.438017 11.4986 0.595532 11.5C0.753047 11.5014 0.904798 11.4397 1.0181 11.3282L5.82411 6.43265C5.93673 6.31789 6 6.16227 6 6C6 5.83773 5.93673 5.68211 5.82411 5.56735L1.0181 0.671779C0.904797 0.560308 0.753046 0.498629 0.595531 0.500023C0.438016 0.501417 0.28734 0.56577 0.175956 0.67923C0.064572 0.79269 0.00139147 0.946179 2.27097e-05 1.10663C-0.00134605 1.26708 0.0592065 1.42166 0.168638 1.53707L4.54992 6L0.168639 10.4629Z"
+              fill="#333D45" />
+            <path
+              d="M4.16864 10.4629C4.05921 10.5783 3.99865 10.7329 4.00002 10.8934C4.00139 11.0538 4.06457 11.2073 4.17596 11.3208C4.28734 11.4342 4.43802 11.4986 4.59553 11.5C4.75305 11.5014 4.9048 11.4397 5.0181 11.3282L9.82411 6.43265C9.93673 6.31789 10 6.16227 10 6C10 5.83773 9.93673 5.68211 9.82411 5.56735L5.0181 0.671779C4.9048 0.560308 4.75305 0.498629 4.59553 0.500023C4.43802 0.501417 4.28734 0.56577 4.17596 0.67923C4.06457 0.79269 4.00139 0.946179 4.00002 1.10663C3.99865 1.26708 4.05921 1.42166 4.16864 1.53707L8.54992 6L4.16864 10.4629Z"
+              fill="#333D45" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tabletOnly">
+      <svg class="or" viewBox="0 0 738 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M358.171 35.256C356.379 35.256 354.896 35.1493 353.723 34.936C352.571 34.7227 351.664 34.3707 351.003 33.88C350.342 33.368 349.862 32.6853 349.563 31.832C349.264 30.9573 349.072 29.88 348.987 28.6C348.902 27.32 348.859 25.784 348.859 23.992C348.859 22.2 348.902 20.664 348.987 19.384C349.072 18.104 349.264 17.0373 349.563 16.184C349.862 15.3093 350.342 14.6267 351.003 14.136C351.664 13.624 352.571 13.2613 353.723 13.048C354.896 12.8347 356.379 12.728 358.171 12.728C359.963 12.728 361.435 12.8347 362.587 13.048C363.76 13.2613 364.678 13.624 365.339 14.136C366 14.6267 366.48 15.3093 366.779 16.184C367.099 17.0373 367.302 18.104 367.387 19.384C367.472 20.664 367.515 22.2 367.515 23.992C367.515 25.784 367.472 27.32 367.387 28.6C367.302 29.88 367.099 30.9573 366.779 31.832C366.48 32.6853 366 33.368 365.339 33.88C364.678 34.3707 363.76 34.7227 362.587 34.936C361.435 35.1493 359.963 35.256 358.171 35.256ZM358.171 31.544C359.11 31.544 359.867 31.512 360.443 31.448C361.04 31.384 361.51 31.2347 361.851 31C362.192 30.7653 362.438 30.3813 362.587 29.848C362.758 29.3147 362.864 28.5787 362.907 27.64C362.95 26.7013 362.971 25.4853 362.971 23.992C362.971 22.4987 362.95 21.2827 362.907 20.344C362.864 19.4053 362.758 18.6693 362.587 18.136C362.438 17.6027 362.192 17.2187 361.851 16.984C361.51 16.7493 361.04 16.6 360.443 16.536C359.867 16.472 359.11 16.44 358.171 16.44C357.254 16.44 356.496 16.472 355.899 16.536C355.323 16.6 354.864 16.7493 354.523 16.984C354.182 17.2187 353.926 17.6027 353.755 18.136C353.606 18.6693 353.51 19.4053 353.467 20.344C353.424 21.2827 353.403 22.4987 353.403 23.992C353.403 25.4853 353.424 26.7013 353.467 27.64C353.51 28.5787 353.606 29.3147 353.755 29.848C353.926 30.3813 354.182 30.7653 354.523 31C354.864 31.2347 355.323 31.384 355.899 31.448C356.496 31.512 357.254 31.544 358.171 31.544ZM372.124 35V12.984H382.652C384.081 12.984 385.223 13.144 386.076 13.464C386.951 13.784 387.612 14.2533 388.06 14.872C388.508 15.4693 388.807 16.2053 388.956 17.08C389.127 17.9333 389.212 18.8933 389.212 19.96C389.212 20.7067 389.148 21.5067 389.02 22.36C388.892 23.2133 388.604 24.0027 388.156 24.728C387.729 25.4533 387.047 25.9867 386.108 26.328L389.628 35H384.828L381.5 26.168L382.62 26.776C382.471 26.84 382.289 26.8827 382.076 26.904C381.884 26.9253 381.66 26.936 381.404 26.936H376.668V35H372.124ZM376.668 23.256H380.828C381.724 23.256 382.428 23.2027 382.94 23.096C383.452 22.9893 383.836 22.8187 384.092 22.584C384.348 22.328 384.508 21.9973 384.572 21.592C384.636 21.1653 384.668 20.6213 384.668 19.96C384.668 19.2987 384.636 18.7547 384.572 18.328C384.508 17.9013 384.359 17.5707 384.124 17.336C383.889 17.1013 383.505 16.9307 382.972 16.824C382.46 16.7173 381.756 16.664 380.86 16.664H376.668V23.256Z"
+          fill="#333D45" />
+        <line x1="336.375" y1="24.625" x2="0.625" y2="24.625" stroke="#333D45" stroke-width="1.25"
+          stroke-linecap="round" stroke-dasharray="6 6" />
+        <line x1="737.375" y1="24.625" x2="401.625" y2="24.625" stroke="#333D45" stroke-width="1.25"
+          stroke-linecap="round" stroke-dasharray="6 6" />
+        <path
+          d="M370.125 48C370.125 47.6548 369.845 47.375 369.5 47.375C369.155 47.375 368.875 47.6548 368.875 48L370.125 48ZM369.5 80L373.108 73.75L365.892 73.75L369.5 80ZM368.875 50.6667C368.875 51.0118 369.155 51.2917 369.5 51.2917C369.845 51.2917 370.125 51.0118 370.125 50.6667L368.875 50.6667ZM370.125 56C370.125 55.6548 369.845 55.375 369.5 55.375C369.155 55.375 368.875 55.6548 368.875 56L370.125 56ZM368.875 61.3333C368.875 61.6785 369.155 61.9583 369.5 61.9583C369.845 61.9583 370.125 61.6785 370.125 61.3333L368.875 61.3333ZM370.125 66.6667C370.125 66.3215 369.845 66.0417 369.5 66.0417C369.155 66.0417 368.875 66.3215 368.875 66.6667L370.125 66.6667ZM368.875 72C368.875 72.3452 369.155 72.625 369.5 72.625C369.845 72.625 370.125 72.3452 370.125 72L368.875 72ZM370.125 77.3333C370.125 76.9882 369.845 76.7083 369.5 76.7083C369.155 76.7083 368.875 76.9882 368.875 77.3333L370.125 77.3333ZM368.875 48L368.875 50.6667L370.125 50.6667L370.125 48L368.875 48ZM368.875 56L368.875 61.3333L370.125 61.3333L370.125 56L368.875 56ZM368.875 66.6667L368.875 72L370.125 72L370.125 66.6667L368.875 66.6667Z"
+          fill="#333D45" />
+      </svg>
+    </div>
+
+    <div class="formContainer">
+      <svg class="formShape" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H12C20.8366 0 28 7.16344 28 16V28H16C7.16344 28 0 20.8366 0 12V0Z" fill="#F77B08" />
+      </svg>
+      <div class="header">
+        <p class="title">Provide us with your experience for a future cooperation</p>
+      </div>
+      <form>
+        <div class="inputContainer">
+          <svg class="formIcons" width="24" height="24" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18 18C20.7614 18 23 15.7614 23 13C23 10.2386 20.7614 8 18 8C15.2386 8 13 10.2386 13 13C13 15.7614 15.2386 18 18 18Z"
+              fill="#333D45" />
+            <path
+              d="M18.0002 20.5C12.9902 20.5 8.91016 23.86 8.91016 28C8.91016 28.28 9.13016 28.5 9.41016 28.5H26.5902C26.8702 28.5 27.0902 28.28 27.0902 28C27.0902 23.86 23.0102 20.5 18.0002 20.5Z"
+              fill="#333D45" />
+          </svg>
+          <input class="inputField" type="text" placeholder="Enter your full triple name" required />
+        </div>
+        <div class="inputContainer">
+          <svg class="formIcons" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17 3.5H7C4 3.5 2 5 2 8.5V15.5C2 19 4 20.5 7 20.5H17C20 20.5 22 19 22 15.5V8.5C22 5 20 3.5 17 3.5ZM17.47 9.59L14.34 12.09C13.68 12.62 12.84 12.88 12 12.88C11.16 12.88 10.31 12.62 9.66 12.09L6.53 9.59C6.21 9.33 6.16 8.85 6.41 8.53C6.67 8.21 7.14 8.15 7.46 8.41L10.59 10.91C11.35 11.52 12.64 11.52 13.4 10.91L16.53 8.41C16.85 8.15 17.33 8.2 17.58 8.53C17.84 8.85 17.79 9.33 17.47 9.59Z"
+              fill="#333D45" />
+          </svg>
+          <input class="inputField" type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="inputContainer">
+          <svg class="formIcons" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+              fill="#333D45" />
+            <path
+              d="M21.9716 18.3291C21.9716 18.6091 21.9216 18.8991 21.8216 19.1791C21.7916 19.2591 21.7616 19.3391 21.7216 19.4191C21.5516 19.7791 21.3316 20.1191 21.0416 20.4391C20.5516 20.9791 20.0116 21.3691 19.4016 21.6191C19.3916 21.6191 19.3816 21.6291 19.3716 21.6291C18.7816 21.8691 18.1416 21.9991 17.4516 21.9991C16.4316 21.9991 15.3416 21.7591 14.1916 21.2691C13.0416 20.7791 11.8916 20.1191 10.7516 19.2891C10.3616 18.9991 9.97156 18.7091 9.60156 18.3991L12.8716 15.1291C13.1516 15.3391 13.4016 15.4991 13.6116 15.6091C13.6616 15.6291 13.7216 15.6591 13.7916 15.6891C13.8716 15.7191 13.9516 15.7291 14.0416 15.7291C14.2116 15.7291 14.3416 15.6691 14.4516 15.5591L15.2116 14.8091C15.4616 14.5591 15.7016 14.3691 15.9316 14.2491C16.1616 14.1091 16.3916 14.0391 16.6416 14.0391C16.8316 14.0391 17.0316 14.0791 17.2516 14.1691C17.4716 14.2591 17.7016 14.3891 17.9516 14.5591L21.2616 16.9091C21.5216 17.0891 21.7016 17.2991 21.8116 17.5491C21.9116 17.7991 21.9716 18.0491 21.9716 18.3291Z"
+              fill="#333D45" />
+          </svg>
+          <input class="inputField" type="tel" placeholder="Enter your mobile number" required />
+        </div>
+        <div class="inputContainer">
+          <svg class="formIcons" width="30" height="30" viewBox="0 0 36 36" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1291_58554)">
               <path
-                d="M18.625 19.7715C18.7779 19.9193 18.9828 20.0012 19.1955 19.9995C19.4082 19.9977 19.6117 19.9125 19.7621 19.7621C19.9126 19.6118 19.998 19.4084 20 19.1957C20.0019 18.983 19.9202 18.778 19.7726 18.625L18.625 19.7715ZM15.1423 8.38233C15.1423 10.1752 14.4301 11.8946 13.1623 13.1623C11.8946 14.4301 10.1752 15.1423 8.38233 15.1423V16.7647C9.48311 16.7647 10.5731 16.5479 11.5901 16.1266C12.6071 15.7054 13.5312 15.0879 14.3095 14.3096C15.0879 13.5312 15.7053 12.6071 16.1266 11.5901C16.5478 10.5731 16.7647 9.48311 16.7647 8.38233H15.1423ZM8.38233 15.1423C6.58948 15.1423 4.87006 14.4301 3.60233 13.1623C2.33459 11.8946 1.62239 10.1752 1.62239 8.38233H0C0 10.6055 0.883137 12.7376 2.45513 14.3096C4.02712 15.8815 6.15919 16.7647 8.38233 16.7647V15.1423ZM1.62239 8.38233C1.62239 6.58948 2.33459 4.87004 3.60233 3.60231C4.87006 2.33457 6.58948 1.62239 8.38233 1.62239V0C6.15919 0 4.02712 0.883108 2.45513 2.4551C0.883137 4.02709 0 6.15919 0 8.38233H1.62239ZM8.38233 1.62239C10.1752 1.62239 11.8946 2.33457 13.1623 3.60231C14.4301 4.87004 15.1423 6.58948 15.1423 8.38233H16.7647C16.7647 7.28154 16.5478 6.19151 16.1266 5.17452C15.7053 4.15753 15.0879 3.23347 14.3095 2.4551C13.5312 1.67673 12.6071 1.05929 11.5901 0.638035C10.5731 0.216784 9.48311 0 8.38233 0V1.62239ZM19.7726 18.625L14.3635 13.217L13.216 14.3636L18.625 19.7715L19.7726 18.625Z"
-                fill="#0884F7"
-              />
+                d="M13.6525 26.9098C13.6225 26.9098 13.5825 26.9298 13.5525 26.9298C11.6125 25.9698 10.0325 24.3798 9.0625 22.4398C9.0625 22.4098 9.0825 22.3698 9.0825 22.3398C10.3025 22.6998 11.5625 22.9698 12.8125 23.1798C13.0325 24.4398 13.2925 25.6898 13.6525 26.9098Z"
+                fill="#333D45" />
+              <path
+                d="M26.9391 22.4498C25.9491 24.4398 24.2991 26.0498 22.2891 27.0198C22.6691 25.7498 22.9891 24.4698 23.1991 23.1798C24.4591 22.9698 25.6991 22.6998 26.9191 22.3398C26.9091 22.3798 26.9391 22.4198 26.9391 22.4498Z"
+                fill="#333D45" />
+              <path
+                d="M27.0191 13.7105C25.7591 13.3305 24.4891 13.0205 23.1991 12.8005C22.9891 11.5105 22.6791 10.2305 22.2891 8.98047C24.3591 9.97047 26.0291 11.6405 27.0191 13.7105Z"
+                fill="#333D45" />
+              <path
+                d="M13.6505 9.08859C13.2905 10.3086 13.0305 11.5486 12.8205 12.8086C11.5305 13.0086 10.2505 13.3286 8.98047 13.7086C9.95047 11.6986 11.5605 10.0486 13.5505 9.05859C13.5805 9.05859 13.6205 9.08859 13.6505 9.08859Z"
+                fill="#333D45" />
+              <path
+                d="M21.4917 12.59C19.1717 12.33 16.8317 12.33 14.5117 12.59C14.7617 11.22 15.0817 9.85 15.5317 8.53C15.5517 8.45 15.5417 8.39 15.5517 8.31C16.3417 8.12 17.1517 8 18.0017 8C18.8417 8 19.6617 8.12 20.4417 8.31C20.4517 8.39 20.4517 8.45 20.4717 8.53C20.9217 9.86 21.2417 11.22 21.4917 12.59Z"
+                fill="#333D45" />
+              <path
+                d="M12.59 21.4917C11.21 21.2417 9.85 20.9217 8.53 20.4717C8.45 20.4517 8.39 20.4617 8.31 20.4517C8.12 19.6617 8 18.8517 8 18.0017C8 17.1617 8.12 16.3417 8.31 15.5617C8.39 15.5517 8.45 15.5517 8.53 15.5317C9.86 15.0917 11.21 14.7617 12.59 14.5117C12.34 16.8317 12.34 19.1717 12.59 21.4917Z"
+                fill="#333D45" />
+              <path
+                d="M28.0002 18.0017C28.0002 18.8517 27.8802 19.6617 27.6902 20.4517C27.6102 20.4617 27.5502 20.4517 27.4702 20.4717C26.1402 20.9117 24.7802 21.2417 23.4102 21.4917C23.6702 19.1717 23.6702 16.8317 23.4102 14.5117C24.7802 14.7617 26.1502 15.0817 27.4702 15.5317C27.5502 15.5517 27.6102 15.5617 27.6902 15.5617C27.8802 16.3517 28.0002 17.1617 28.0002 18.0017Z"
+                fill="#333D45" />
+              <path
+                d="M21.4917 23.4102C21.2417 24.7902 20.9217 26.1502 20.4717 27.4702C20.4517 27.5502 20.4517 27.6102 20.4417 27.6902C19.6617 27.8802 18.8417 28.0002 18.0017 28.0002C17.1517 28.0002 16.3417 27.8802 15.5517 27.6902C15.5417 27.6102 15.5517 27.5502 15.5317 27.4702C15.0917 26.1402 14.7617 24.7902 14.5117 23.4102C15.6717 23.5402 16.8317 23.6302 18.0017 23.6302C19.1717 23.6302 20.3417 23.5402 21.4917 23.4102Z"
+                fill="#333D45" />
+              <path
+                d="M21.7633 21.7633C19.2622 22.0789 16.7378 22.0789 14.2367 21.7633C13.9211 19.2622 13.9211 16.7378 14.2367 14.2367C16.7378 13.9211 19.2622 13.9211 21.7633 14.2367C22.0789 16.7378 22.0789 19.2622 21.7633 21.7633Z"
+                fill="#333D45" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1291_58554">
+                <rect width="24" height="24" fill="white" transform="translate(6 6)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <input class="inputField" type="text" placeholder="Enter country + city names" required />
+        </div>
+
+        <div class="uploadContainer">
+          <div class="inputBox">
+            <svg class="formIconsForUploads" width="24" height="24" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.976311 0.976311C0 1.95262 0 3.52397 0 6.66667V13.3333C0 16.476 0 18.0474 0.976311 19.0237C1.95262 20 3.52397 20 6.66667 20H13.3333C16.476 20 18.0474 20 19.0237 19.0237C20 18.0474 20 16.476 20 13.3333V6.66667C20 3.52397 20 1.95262 19.0237 0.976311C18.0474 0 16.476 0 13.3333 0H6.66667C3.52397 0 1.95262 0 0.976311 0.976311ZM6.10068 15H7.97039C8.07991 14.9999 8.18835 14.9783 8.28951 14.9364C8.39068 14.8944 8.48259 14.833 8.55999 14.7555C8.6374 14.678 8.69878 14.5861 8.74064 14.4849C8.7825 14.3837 8.80402 14.2753 8.80397 14.1658C8.80391 14.0563 8.78229 13.9479 8.74032 13.8468C8.69836 13.7457 8.63688 13.6538 8.5594 13.5764C8.48192 13.499 8.38995 13.4377 8.28874 13.3958C8.18754 13.354 8.07908 13.3324 7.96956 13.3325H6.09985C5.91885 13.3323 5.74533 13.2603 5.61735 13.1324C5.48937 13.0044 5.41737 12.8309 5.41715 12.65V7.34917C5.41737 7.16822 5.48937 6.99476 5.61735 6.86681C5.74533 6.73886 5.91885 6.66689 6.09985 6.66667H7.96956C8.19064 6.66667 8.40266 6.57887 8.55898 6.42259C8.71531 6.26631 8.80313 6.05435 8.80313 5.83333C8.80313 5.61232 8.71531 5.40036 8.55898 5.24408C8.40266 5.0878 8.19064 5 7.96956 5H6.09985C5.47676 5.00088 4.87945 5.24878 4.43893 5.68932C3.99842 6.12987 3.75066 6.72709 3.75 7.35V12.6508C3.75088 13.2737 3.99885 13.8709 4.43952 14.3113C4.8802 14.7517 5.47759 14.9993 6.10068 15ZM12.6793 15H12.7109C12.8868 15.0001 13.0581 14.9445 13.2004 14.8412C13.3427 14.7379 13.4486 14.5922 13.5028 14.425L16.212 6.09167C16.2775 5.88224 16.2578 5.65541 16.1571 5.46042C16.0564 5.26544 15.8828 5.11804 15.674 5.05023C15.4652 4.98242 15.2381 4.99966 15.042 5.09823C14.8459 5.19679 14.6966 5.36871 14.6265 5.57667L12.8251 11.1183L11.4881 5.63667C11.4622 5.53035 11.4156 5.43017 11.351 5.34185C11.2864 5.25354 11.205 5.1788 11.1115 5.12193C11.018 5.06505 10.9142 5.02715 10.806 5.01037C10.6979 4.9936 10.5875 4.99829 10.4811 5.02417C10.3748 5.05005 10.2746 5.09662 10.1862 5.16121C10.0979 5.22581 10.0231 5.30717 9.96623 5.40065C9.90934 5.49412 9.87142 5.59789 9.85464 5.70602C9.83786 5.81414 9.84255 5.92452 9.86844 6.03083L11.9007 14.3642C11.9436 14.5404 12.0428 14.6979 12.1833 14.8126C12.3238 14.9274 12.4979 14.9932 12.6793 15Z"
+                fill="#333D45" />
+            </svg>
+            <input class="inputField" style="width: 82%;" type="text" placeholder="Upload your CV" required />
+          </div>
+          <div class="uploadBox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 20H18" stroke="#333D45" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M12 4V16M12 4C13.054 4 16 8 16 8M12 4C10.9459 4 8 8 8 8" stroke="#333D45" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
         </div>
-        <svg
-          width="64"
-          height="48"
-          viewBox="0 0 64 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_d_527_3846)">
-            <rect x="4" y="3" width="56" height="40" rx="20" fill="white" />
-          </g>
-          <g filter="url(#filter1_i_527_3846)">
-            <rect x="6" y="4" width="52" height="38" rx="19" fill="white" />
-          </g>
-          <path
-            d="M21.4536 29L25.3896 17.992H27.7576L31.6936 29H29.8216L28.8616 26.28H24.2216L23.2776 29H21.4536ZM24.7336 24.744H28.3336L26.5736 19.736H26.4936L24.7336 24.744ZM33.5111 29V17.992H38.6471C39.3404 17.992 39.9004 18.072 40.3271 18.232C40.7537 18.392 41.0737 18.6267 41.2871 18.936C41.5004 19.2347 41.6444 19.5973 41.7191 20.024C41.7937 20.44 41.8311 20.8987 41.8311 21.4C41.8311 21.7627 41.7937 22.1627 41.7191 22.6C41.6551 23.0267 41.5057 23.4213 41.2711 23.784C41.0471 24.136 40.6897 24.392 40.1991 24.552L42.0071 29H40.0871L38.3271 24.504L38.7911 24.744C38.7164 24.776 38.6257 24.7973 38.5191 24.808C38.4231 24.808 38.3057 24.808 38.1671 24.808H35.3191V29H33.5111ZM35.3191 23.272H37.8791C38.3804 23.272 38.7751 23.24 39.0631 23.176C39.3511 23.1013 39.5644 22.9893 39.7031 22.84C39.8417 22.6907 39.9271 22.4987 39.9591 22.264C40.0017 22.0293 40.0231 21.7413 40.0231 21.4C40.0231 21.048 40.0017 20.7547 39.9591 20.52C39.9271 20.2747 39.8471 20.0827 39.7191 19.944C39.5911 19.7947 39.3831 19.688 39.0951 19.624C38.8177 19.56 38.4337 19.528 37.9431 19.528H35.3191V23.272Z"
-            fill="#000C17"
-          />
-          <defs>
-            <filter
-              id="filter0_d_527_3846"
-              x="0"
-              y="0"
-              width="64"
-              height="48"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dy="1" />
-              <feGaussianBlur stdDeviation="2" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0.0745098 0 0 0 0 0.141176 0 0 0 0.18 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow_527_3846"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow_527_3846"
-                result="shape"
-              />
-            </filter>
-            <filter
-              id="filter1_i_527_3846"
-              x="6"
-              y="4"
-              width="52"
-              height="41"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                result="shape"
-              />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dy="3" />
-              <feGaussianBlur stdDeviation="2.5" />
-              <feComposite
-                in2="hardAlpha"
-                operator="arithmetic"
-                k2="-1"
-                k3="1"
-              />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="shape"
-                result="effect1_innerShadow_527_3846"
-              />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-      <div id="cities-dropdown">
-        <div class="city-row">
-          <img src="assets/Ireland.png" alt="" />
-          <p>Jordan</p>
+
+        <div class="uploadContainer">
+          <div class="inputBox">
+            <svg class="formIconsForUploads" width="24" height="24" viewBox="0 0 16 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.354024 4.52735H4.46169V0.359627C4.43628 0.382829 4.4113 0.406031 4.38716 0.430092L0.423471 4.45302C0.399333 4.47751 0.375621 4.50329 0.354024 4.52735ZM0 5.49065V20.531C0 21.3396 0.649606 22 1.44658 22H14.5534C15.3504 22 16 21.34 16 20.531V1.46902C16 0.660391 15.3504 0 14.5534 0H5.41111C5.32472 0 5.24172 0.00730426 5.16126 0.0206238V4.88268C5.16126 5.07861 5.00416 5.23715 4.81063 5.23715H0.0186328C0.0059287 5.31922 0 5.40429 0 5.49065ZM9.43112 6.66621C9.43112 7.46624 8.78787 8.11933 8.00021 8.11933C7.21171 8.11933 6.56803 7.46667 6.56803 6.66621C6.56803 5.86704 7.21129 5.21438 8.00021 5.21438C8.78787 5.21438 9.43112 5.86704 9.43112 6.66621ZM10.5165 12.4989C10.5165 12.6475 10.3975 12.7678 10.2514 12.7678H5.74862C5.6021 12.7678 5.48352 12.6471 5.48352 12.4989V10.9521C5.48352 9.66611 6.43422 8.59411 7.65762 8.42224L7.42217 10.131C7.41116 10.2101 7.43911 10.2831 7.50009 10.3342L7.86258 10.6316C7.90122 10.6641 7.94982 10.6818 8 10.6818C8.05018 10.6818 8.09878 10.6641 8.13742 10.6316L8.49991 10.3342C8.56131 10.2831 8.58884 10.2101 8.57783 10.131L8.34238 8.42224C9.56663 8.59411 10.5165 9.66568 10.5165 10.9521V12.4989ZM3.99333 18.5266C3.99333 18.3307 4.14959 18.1721 4.3427 18.1721H11.6569C11.85 18.1721 12.0075 18.3303 12.0075 18.5266C12.0075 18.7225 11.8504 18.8824 11.6569 18.8824H4.34312C4.14959 18.8819 3.99333 18.7225 3.99333 18.5266ZM2.14022 16.6666C2.14022 16.4707 2.29648 16.3121 2.48959 16.3121H13.51C13.7031 16.3121 13.8594 16.4707 13.8594 16.6666C13.8594 16.8625 13.7035 17.0224 13.51 17.0224H2.48916C2.29606 17.0224 2.14022 16.863 2.14022 16.6666ZM2.14022 14.807C2.14022 14.6111 2.29648 14.4526 2.48959 14.4526H13.51C13.7031 14.4526 13.8594 14.6111 13.8594 14.807C13.8594 15.0029 13.7035 15.1628 13.51 15.1628H2.48916C2.29606 15.1624 2.14022 15.0029 2.14022 14.807Z"
+                fill="#333D45" />
+            </svg>
+            <input class="inputField" style="width: 67%;" type="text" placeholder="Upload your cover letter" />
+            <p class="optional">Optional</p>
+          </div>
+          <div class="uploadBox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 20H18" stroke="#333D45" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M12 4V16M12 4C13.054 4 16 8 16 8M12 4C10.9459 4 8 8 8 8" stroke="#333D45" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
         </div>
-        <div class="city-row">
-          <img src="assets/moscow.png" alt="" />
-          <p>Moscow</p>
+        <div class="uploadContainer uploadContainer3">
+          <div class="inputBox inputBox3">
+            <svg class="formIconsForUploads formIconsForUploads3" width="20" height="23" viewBox="0 0 20 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.9999 1.00004C19.9999 0.447755 19.5522 4.39163e-05 18.9999 4.26758e-05L1 2.24611e-06C0.447716 1.00562e-06 0 0.447717 0 1V20.0833C0 20.6356 0.447715 21.0833 1 21.0833H1.93538V23L2.90311 22.3611L3.87084 23V21.0833H19C19.5523 21.0833 20 20.6356 20 20.0833L19.9999 1.00004ZM12.6166 7.0318H15.067V7.7147H14.2394V9.88412H13.4483V7.7147H12.6166V7.0318ZM10.0648 7.0318H11.3874C11.528 7.0318 11.6578 7.0606 11.7768 7.11819C11.8959 7.17582 11.998 7.25075 12.0832 7.34315C12.1683 7.43556 12.2352 7.54149 12.2839 7.66057C12.3327 7.7798 12.357 7.89956 12.357 8.02013C12.357 8.18625 12.3205 8.34091 12.2475 8.48417C12.1744 8.62747 12.073 8.74463 11.9431 8.83568L12.5517 9.88421H11.6592L11.152 9.00836H10.8559V9.88416H10.0648V7.0318ZM6.28802 11.2352H5.10345V11.7092H6.06901V12.344H5.10345V13.4046H4.31236V10.5522H6.28806L6.28802 11.2352ZM6.26166 8.70514C6.17915 8.79755 6.07917 8.87126 5.96145 8.92607C5.84382 8.98096 5.71467 9.00841 5.57405 9.00841H5.10345V9.88421H4.31236V7.0318H5.55373C5.69435 7.0318 5.82414 7.0606 5.94321 7.11819C6.0622 7.17582 6.16431 7.25075 6.24946 7.34315C6.33461 7.43556 6.40161 7.54149 6.45024 7.66057C6.49896 7.7798 6.52327 7.89956 6.52327 8.02013C6.52333 8.14581 6.49997 8.27043 6.45437 8.38772C6.40828 8.50686 6.34409 8.61269 6.26166 8.70514ZM9.27786 12.5307C9.20483 12.7035 9.1034 12.8562 8.97361 12.9888C8.84383 13.1213 8.68896 13.2277 8.50909 13.3082C8.32923 13.3885 8.13244 13.4286 7.91892 13.4286C7.69981 13.4286 7.50099 13.3872 7.32253 13.3041C7.14402 13.2211 6.99115 13.112 6.86413 12.9767C6.73698 12.8415 6.63827 12.6868 6.568 12.5126C6.49822 12.3416 6.46242 12.1588 6.46253 11.9743C6.46253 11.7868 6.499 11.606 6.57204 11.432C6.64507 11.258 6.74714 11.1047 6.87838 10.972C7.00948 10.8395 7.16498 10.7337 7.34485 10.6546C7.52471 10.5756 7.7215 10.5361 7.93511 10.5361C8.15422 10.5361 8.353 10.5776 8.53146 10.6606C8.71005 10.7437 8.86274 10.8534 8.9899 10.99C9.11647 11.1258 9.21624 11.2839 9.28403 11.4561C9.35294 11.6302 9.38751 11.8083 9.38751 11.9904C9.38783 12.1759 9.35054 12.3597 9.27786 12.5307ZM9.55775 9.01029C9.48472 9.18306 9.38329 9.33575 9.2535 9.46832C9.12367 9.60088 8.96885 9.7073 8.78898 9.78771C8.60912 9.86803 8.41233 9.90819 8.19872 9.90819C7.97971 9.90819 7.78083 9.86669 7.60233 9.78367C7.42382 9.70065 7.27095 9.59154 7.14393 9.45623C7.01678 9.32106 6.91807 9.16635 6.8478 8.99219C6.77802 8.82113 6.74222 8.63834 6.74233 8.45385C6.74211 8.26767 6.77935 8.08331 6.85189 7.91155C6.92492 7.73743 7.02699 7.58412 7.15822 7.45155C7.28932 7.31899 7.44483 7.21324 7.62469 7.13413C7.80456 7.05516 8.00134 7.01567 8.21496 7.01567C8.43397 7.01567 8.63284 7.05718 8.8113 7.1402C8.9899 7.22326 9.14259 7.333 9.26974 7.46961C9.39632 7.6054 9.49608 7.76346 9.56388 7.93563C9.63278 8.10979 9.66735 8.28786 9.66735 8.46993C9.66772 8.6555 9.63045 8.83926 9.55775 9.01029ZM11.8824 13.4046H9.78502V10.5523H10.5761V12.7217H11.8824V13.4046ZM13.0102 13.4046H12.2191V10.5523H13.0102V13.4046ZM16.2232 12.5308C16.1501 12.7035 16.0487 12.8562 15.9189 12.9888C15.7891 13.1214 15.6342 13.2278 15.4544 13.3082C15.2745 13.3885 15.0777 13.4287 14.8642 13.4287C14.6452 13.4287 14.4463 13.3872 14.2678 13.3042C14.0893 13.2212 13.9364 13.112 13.8094 12.9767C13.6823 12.8415 13.5836 12.6868 13.5133 12.5127C13.4435 12.3416 13.4077 12.1588 13.4078 11.9743C13.4078 11.7869 13.4443 11.6061 13.5173 11.432C13.5904 11.2579 13.6924 11.1046 13.8237 10.972C13.9548 10.8395 14.1103 10.7337 14.2901 10.6546C14.47 10.5756 14.6668 10.5361 14.8804 10.5361C15.0995 10.5361 15.2983 10.5776 15.4767 10.6606C15.6553 10.7437 15.808 10.8535 15.9353 10.9901C16.0618 11.1259 16.1616 11.2839 16.2294 11.4561C16.2983 11.6302 16.3328 11.8083 16.3328 11.9904C16.3331 12.176 16.2958 12.3597 16.2232 12.5308Z"
+                fill="#333D45" />
+            </svg>
+            <input class="inputField inputField3" type="text" placeholder="Leave any portfolio link" />
+            <p class="optional optional3">Optional</p>
+          </div>
+          <div class="uploadBox uploadBox3">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 1V17M17 9H1" stroke="#333D45" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
         </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
+
+        <div class="msgBox">
+          <p class="msg">Leave us a message to quickly promote yourself and your experience:</p>
+          <textarea placeholder="Enter your message here" style="font-size: 14px;"></textarea>
         </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
+
+        <div style="display: block; flex: 1;">
+          <div class="checkBoxes">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="checkbox1">
+              <span class="checkmark"></span>
+              I agree to <span style="text-decoration: underline;">the property rights</span> & <span
+                style="text-decoration: underline;">terms of use.</span>
+            </label>
+            <br>
+            <label class="custom-checkbox">
+              <input type="checkbox" id="checkbox2">
+              <span class="checkmark"></span>
+              I agree to I agree to use data sent by me.
+            </label>
+          </div>
+
+          <button type="submit" id="sendButton" disabled>
+            <p>Send</p>
+            <svg style="position: absolute; right: 20px" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.12661 0.224632L16.7831 7.01749C17.1482 7.19919 17.4558 7.4814 17.6709 7.83195C17.886 8.18251 18.0001 8.58736 18 9.00049C17.9999 9.41363 17.8858 9.81841 17.6706 10.1689C17.4554 10.5193 17.1477 10.8013 16.7826 10.9829L3.1276 17.7748C2.73462 17.9706 2.29262 18.041 1.85952 17.977C1.42643 17.913 1.02246 17.7175 0.700547 17.4162C0.37863 17.1148 0.153757 16.7216 0.0554703 16.2881C-0.042816 15.8547 -0.00994244 15.4011 0.149736 14.987L2.30017 9.40163C2.39957 9.14322 2.39953 8.85622 2.3001 8.59779L0.149817 3.01135C-0.00953057 2.59733 -0.0421793 2.14406 0.0561512 1.7109C0.154482 1.27774 0.379213 0.884851 0.700911 0.583691C1.02261 0.282532 1.42628 0.0871132 1.85909 0.0230423C2.29191 -0.0410285 2.7337 0.0292575 3.12661 0.224632Z"
+                fill="white" />
+            </svg>
+          </button>
         </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-        <div class="city-row">
-          <img src="assets/Lebanon.png" alt="" />
-          <p>Lebanon</p>
-        </div>
-      </div>
-      <div id="categories-dropdown">
-        <div class="categories-row">
-          <p>Data management and analytics</p>
-        </div>
-        <div class="categories-row">
-          <p>Mechanical & Electrical Engineering</p>
-        </div>
-        <div class="categories-row">
-          <p>Strategy Management</p>
-        </div>
-        <div class="categories-row">
-          <p>Leadership</p>
-        </div>
-        <div class="categories-row">
-          <p>HRM</p>
-        </div>
-        <div class="categories-row">
-          <p>Oil and Gas</p>
-        </div>
-        <div class="categories-row">
-          <p>Health, Safety and Environment</p>
-        </div>
-        <div class="categories-row">
-          <p>Business Intelligence</p>
-        </div>
-        <div class="categories-row">
-          <p>Data management and analytics</p>
-        </div>
-        <div class="categories-row">
-          <p>Mechanical & Electrical Engineering</p>
-        </div>
-      </div>
+
+      </form>
+      <svg class="circle svg1" width="37" height="37" viewBox="0 0 37 37" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x="33" y="56" width="52" height="52" rx="26" transform="rotate(180 33 56)" stroke="#F77B08"
+          stroke-opacity="0.8" stroke-width="8" />
+      </svg>
+      <svg class="circle svg2" width="54" height="54" viewBox="0 0 54 54" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="90" width="86" height="86" rx="43" transform="rotate(180 50 90)" stroke="#F77B08"
+          stroke-opacity="0.8" stroke-width="8" />
+      </svg>
     </div>
 
-    <!---------------------------------------------  hero-section -------------------------------------------------->
-    <div class="hero-section">
-      <img src="Assets/sectionImage.png" alt="" />
-      <div class="hero-inner">
-        <p>Join our team</p>
-        <p>
-          Here are we show our
-          <span style="font-weight: bold">European Quality</span> success team,
-          not only just a professional working staff or a university professors
-          and doctors and PHD holders, they are the crew of our organization,
-          and the success partners, with over than
-          <span style="color: #e47107; font-weight: bolder">34</span>
-          experienced tutor we can provide a distinguish training services.
-        </p>
-      </div>
-      <div class="members">
-        <div class="member">
-          <img src="Assets/member1.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member2.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member3.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member4.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member5.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member6.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member7.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member8.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member9.png" alt="" />
-        </div>
-        <div class="member">
-          <img src="Assets/member10.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <script src="Careers.js"></script>
-  </body>
+  </div>
+
+  <script src="Careers.js"></script>
+</body>
+
 </html>

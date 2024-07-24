@@ -1,3 +1,4 @@
+/** @format */
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -435,5 +436,505 @@ P {
   .member img {
     width: 45px !important;
     height: 45px !important;
+  }
+}
+.sectionHeader {
+  margin-block: 90px;
+  width: 60%;
+  margin-inline: auto;
+}
+.sectionHeader .title1 {
+  font-family: saira-medium;
+  font-size: 24px;
+  text-align: center;
+  color: #000c17;
+}
+@media (max-width: 767px) {
+  .sectionHeader .title1 {
+    font-size: 20px;
+  }
+}
+.sectionHeader .title2 {
+  font-family: "Cairo";
+  text-align: center;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .sectionHeader .title2 {
+    font-size: 14px;
+  }
+}
+
+.career {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .career {
+    display: block;
+  }
+}
+.career .opportunities {
+  width: 55%;
+}
+@media (max-width: 1024px) {
+  .career .opportunities {
+    width: 100%;
+  }
+}
+.career .opportunities #availableOpportunity {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Cairo";
+  color: #333d45;
+}
+@media (max-width: 767px) {
+  .career .opportunities #availableOpportunity {
+    font-size: 18px;
+  }
+}
+.career .opportunities .positionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .career .opportunities .positionContainer {
+    display: block;
+  }
+}
+.career .opportunities .position {
+  border: 0.5px solid #a1a8ae;
+  border-radius: 8px;
+  width: 49%;
+  margin-bottom: 2%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 116px;
+}
+@media (max-width: 767px) {
+  .career .opportunities .position {
+    width: 100%;
+    margin-inline: auto;
+    height: 110px;
+  }
+}
+.career .opportunities .position .title {
+  font-family: saira-medium;
+  color: #333d45;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .career .opportunities .position .title {
+    font-size: 14px;
+  }
+}
+.career .opportunities .position .subTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.career .opportunities .position .subTitleText {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Cairo";
+  color: #a1a8ae;
+}
+.career .opportunities .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.career .opportunities .pagination .arrow {
+  background-color: #f3f5f7;
+  margin-inline: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.career .tabletOnly {
+  display: none;
+  margin-block: 20px;
+}
+@media (max-width: 1024px) {
+  .career .tabletOnly {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .career .tabletOnly {
+    display: block;
+  }
+}
+.career .tabletOnly .or {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .career .tabletOnly .or {
+    height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .career .tabletOnly .or {
+    height: 60px;
+  }
+}
+.career .formContainer {
+  width: 40%;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  margin-bottom: 100px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .career .formContainer {
+    width: 100%;
+  }
+}
+.career .formContainer .formShape {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+@media (max-width: 767px) {
+  .career .formContainer .formShape {
+    display: none;
+  }
+}
+.career .formContainer .header {
+  display: flex;
+  border-bottom: 1px solid #ecf0f3;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.career .formContainer .title {
+  color: #000c17;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Cairo";
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .career .formContainer .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .career .formContainer form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .career .formContainer form {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+.career .formContainer form .inputContainer {
+  background-color: #f9fafa;
+  width: 85%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .career .formContainer form .inputContainer {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .career .formContainer form .inputContainer {
+    width: 85%;
+    height: 44px;
+  }
+}
+.career .formContainer form .formIcons {
+  width: 8%;
+}
+.career .formContainer form .inputField {
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #a1a8ae;
+  width: 82%;
+  padding-left: 5%;
+  padding-right: 2%;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .inputField {
+    font-size: 12px;
+  }
+}
+.career .formContainer form .inputField:focus {
+  outline: none;
+}
+.career .formContainer form .inputField::-moz-placeholder {
+  color: #a1a8ae;
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+.career .formContainer form .inputField::placeholder {
+  color: #a1a8ae;
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .inputField::-moz-placeholder {
+    font-size: 12px;
+  }
+  .career .formContainer form .inputField::placeholder {
+    font-size: 12px;
+  }
+}
+.career .formContainer form .uploadContainer {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 35px;
+}
+@media (max-width: 1024px) {
+  .career .formContainer form .uploadContainer {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .career .formContainer form .uploadContainer {
+    width: 85%;
+    height: 44px;
+  }
+}
+.career .formContainer form .inputBox {
+  background-color: #f9fafa;
+  width: 85%;
+  height: 52px;
+  border-radius: 10px 2px 2px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .inputBox {
+    height: 44px;
+  }
+}
+.career .formContainer form .formIconsForUploads {
+  width: 18%;
+}
+.career .formContainer form .optional {
+  width: 15%;
+  color: #a1a8ae;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Cairo";
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .optional {
+    font-size: 8px;
+  }
+}
+.career .formContainer form .uploadBox {
+  width: 13%;
+  height: 52px;
+  background-color: #f9fafa;
+  border-radius: 2px 8px 8px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .uploadBox {
+    height: 44px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form .uploadContainer3 {
+    width: 95%;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form .inputBox3 {
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form .formIconsForUploads3 {
+    width: 9%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form .inputField3 {
+    width: 100%;
+    padding-inline: 2%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form .optional3 {
+    width: 8%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form .uploadBox3 {
+    width: 6%;
+  }
+}
+.career .formContainer form .msgBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 10%;
+}
+.career .formContainer form .msg {
+  font-weight: 500;
+  color: #333d45;
+  font-family: "Cairo";
+  width: 85%;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .msg {
+    font-size: 14px;
+  }
+}
+.career .formContainer form textarea {
+  width: 85%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  background-color: #f9fafa;
+  margin-top: 20px;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .career .formContainer form textarea {
+    font-size: 12px;
+  }
+}
+.career .formContainer form textarea:focus {
+  outline: none;
+}
+.career .formContainer form .checkBoxes {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+.career .formContainer form .custom-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Cairo";
+  font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  .career .formContainer form .custom-checkbox {
+    font-size: 12px;
+  }
+}
+.career .formContainer form .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.career .formContainer form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ecf0f3;
+  border-radius: 4px;
+}
+.career .formContainer form .custom-checkbox input:checked ~ .checkmark {
+  background-color: #0884f7;
+}
+.career .formContainer form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.career .formContainer form .custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+.career .formContainer form .custom-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.career .formContainer form #sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-inline: auto;
+  margin-bottom: 25px;
+  position: relative;
+  width: 50%;
+  padding: 10px 20px;
+  background-color: #0884f7;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .career .formContainer form #sendButton {
+    width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .career .formContainer form #sendButton {
+    width: 80%;
+  }
+}
+.career .formContainer form button:enabled {
+  cursor: pointer;
+}
+.career .formContainer .circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .career .formContainer .circle {
+    display: none;
   }
 }/*# sourceMappingURL=Careers.css.map */

@@ -153,19 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const checkbox1 = document.getElementById('checkbox1');
-    const checkbox2 = document.getElementById('checkbox2');
-    const submitButton = document.getElementById('sendButton');
-  
-    function checkCheckboxes() {
-      if (checkbox1.checked && checkbox2.checked) {
-        submitButton.disabled = false;
-      } else {
-        submitButton.disabled = true;
-      }
-    }
-  
-    checkbox1.addEventListener('change', checkCheckboxes);
-    checkbox2.addEventListener('change', checkCheckboxes);
-  });
+
+
+

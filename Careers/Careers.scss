@@ -1,3 +1,5 @@
+/** @format */
+
 @use "../styles/layout/variables.scss" as *;
 
 P {
@@ -144,7 +146,6 @@ P {
       padding: 0.5rem 10px;
       padding-left: 10px;
       cursor: pointer;
-      
     }
   }
   .navigation-left-side {
@@ -305,51 +306,523 @@ P {
       font-size: 45px;
     }
     p:nth-of-type(2) {
-        font-size: 18px;
-        font-family:"Cairo";
-        margin-top: 2rem;
-        width: 100%;
+      font-size: 18px;
+      font-family: "Cairo";
+      margin-top: 2rem;
+      width: 100%;
     }
 
     @include mobileXS {
       font-size: 30px;
     }
   }
-  .members{
+  .members {
     display: flex;
     position: absolute;
     bottom: 1rem;
     width: 100%;
     justify-content: space-evenly;
     z-index: 15;
-    .member{
-        img{
-            width: 100px;
-            height: 100px;
-            border-radius: 16px;
-        }
+    .member {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 16px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 1180px) {
-    .member:nth-child(n+8) {
-      display: none;
-    }
+  .member:nth-child(n + 8) {
+    display: none;
   }
+}
 @media screen and (max-width: 1024px) {
-    .member:nth-child(n+6) {
-      display: none;
-    }
+  .member:nth-child(n + 6) {
+    display: none;
   }
+}
 @media screen and (max-width: 767px) {
-    .member:nth-child(n+6) {
-      display: none;
-    }
-    .member{
-        img{
-            width: 45px !important;
-            height: 45px !important;
-        }
+  .member:nth-child(n + 6) {
+    display: none;
+  }
+  .member {
+    img {
+      width: 45px !important;
+      height: 45px !important;
     }
   }
+}
+
+.sectionHeader {
+  margin-block: 90px;
+  width: 60%;
+  margin-inline: auto;
+  .title1 {
+    font-family: saira-medium;
+    font-size: 24px;
+    text-align: center;
+    color: #000c17;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  .title2 {
+    font-family: "Cairo";
+    text-align: center;
+    font-weight: 500;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}
+.career {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  justify-content: space-between;
+  @include tablet {
+    display: block;
+  }
+
+  .opportunities {
+    width: 55%;
+    @include tablet {
+      width: 100%;
+    }
+
+    #availableOpportunity {
+      font-size: 20px;
+      font-weight: 800;
+      font-family: "Cairo";
+      color: #333d45;
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    .positionContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      @include mobile {
+        display: block;
+      }
+    }
+
+    .position {
+      border: 0.5px solid #a1a8ae;
+      border-radius: 8px;
+      width: 49%;
+      margin-bottom: 2%;
+      padding: 3%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 116px;
+      @include mobile {
+        width: 100%;
+        margin-inline: auto;
+        height: 110px;
+      }
+
+      .title {
+        font-family: saira-medium;
+        color: #333d45;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+
+      .subTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .subTitleText {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: "Cairo";
+        color: #a1a8ae;
+      }
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .arrow {
+        background-color: #f3f5f7;
+        margin-inline: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .tabletOnly {
+    display: none;
+    margin-block: 20px;
+    @include tablet {
+      display: block;
+    }
+    @include mobile {
+      display: block;
+    }
+
+    .or {
+      width: 100%;
+      @include tablet {
+        height: 80px;
+      }
+      @include mobile {
+        height: 60px;
+      }
+    }
+  }
+
+  .formContainer {
+    width: 40%;
+    border-radius: 16px;
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+    margin-bottom: 100px;
+    position: relative;
+    @include tablet {
+      width: 100%;
+    }
+
+    .formShape {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .header {
+      display: flex;
+      border-bottom: 1px solid #ecf0f3;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .title {
+      color: #000c17;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Cairo";
+      text-align: center;
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    form {
+      @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @include mobile {
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      .inputContainer {
+        background-color: #f9fafa;
+        width: 85%;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 35px;
+        border-radius: 10px;
+        @include tablet {
+          width: 45%;
+        }
+        @include mobile {
+          width: 85%;
+          height: 44px;
+        }
+      }
+
+      .formIcons {
+        width: 8%;
+      }
+
+      .inputField {
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid #a1a8ae;
+        width: 82%;
+        padding-left: 5%;
+        padding-right: 2%;
+        font-size: 14px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      .inputField:focus {
+        outline: none;
+      }
+
+      .inputField::placeholder {
+        color: #a1a8ae;
+        font-size: 14px;
+        font-family: "Cairo";
+        font-weight: 500;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      // Last Three Fields
+      .uploadContainer {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 35px;
+        @include tablet {
+          width: 45%;
+        }
+        @include mobile {
+          width: 85%;
+          height: 44px;
+        }
+      }
+
+      .inputBox {
+        background-color: #f9fafa;
+        width: 85%;
+        height: 52px;
+        border-radius: 10px 2px 2px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        @include mobile {
+          height: 44px;
+        }
+      }
+
+      .formIconsForUploads {
+        width: 18%;
+      }
+
+      .optional {
+        width: 15%;
+        color: #a1a8ae;
+        font-size: 10px;
+        font-weight: 400;
+        font-family: "Cairo";
+        text-align: center;
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+
+      .uploadBox {
+        width: 13%;
+        height: 52px;
+        background-color: #f9fafa;
+        border-radius: 2px 8px 8px 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+          height: 44px;
+        }
+      }
+
+      // Last Input
+      @mixin tablet {
+        @media (min-width: 768px) and (max-width: 1024px) {
+          @content;
+        }
+      }
+      .uploadContainer3 {
+        @include tablet {
+          width: 95%;
+          justify-content: space-between;
+        }
+      }
+      .inputBox3 {
+        @include tablet {
+          width: 93%;
+          display: flex;
+          flex-direction: row;
+        }
+      }
+      .formIconsForUploads3 {
+        @include tablet {
+          width: 9%;
+        }
+      }
+      .inputField3 {
+        @include tablet {
+          width: 100%;
+          padding-inline: 2%;
+        }
+      }
+      .optional3 {
+        @include tablet {
+          width: 8%;
+        }
+      }
+      .uploadBox3 {
+        @include tablet {
+          width: 6%;
+        }
+      }
+
+      // msg Field
+      .msgBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        margin-top: 10%;
+      }
+      .msg {
+        font-weight: 500;
+        color: #333d45;
+        font-family: "Cairo";
+        width: 85%;
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+      textarea {
+        width: 85%;
+        height: 150px;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        resize: none;
+        border: none;
+        background-color: #f9fafa;
+        margin-top: 20px;
+        font-size: 14px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+
+      // check box
+      .checkBoxes {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+      }
+
+      .custom-checkbox {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        user-select: none;
+        font-family: "Cairo";
+        font-weight: 500;
+        font-size: 14px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      .custom-checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #ecf0f3;
+        border-radius: 4px;
+      }
+
+      .custom-checkbox input:checked ~ .checkmark {
+        background-color: #0884f7;
+      }
+
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .custom-checkbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .custom-checkbox .checkmark:after {
+        left: 7px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+      #sendButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-inline: auto;
+        margin-bottom: 25px;
+        position: relative;
+        width: 50%;
+        padding: 10px 20px;
+        background-color: #0884f7;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        @include tablet {
+          width: 30%;
+        }
+        @include mobile {
+          width: 80%;
+        }
+      }
+      button:enabled {
+        cursor: pointer;
+      }
+    }
+    .circle {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}
