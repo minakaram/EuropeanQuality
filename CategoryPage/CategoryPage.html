@@ -237,36 +237,122 @@
             </div>
         </div>
     </div>
-    <div class="backArrowBox">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <mask id="path-1-inside-1_1531_28934" fill="white">
-                <path d="M0 20C0 8.95431 8.95431 0 20 0H40V40H20C8.95431 40 0 31.0457 0 20Z" />
-            </mask>
-            <path d="M0 20C0 8.95431 8.95431 0 20 0H40V40H20C8.95431 40 0 31.0457 0 20Z" fill="#F9FAFA" />
-            <path
-                d="M0 0H40H0ZM40 40H0H40ZM18 40C6.95431 40 -2 31.0457 -2 20C-2 8.9543 6.95431 0 18 0H20C10.0589 0 2 8.9543 2 20C2 31.0457 10.0589 40 20 40H18ZM40 0V40V0Z"
-                fill="#333D45" mask="url(#path-1-inside-1_1531_28934)" />
-            <path
-                d="M32 20.75C32.4142 20.75 32.75 20.4142 32.75 20C32.75 19.5858 32.4142 19.25 32 19.25V20.75ZM15.4697 19.4697C15.1768 19.7626 15.1768 20.2374 15.4697 20.5303L20.2426 25.3033C20.5355 25.5962 21.0104 25.5962 21.3033 25.3033C21.5962 25.0104 21.5962 24.5355 21.3033 24.2426L17.0607 20L21.3033 15.7574C21.5962 15.4645 21.5962 14.9896 21.3033 14.6967C21.0104 14.4038 20.5355 14.4038 20.2426 14.6967L15.4697 19.4697ZM32 19.25L16 19.25V20.75L32 20.75V19.25Z"
-                fill="#333D45" />
-        </svg>
-        <div class="boxContent">
-            <p class="categoriesText">Categories</p>
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M1.89053 9.65149C1.79934 9.74592 1.74888 9.87239 1.75002 10.0037C1.75116 10.1349 1.80381 10.2605 1.89663 10.3534C1.98945 10.4462 2.11501 10.4988 2.24628 10.5C2.37754 10.5011 2.504 10.4507 2.59842 10.3595L6.60342 6.35398C6.69728 6.26009 6.75 6.13276 6.75 6C6.75 5.86724 6.69728 5.73991 6.60342 5.64602L2.59842 1.64055C2.504 1.54934 2.37754 1.49888 2.24628 1.50002C2.11501 1.50116 1.98945 1.55381 1.89663 1.64664C1.80381 1.73947 1.75116 1.86506 1.75002 1.99633C1.74888 2.12761 1.79934 2.25408 1.89053 2.34851L5.5416 6L1.89053 9.65149Z"
-                    fill="#A1A8AE" />
-                <path
-                    d="M5.89053 9.65149C5.79934 9.74592 5.74888 9.87239 5.75002 10.0037C5.75116 10.1349 5.80381 10.2605 5.89663 10.3534C5.98945 10.4462 6.11501 10.4988 6.24628 10.5C6.37754 10.5011 6.504 10.4507 6.59842 10.3595L10.6034 6.35398C10.6973 6.26009 10.75 6.13276 10.75 6C10.75 5.86724 10.6973 5.73991 10.6034 5.64602L6.59842 1.64055C6.504 1.54934 6.37754 1.49888 6.24628 1.50002C6.11501 1.50116 5.98945 1.55381 5.89663 1.64664C5.80381 1.73947 5.75116 1.86506 5.75002 1.99633C5.74888 2.12761 5.79934 2.25408 5.89053 2.34851L9.5416 6L5.89053 9.65149Z"
-                    fill="#A1A8AE" />
-            </svg>
-            <p class="maintenanceText">Maintenance management & engineering category </p>
 
+    <div class="filterSection">
+        <div class="titleBox">
+            <svg class="background" width="259" height="68" viewBox="0 0 259 68" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 20C0 8.9543 8.9543 0 20 0H191C228.555 0 259 30.4446 259 68H0V20Z" fill="#FEF2E6" />
+            </svg>
+            <div class="title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.8188 2H5.18117C3.442 2 2.40466 3.91555 3.36937 5.34564L9.09107 12.8274C9.56799 13.5344 9.82249 14.3651 9.82249 15.2148V20.9219C9.82249 21.8805 10.9952 22.3605 11.6811 21.6827L13.8586 19.5307C14.0628 19.329 14.1775 19.0553 14.1775 18.7699V15.2148C14.1775 14.3651 14.432 13.5344 14.9089 12.8274L20.6306 5.34564C21.5953 3.91555 20.558 2 18.8188 2Z"
+                        fill="#F77B08" />
+                </svg>
+                <p class="titleText">Courses Filter</p>
+            </div>
+        </div>
+        <div class="filterBox">
+            <form class="filterOptions">
+                <div class="firstInput">
+                    <input type="text" placeholder="Search courses" class="search list">
+                </div>
+                <div class="otherInputs">
+                    <select name="" id="" class="city list">
+                        <option value="" selected disabled>City</option>
+                        <option value="">Cairo</option>
+                        <option value="">Alexandria</option>
+                    </select>
+                    <select name="" id="" class="duration list">
+                        <option value="" selected disabled>Duration</option>
+                        <option value="">1 Month</option>
+                        <option value="">3 Month</option>
+                    </select>
+                    <div class="date">
+                        <select name="" id="" class="year list">
+                            <option value="" selected disabled>Year</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                        </select>
+                        <select name="" id="" class="month list">
+                            <option value="" selected disabled>Month</option>
+                            <option value="">January</option>
+                            <option value="">February</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="clearBox">
+                <button class="clearBtn">Clear Filters</button>
+            </div>
+            <div class="selectedFilters">
+                <div class="filters">
+                    <p class="filterText">Search : Engineering</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">Cairo</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">Dubai</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">7 Days</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">5 Days</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">2024</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">August</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">September</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="filters">
+                    <p class="filterText">October</p>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 9M1 1L9 9" stroke="#EA2A2A" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
 
     <script src="CategoryPage.js"></script>
 </body>
