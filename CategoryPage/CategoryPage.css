@@ -440,6 +440,13 @@ P {
 }
 .filterSection .filterBox .filterOptions .otherInputs .city {
   width: 35%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .filterSection .filterBox .filterOptions .otherInputs .city {
@@ -449,6 +456,13 @@ P {
 }
 .filterSection .filterBox .filterOptions .otherInputs .duration {
   width: 17.5%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
   .filterSection .filterBox .filterOptions .otherInputs .duration {
@@ -468,9 +482,23 @@ P {
 }
 .filterSection .filterBox .filterOptions .otherInputs .date .year {
   width: 45%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
 }
 .filterSection .filterBox .filterOptions .otherInputs .date .month {
   width: 45%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
 }
 .filterSection .filterBox .filterOptions .list {
   background-color: #f9fafa;

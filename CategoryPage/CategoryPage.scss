@@ -331,6 +331,12 @@ P {
         }
         .city {
           width: 35%;
+          appearance: none;
+          -webkit-appearance: none;
+          position: relative;
+          background-image: url(../assets/form-search/select-arrow.svg);
+          background-position: right 1rem center;
+          background-repeat: no-repeat;
           @include mobile {
             width: 100%;
             margin-bottom: 10px;
@@ -338,6 +344,12 @@ P {
         }
         .duration {
           width: 17.5%;
+          appearance: none;
+          -webkit-appearance: none;
+          position: relative;
+          background-image: url(../assets/form-search/select-arrow.svg);
+          background-position: right 1rem center;
+          background-repeat: no-repeat;
           @include mobile {
             width: 100%;
             margin-bottom: 10px;
@@ -352,9 +364,21 @@ P {
           }
           .year {
             width: 45%;
+            appearance: none;
+            -webkit-appearance: none;
+            position: relative;
+            background-image: url(../assets/form-search/select-arrow.svg);
+            background-position: right 1rem center;
+            background-repeat: no-repeat;
           }
           .month {
             width: 45%;
+            appearance: none;
+            -webkit-appearance: none;
+            position: relative;
+            background-image: url(../assets/form-search/select-arrow.svg);
+            background-position: right 1rem center;
+            background-repeat: no-repeat;
           }
         }
       }
