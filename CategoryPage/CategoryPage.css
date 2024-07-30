@@ -382,6 +382,263 @@ P {
   font-size: 12px;
 }
 
+.filterSection {
+  width: 90%;
+  margin: 5rem auto;
+}
+.filterSection .titleBox {
+  position: relative;
+}
+.filterSection .titleBox .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.filterSection .titleBox .title {
+  display: flex;
+  padding: 6px 0px 6px 14px;
+}
+.filterSection .titleBox .title .titleText {
+  font-family: saira-regular;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f77b08;
+  padding-left: 8px;
+}
+@media (max-width: 1024px) {
+  .filterSection .titleBox .title .titleText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .filterSection .titleBox .title .titleText {
+    font-size: 16px;
+  }
+}
+.filterSection .filterBox {
+  border-radius: 20px;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox {
+    border-radius: 12px;
+  }
+}
+.filterSection .filterBox .filterOptions {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #a1a8ae;
+}
+@media (max-width: 1024px) {
+  .filterSection .filterBox .filterOptions {
+    display: block;
+  }
+}
+.filterSection .filterBox .filterOptions .firstInput {
+  width: 33.75%;
+}
+@media (max-width: 1024px) {
+  .filterSection .filterBox .filterOptions .firstInput {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.filterSection .filterBox .filterOptions .firstInput .search {
+  width: 100%;
+  height: 100%;
+}
+.filterSection .filterBox .filterOptions .firstInput .search::-moz-placeholder {
+  color: #a1a8ae;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+.filterSection .filterBox .filterOptions .firstInput .search::placeholder {
+  color: #a1a8ae;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .filterOptions .firstInput .search::-moz-placeholder {
+    font-size: 12px;
+  }
+  .filterSection .filterBox .filterOptions .firstInput .search::placeholder {
+    font-size: 12px;
+  }
+}
+.filterSection .filterBox .filterOptions .otherInputs {
+  width: 63.75%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .filterSection .filterBox .filterOptions .otherInputs {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .filterOptions .otherInputs {
+    width: 100%;
+    display: block;
+  }
+}
+.filterSection .filterBox .filterOptions .otherInputs .city {
+  width: 35%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .filterOptions .otherInputs .city {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.filterSection .filterBox .filterOptions .otherInputs .duration {
+  width: 17.5%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .filterOptions .otherInputs .duration {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.filterSection .filterBox .filterOptions .otherInputs .date {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .filterOptions .otherInputs .date {
+    width: 100%;
+  }
+}
+.filterSection .filterBox .filterOptions .otherInputs .date .year {
+  width: 45%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+}
+.filterSection .filterBox .filterOptions .otherInputs .date .month {
+  width: 45%;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+}
+.filterSection .filterBox .filterOptions .list {
+  background-color: #f9fafa;
+  padding: 6px;
+  border-radius: 10px;
+  font-family: "Cairo";
+  font-weight: 500;
+  border: none;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .filterOptions .list {
+    font-size: 12px;
+  }
+}
+.filterSection .filterBox .filterOptions .list:focus {
+  outline: none;
+}
+.filterSection .filterBox .filterOptions option {
+  background-color: #f9fafa;
+  color: var(--neutral-black);
+}
+.filterSection .filterBox .filterOptions option:disabled:checked {
+  background-color: #f9fafa;
+  color: gray;
+  color: var(--ternary-neutrals--3);
+}
+.filterSection .filterBox .clearBox {
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+}
+.filterSection .filterBox .clearBox .clearBtn {
+  border: none;
+  background-color: #fef1f1;
+  padding: 6px 20px;
+  border-radius: 40px;
+  font-family: "Cairo";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #ea2a2a;
+}
+@media (max-width: 767px) {
+  .filterSection .filterBox .clearBox .clearBtn {
+    font-size: 12px;
+  }
+}
+.filterSection .filterBox .selectedFilters {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.filterSection .filterBox .selectedFilters .filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a1a8ae;
+  border-radius: 6px;
+  margin: 0px 5px 5px 0px;
+  padding: 2px 6px;
+}
+.filterSection .filterBox .selectedFilters .filters .filterText {
+  font-family: "Cairo";
+  font-size: 12px;
+  font-weight: 400;
+  padding-right: 6px;
+}
+.filterSection .filterBox .selectedFilters .filters .filters,
+.filterSection .filterBox .selectedFilters .filters svg {
+  cursor: pointer;
+}
+.filterSection .boxContent {
+  background-color: #f9fafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.filterSection .boxContent .categoriesText {
+  font-weight: 600;
+  font-size: 12px;
+}
+.filterSection .boxContent .categoriesText a {
+  color: #a1a8ae;
+  text-decoration: none;
+}
+.filterSection .boxContent .maintenanceText {
+  color: #333d45;
+  font-family: "Cairo";
+  font-weight: 600;
+  font-size: 12px;
+}
+
 .hero-section {
   width: 90%;
   margin: 2rem auto;
