@@ -1,8 +1,36 @@
 /** @format */
 
 @use "../styles/layout/variables.scss" as *;
+
 P {
   margin-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  height: 95%;
+  padding: 1rem 0rem;
+  margin-block: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a1a8ae;
+  border-radius: 15px;
+  height: 95%;
+  width: 4px;
+  border: 3px solid #f1f1f1;
+  transition: 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 2px solid #f1f1f1;
+  ;
 }
 
 .chat-icon {
@@ -12,6 +40,7 @@ P {
   left: 1rem;
   cursor: pointer;
 }
+
 .top-arrow-icon {
   position: fixed;
   z-index: 4000;
@@ -20,6 +49,7 @@ P {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transform: translateY(100px);
 }
+
 .top-arrow-icon.show {
   opacity: 1;
   transform: translateY(0);
@@ -44,6 +74,7 @@ P {
   background-color: var(--natural-white);
   transition: box-shadow 0.3s ease;
   z-index: 1000;
+
   #navigation-menu-dropdown {
     display: flex;
     flex-wrap: wrap;
@@ -57,20 +88,24 @@ P {
     transition: 0.3s;
     border-radius: 10px;
     box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
+
     @include tablet {
       left: 50%;
       transform: translateX(-50%);
       width: 60%;
     }
+
     @include mobile {
       width: 100%;
     }
+
     p {
       width: 50%;
       padding: 1rem 1rem 1rem 2rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
       a {
         text-decoration: none;
         color: black;
@@ -78,6 +113,7 @@ P {
       }
     }
   }
+
   #cities-dropdown,
   #categories-dropdown {
     position: absolute;
@@ -94,15 +130,18 @@ P {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+
     &::-webkit-scrollbar {
       width: 8px;
       height: 3px;
       border-radius: 10px;
       overflow: hidden;
+
       @include mobile {
         width: 2px;
       }
     }
+
     &::-webkit-scrollbar-track {
       background: #f1f1f1;
       padding: 1rem 0rem;
@@ -110,12 +149,14 @@ P {
       border-radius: 10px;
       margin-block: 0.3rem;
     }
+
     &::-webkit-scrollbar-thumb {
       background-color: #a1a8ae;
       border-radius: 10px;
       overflow: hidden;
       border: 2px solid #f1f1f1;
     }
+
     .city-row {
       display: flex;
       padding-left: 10px;
@@ -124,15 +165,18 @@ P {
       border: 1px solid #ecf0f3;
       padding: 0.5rem 10px;
       cursor: pointer;
+
       img {
         width: 20px;
         height: 20px;
       }
+
       P {
         font-family: "Cairo";
         font-weight: 600;
       }
     }
+
     .categories-row {
       border: 1px solid #ecf0f3;
       padding: 0.5rem 10px;
@@ -140,37 +184,47 @@ P {
       cursor: pointer;
     }
   }
+
   .navigation-left-side {
     display: flex;
     gap: 2rem;
+
     .navigation-menu {
       display: none;
+
       a {
         font-family: saira-semiBold;
         text-decoration: none;
       }
+
       svg {
         transition: 0.3s;
         margin-right: 0.7rem;
       }
+
       #navigation-menu-btn.rotated {
         transform: rotate(90deg);
       }
+
       @include tablet {
         align-self: center;
         display: flex;
       }
     }
+
     @include mobileXS {
       gap: 1.5rem;
     }
   }
+
   .navigation-right-side {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
     .navbar-search-box {
       position: relative;
+
       .search-absolute-box {
         position: absolute;
         right: 0;
@@ -181,9 +235,11 @@ P {
         display: none;
         border-radius: 40px;
         border: 1px solid #ecf0f3;
+
         @include mobile {
           width: 220px;
         }
+
         input {
           width: 100%;
           height: 100%;
@@ -191,10 +247,12 @@ P {
           outline-color: var(--primary--color);
           border-radius: 40px;
           padding: 0rem 0.7rem;
+
           @include mobile {
             font-size: 12px;
           }
         }
+
         svg {
           position: absolute;
           top: 50%;
@@ -204,6 +262,7 @@ P {
       }
     }
   }
+
   ul {
     display: flex;
     padding: 0;
@@ -213,41 +272,51 @@ P {
     align-items: center;
     gap: 2rem;
     position: relative;
+
     .active-link {
       color: var(--primary--color);
       font-family: saira-semiBold;
       border-bottom: 2px solid var(--primary--color);
     }
+
     a {
       color: var(--neutral-black);
       text-decoration: none;
       font-family: saira-regular;
       padding: 1rem 0rem;
     }
+
     @include customScreen {
       gap: 1.5rem;
     }
+
     @include tablet {
       display: none;
     }
   }
+
   svg {
     cursor: pointer;
   }
+
   @include customScreen {
     padding-left: 1rem;
   }
+
   @include mobile {
     width: 93%;
     padding-left: 1.5rem;
   }
+
   @include mobileXS {
     padding-left: 1rem;
   }
+
   @media (max-width: 1200px) and (min-width: 1025px) {
     width: 90%;
   }
 }
+
 .navigation-bar.scrolled {
   transition: background-color 0.5s ease;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
@@ -266,24 +335,30 @@ P {
   border-radius: 50px;
   padding: 0.2rem 2rem 0.2rem 0rem;
   align-items: center;
+
   @include mobile {
     margin-left: 10px;
     padding-right: 1rem;
     width: 90%;
+
     svg:first-child {
       height: 100%;
     }
+
     font-size: 12px;
   }
+
   .boxContent {
     background-color: #f9fafa;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+
     .categoriesText {
       font-weight: 600;
       font-size: 12px;
+
       a {
         color: #a1a8ae;
         text-decoration: none;
@@ -298,81 +373,100 @@ P {
     }
   }
 }
+
 .filterSection {
   width: 90%;
   margin: 5rem auto;
 
   .titleBox {
     position: relative;
+
     .background {
       position: absolute;
       top: 0px;
       left: 0px;
       z-index: -1;
     }
+
     .title {
       display: flex;
       padding: 6px 0px 6px 14px;
+
       .titleText {
         font-family: saira-regular;
         font-size: 18px;
         font-weight: 600;
         color: #f77b08;
         padding-left: 8px;
+
         @include tablet {
           font-size: 18px;
         }
+
         @include mobile {
           font-size: 16px;
         }
       }
     }
   }
+
   .filterBox {
     border-radius: 20px;
     box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
     background-color: #fff;
+
     @include mobile {
       border-radius: 12px;
     }
+
     .filterOptions {
       display: flex;
       justify-content: space-between;
       padding: 20px;
       border-bottom: 1px solid #a1a8ae;
+
       @include tablet {
         display: block;
       }
+
       .firstInput {
         width: 33.75%;
+
         @include tablet {
           width: 100%;
           margin-bottom: 10px;
         }
+
         .search {
           width: 100%;
           height: 100%;
         }
+
         .search::placeholder {
           color: #a1a8ae;
           font-family: "Cairo";
           font-weight: 500;
+
           @include mobile {
             font-size: 12px;
           }
         }
       }
+
       .otherInputs {
         width: 63.75%;
         display: flex;
         justify-content: space-between;
+
         @include tablet {
           width: 100%;
         }
+
         @include mobile {
           width: 100%;
           display: block;
         }
+
         .city {
           width: 35%;
           appearance: none;
@@ -381,11 +475,13 @@ P {
           background-image: url(../assets/form-search/select-arrow.svg);
           background-position: right 1rem center;
           background-repeat: no-repeat;
+
           @include mobile {
             width: 100%;
             margin-bottom: 10px;
           }
         }
+
         .duration {
           width: 17.5%;
           appearance: none;
@@ -394,18 +490,22 @@ P {
           background-image: url(../assets/form-search/select-arrow.svg);
           background-position: right 1rem center;
           background-repeat: no-repeat;
+
           @include mobile {
             width: 100%;
             margin-bottom: 10px;
           }
         }
+
         .date {
           width: 40%;
           display: flex;
           justify-content: space-between;
+
           @include mobile {
             width: 100%;
           }
+
           .year {
             width: 45%;
             appearance: none;
@@ -415,6 +515,7 @@ P {
             background-position: right 1rem center;
             background-repeat: no-repeat;
           }
+
           .month {
             width: 45%;
             appearance: none;
@@ -426,6 +527,7 @@ P {
           }
         }
       }
+
       .list {
         background-color: #f9fafa;
         padding: 6px;
@@ -433,16 +535,20 @@ P {
         font-family: "Cairo";
         font-weight: 500;
         border: none;
+
         @include mobile {
           font-size: 12px;
         }
       }
+
       .list:focus {
         outline: none;
       }
+
       option {
         background-color: #f9fafa;
         color: var(--neutral-black);
+
         &:disabled:checked {
           background-color: #f9fafa;
           color: gray;
@@ -450,10 +556,12 @@ P {
         }
       }
     }
+
     .clearBox {
       display: flex;
       justify-content: center;
       padding-block: 20px;
+
       .clearBtn {
         border: none;
         background-color: #fef1f1;
@@ -465,15 +573,18 @@ P {
         line-height: 14px;
         text-align: center;
         color: #ea2a2a;
+
         @include mobile {
           font-size: 12px;
         }
       }
     }
+
     .selectedFilters {
       display: flex;
       flex-wrap: wrap;
       padding: 20px;
+
       .filters {
         display: flex;
         justify-content: center;
@@ -482,12 +593,14 @@ P {
         border-radius: 6px;
         margin: 0px 5px 5px 0px;
         padding: 2px 6px;
+
         .filterText {
           font-family: "Cairo";
           font-size: 12px;
           font-weight: 400;
           padding-right: 6px;
         }
+
         .filters,
         svg {
           cursor: pointer;
@@ -495,15 +608,18 @@ P {
       }
     }
   }
+
   .boxContent {
     background-color: #f9fafa;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+
     .categoriesText {
       font-weight: 600;
       font-size: 12px;
+
       a {
         color: #a1a8ae;
         text-decoration: none;
@@ -529,63 +645,78 @@ P {
   border-radius: 20px;
   overflow: hidden;
   flex-wrap: wrap;
+
   @include tablet {
     flex-direction: column;
   }
+
   .hero-left-side {
     width: 55%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     @include tablet {
       height: 250px;
     }
+
     @include mobile {
       height: 400px;
     }
+
     .left-side-inner {
       width: 90%;
+
       @include tablet {
         height: 100%;
         text-align: center;
       }
+
       h3 {
         color: #000c17;
         font-size: 24px;
         font-family: saira-semiBold;
         line-height: 37.78px;
         margin-bottom: 1rem;
+
         @include mobile {
           font-size: 20px;
         }
       }
+
       p {
         line-height: 28px;
         font-family: "Cairo";
         font-weight: 400;
+
         @include mobile {
           font-size: 14px;
         }
+
         span {
           font-weight: 800;
           color: #e47107;
           font-size: 18px;
         }
       }
+
       .download-buttons {
         display: flex;
         align-items: center;
         gap: 1rem;
         margin-top: 1rem;
+
         @include mobile {
           flex-wrap: wrap;
           justify-content: center;
         }
+
         .download-button {
           border: 1px solid #a1a8ae;
           border-radius: 10px;
           background-color: transparent;
+
           a {
             padding: 0.6rem 1.2rem;
             width: 100%;
@@ -599,41 +730,50 @@ P {
         }
       }
     }
+
     @include tablet {
       width: 100%;
       order: 1;
     }
   }
+
   .hero-right-side {
     width: 45%;
     height: 400px;
     padding: 10px;
+
     @include tablet {
       width: 100%;
       order: 0;
     }
+
     @include mobile {
       height: 280px;
     }
+
     .right-side-inner {
       position: relative;
       width: 100%;
       height: 100%;
+
       .svg-top {
         position: absolute;
         top: 0;
         right: 0;
       }
+
       .svg-bottom {
         position: absolute;
         bottom: 5px;
         left: 5px;
         z-index: 0;
+
         @include mobile {
           bottom: 0;
           left: -8px;
         }
       }
+
       img {
         z-index: 1;
         position: absolute;
@@ -647,9 +787,11 @@ P {
     }
   }
 }
+
 .category-main-section {
   width: 90%;
   margin: 5rem auto;
+
   .header {
     .result-row {
       display: flex;
@@ -657,42 +799,52 @@ P {
       align-items: center;
       border-bottom: 1px solid #333d45;
       padding-bottom: 10px;
+
       div {
         color: #000c17;
         font-family: "Cairo";
         font-size: 18px;
+
         @include mobile {
           font-size: 16px;
         }
+
         .result-number {
           color: #e47107;
           font-weight: 700;
         }
       }
+
       div:last-child {
         cursor: pointer;
       }
     }
+
     .sorting {
       display: flex;
+
       p {
         background-color: #f9fafa;
         cursor: pointer;
       }
+
       p:first-child {
         padding: 0.2rem 1rem;
         border-bottom-left-radius: 10px;
       }
+
       p:last-child {
         border-bottom-right-radius: 10px;
         padding: 0.2rem 1rem;
       }
+
       p.active {
         background-color: #333d45;
         color: #fff;
       }
     }
   }
+
   .categories-container {
     width: 100%;
     display: flex;
@@ -706,10 +858,13 @@ P {
       flex-direction: column;
       gap: 1rem;
       height: auto;
-      overflow: visible; /* Default state */
+      overflow: visible;
+
+      /* Default state */
       @include tablet {
         width: 100%;
       }
+
       .categories-row {
         width: 95%;
         display: flex;
@@ -723,59 +878,73 @@ P {
         height: 65px;
         cursor: pointer;
         font-family: "Cairo";
+
         @include tablet {
           width: 100%;
         }
+
         @include mobile {
           flex-direction: column;
           gap: 1.5rem;
           height: auto;
         }
+
         .course-name {
           font-size: 14px;
           font-weight: 600;
         }
+
         .category-row-right {
           height: 100%;
           display: flex;
           gap: 2rem;
+
           @include mobile {
             flex-direction: column;
             width: 100%;
           }
+
           .code-duration {
             display: flex;
             align-items: center;
             border-left: 1px solid #c0c4c8;
             border-right: 1px solid #c0c4c8;
+
             @include mobile {
               border: none;
               justify-content: center;
             }
+
             p {
               padding: 0rem 1.2rem;
               height: fit-content;
               font-size: 14px;
               font-weight: 500;
             }
+
             p:first-child {
               border-right: 1px solid #c0c4c8;
             }
           }
+
           .location {
             display: flex;
             align-items: center;
             gap: 1rem;
+
             @include mobile {
               justify-content: center;
             }
+
             p {
               font-size: 14px;
               font-weight: 400;
+
               @include mobile {
                 color: #0884f7;
               }
             }
+
             svg {
               height: 100%;
 
@@ -787,27 +956,33 @@ P {
             }
           }
         }
+
         .absolute-arrow {
           display: none;
         }
       }
+
       .categories-row.active {
         background-color: #e4f1fe;
         position: relative;
+
         .absolute-arrow {
           display: flex;
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           left: 102%;
+
           @include tablet {
             display: none;
           }
         }
+
         .location p {
           color: #0884f7;
           font-weight: 700;
         }
+
         .location svg path {
           fill: #0884f7;
         }
@@ -820,9 +995,9 @@ P {
       border-radius: 8px;
       height: 790px;
       overflow: auto;
+
       &::-webkit-scrollbar {
-        width: 4px;
-        padding: 1rem 0rem;
+        width: 10px;
       }
 
       /* Track */
@@ -830,6 +1005,7 @@ P {
         background: #f1f1f1;
         height: 95%;
         padding: 1rem 0rem;
+        margin-block: 5px;
       }
 
       /* Handle */
@@ -837,68 +1013,91 @@ P {
         background: #a1a8ae;
         border-radius: 15px;
         height: 95%;
-        padding: 1rem 0rem;
+        width: 4px;
+        border: 3px solid #f1f1f1;
+        transition: 0.2s;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        border: 2px solid #f1f1f1;
+        ;
       }
 
       @include tablet {
         display: none;
       }
+
       .heading {
         text-align: center;
         padding: 1rem;
         font-family: saira-medium;
         border-bottom: 1px solid #333d45;
+
         span {
           color: #e47107;
           font-family: saira-semiBold;
         }
       }
+
       .available-cities {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         padding: 0.6rem 0.5rem;
-        .city-box {
-          border: 1px solid #ecf0f3;
-          border-radius: 4px;
-          .course-date {
-            display: flex;
-            justify-content: center;
-            gap: 0.3rem;
-            padding: 0.5rem;
-            font-family: "Cairo";
-            font-weight: 600;
-            font-size: 12px;
-          }
-          .city-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5rem;
-            .city {
+
+        a {
+          text-decoration: none;
+          color: inherit;
+
+          .city-box {
+            border: 1px solid #ecf0f3;
+            border-radius: 4px;
+
+            .course-date {
               display: flex;
-              gap: 0.5rem;
-              align-items: center;
-              padding-left: 0.5rem;
-              img {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-              }
-              span {
-                font-family: "Cairo";
-                font-weight: 500;
-                font-size: 14px;
-              }
+              justify-content: center;
+              gap: 0.3rem;
+              padding: 0.5rem;
+              font-family: "Cairo";
+              font-weight: 600;
+              font-size: 12px;
             }
-            .price {
-              font-weight: 700;
-              padding-right: 0.7rem;
+
+            .city-row {
+              display: flex;
+              justify-content: space-between;
+              padding: 0.5rem;
+
+              .city {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                padding-left: 0.5rem;
+
+                img {
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                }
+
+                span {
+                  font-family: "Cairo";
+                  font-weight: 500;
+                  font-size: 14px;
+                }
+              }
+
+              .price {
+                font-weight: 700;
+                padding-right: 0.7rem;
+              }
             }
           }
         }
       }
     }
   }
+
   .pagination {
     width: 70%;
     display: flex;
@@ -906,65 +1105,255 @@ P {
     align-items: center;
     margin-top: 2rem;
     gap: 2rem;
+
+    @include tablet {
+      margin: 2rem auto;
+    }
+
     .back {
       display: flex;
       align-items: center;
       gap: 5px;
-      button:first-child {
+
+      a:first-child {
         background-color: #f3f5f7;
         width: 28px;
         height: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: none;
+
+        button {
+          border: none;
+          width: 100%;
+          height: 100%;
+          background-color: #f3f5f7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
-      button:last-child {
+
+      a:last-child {
         background-color: #f3f5f7;
         width: 40px;
         height: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: none;
+
+        button {
+          border: none;
+          width: 100%;
+          height: 100%;
+          background-color: #f3f5f7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
-    .next {
+  }
+
+  .next {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+
+
+    a:first-child {
+      background-color: #f3f5f7;
+      width: 40px;
+      height: 32px;
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 5px;
-      button:first-child {
+
+      button {
+        border: none;
+        width: 100%;
+        height: 100%;
         background-color: #f3f5f7;
-        width: 40px;
-        height: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: none;
-      }
-      button:last-child {
-        background-color: #f3f5f7;
-        width: 28px;
-        height: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
       }
     }
-    .pages {
-      font-family: "Cairo";
+
+    a:last-child {
+      background-color: #f3f5f7;
+      width: 28px;
+      height: 32px;
       display: flex;
-      gap: 2px;
-      span:first-child {
-        font-weight: 700;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: #f3f5f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      span:nth-child(2) {
-        color: #a1a8ae;
+    }
+
+  }
+
+  .pages {
+    font-family: "Cairo";
+    display: flex;
+    gap: 2px;
+
+    span:first-child {
+      font-weight: 700;
+    }
+
+    span:nth-child(2) {
+      color: #a1a8ae;
+    }
+
+    span:last-child {
+      font-weight: 600;
+      color: #a1a8ae;
+    }
+  }
+}
+
+
+.clickable-ovelay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 102200;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: none;
+
+  .clickable-ovelay-container {
+    background-color: white;
+    width: 80%;
+    margin: 80px auto;
+    position: relative;
+    border-radius: 12px;
+
+    .main-header {
+      text-align: center;
+      padding: 2rem 3rem;
+      color: #0884F7;
+      font-family: "Cairo";
+      font-weight: 700;
+      border-bottom: 1px solid #A1A8AE;
+
+      @include mobile {
+        padding: 2rem 1rem;
       }
-      span:last-child {
-        font-weight: 600;
-        color: #a1a8ae;
+    }
+
+    button {
+      border-radius: 50%;
+      height: 56px;
+      width: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #EA2A2A;
+      position: absolute;
+      top: -1.5rem;
+      right: -1.5rem;
+      border: none;
+    }
+
+    .overlay-container-boxes {
+      padding-bottom: 2rem;
+
+      .heading {
+        text-align: center;
+        padding: 3rem 0rem 2rem 0rem;
+        font-family: saira-medium;
+
+        span {
+          color: #e47107;
+          font-family: saira-bold;
+          padding-right: 5px;
+        }
+      }
+
+      .overlay-container-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0rem 2rem;
+        height: 500px;
+        overflow: auto;
+
+        @include mobile {
+          flex-direction: column;
+          height: 400px;
+        }
+
+        .city-item {
+          width: calc(50% - 0.7rem);
+          border-radius: 5px;
+          border: 1px solid #ECF0F3;
+          padding: 1rem 0.7rem;
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+
+          @include mobile {
+            width: 100%;
+          }
+
+          .date {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            span {
+              font-size: 12px;
+              font-family: "Cairo";
+              font-weight: 600;
+            }
+          }
+
+          .city-name-salary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .city-name {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%
+              }
+
+              span {
+                font-size: 14px;
+                font-family: "Cairo";
+                font-weight: 500;
+              }
+            }
+
+            .price {
+              font-family: "Cairo";
+              font-weight: 700;
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
   }
@@ -978,24 +1367,29 @@ P {
   background-color: var(--ternary-neutrals--1);
   border-radius: 20px;
   position: relative;
+
   @include mobile {
     padding: 1rem 1rem 0rem 1rem;
     margin-bottom: 0px;
     margin-top: 0;
     width: 100%;
   }
+
   .border-icon {
     position: absolute;
     top: 0px;
     left: 0px;
   }
+
   .footer-upper {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
+
     @include tablet {
       flex-direction: column;
     }
+
     .footer-left-side {
       width: calc(100% / 3);
       position: relative;
@@ -1003,22 +1397,27 @@ P {
       padding-top: 2rem;
       border-right: 1px solid #0f1b25;
       align-self: stretch;
+
       @include tablet {
         width: 100%;
       }
+
       .logo {
         width: 100px;
       }
+
       .protected {
         position: absolute;
         bottom: 2rem;
         left: -0.5rem;
+
         @include tablet {
           right: 1rem;
           top: 1rem;
           left: unset;
         }
       }
+
       p {
         color: #e4f1fe;
         font-family: "Cairo";
@@ -1026,11 +1425,13 @@ P {
         line-height: 30px;
         margin-top: 2rem;
         width: 90%;
+
         @include mobile {
           width: 100%;
         }
       }
     }
+
     .footer-middle {
       padding-left: 2rem;
       padding-top: 0.5rem;
@@ -1038,43 +1439,53 @@ P {
       padding-right: 2rem;
       display: flex;
       flex-direction: column;
+
       @include tablet {
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 3rem;
       }
+
       @include mobile {
         padding-left: 0px;
       }
+
       .middle-inner {
         display: flex;
         gap: 0.7rem;
         margin-bottom: 3rem;
+
         @include tablet {
           width: 50%;
         }
+
         @include mobile {
           width: 100%;
         }
+
         .heading-box {
           p {
             font-family: saira-medium;
             color: #e4f1fe;
             font-size: 17px;
           }
+
           svg {
             margin-top: -10px;
           }
         }
+
         p.page {
           margin: 0.5rem 0rem;
+
           a {
             font-family: "Cairo";
             font-size: 14px;
             text-decoration: none;
             color: #e4f1fe;
             font-weight: normal;
+
             &:hover {
               color: var(--primary--color);
             }
@@ -1082,18 +1493,22 @@ P {
         }
       }
     }
+
     .footer-right-side {
       width: calc(100% / 3);
       padding-left: 2rem;
       padding-top: 0.5rem;
       padding-right: 2rem;
+
       @include mobile {
         padding-left: 0px;
         padding-right: 0px;
       }
+
       @include tablet {
         width: 100%;
       }
+
       .inner-box {
         display: flex;
         gap: 0.7rem;
@@ -1102,6 +1517,7 @@ P {
         border-bottom: 1px solid #19242e;
         padding-bottom: 2rem;
         margin-bottom: 2rem;
+
         .inner-right-box {
           .heading-box {
             @include mobile {
@@ -1109,30 +1525,37 @@ P {
               gap: 0.5rem;
               align-items: flex-start;
             }
+
             p {
               font-family: saira-medium;
               color: #e4f1fe;
             }
+
             svg {
               margin-top: -10px;
             }
+
             .mobile-recieve-svg {
               display: none;
+
               @include mobile {
                 display: block;
                 margin-top: 0px;
               }
             }
           }
+
           p.description {
             margin-top: 2rem;
             font-family: "Cairo";
             font-size: 14px;
             font-weight: 400;
           }
+
           .email-box {
             margin-top: 2.5rem;
             position: relative;
+
             input {
               width: 100%;
               padding: 0.6rem 1rem;
@@ -1142,13 +1565,16 @@ P {
               font-family: "Cairo";
               background-color: #19242e;
               color: white;
+
               &::placeholder {
                 color: #697177;
               }
+
               @include mobile {
                 font-size: 12px;
               }
             }
+
             button {
               position: absolute;
               top: 50%;
@@ -1163,93 +1589,113 @@ P {
               align-items: center;
               gap: 0.5rem;
               color: white;
+
               @include mobile {
                 font-size: 12px;
               }
             }
           }
         }
+
         .inner-left-box {
           @include mobile {
             display: none;
           }
         }
       }
+
       .contact-us {
         color: #e4f1fe;
         border-bottom: 1px solid #19242e;
         padding-bottom: 2rem;
         padding-top: 1.5rem;
+
         .heading {
           display: flex;
           gap: 0.5rem;
           align-items: flex-start;
           margin-bottom: 1rem;
+
           .contact-head {
             p {
               font-family: saira-medium;
               color: #e4f1fe;
             }
+
             svg {
               margin-top: -10px;
             }
           }
         }
+
         .contact-row {
           margin-bottom: 1rem !important;
           display: flex;
           font-family: "Cairo";
           font-size: 14px;
           gap: 0.5rem;
+
           a {
             text-decoration: none;
             color: #e4f1fe;
           }
+
           span {
             display: block;
           }
+
           svg {
             width: 40px;
           }
         }
+
         .social {
           display: flex;
           gap: 1rem;
           align-items: center;
           margin-top: 2.5rem;
           margin-left: 1rem;
+
           @include mobile {
             justify-content: center;
             gap: 2rem;
             margin-left: 0px;
           }
+
           svg {
             cursor: pointer;
           }
         }
       }
+
       .payment-method {
         padding-top: 2rem;
         padding-bottom: 2rem;
         color: #e4f1fe;
+
         @include tablet {
           display: flex;
           justify-content: space-between;
         }
+
         @include mobile {
           display: block;
         }
+
         .payment-heading {
           display: flex;
           gap: 0.5rem;
+
           @include tablet {
             align-items: end;
             width: 45%;
           }
+
           @include mobile {
             width: 100%;
             align-items: flex-start;
           }
+
           .payment-heading-text {
             p {
               font-family: saira-medium;
@@ -1257,16 +1703,19 @@ P {
             }
           }
         }
+
         .payment-ways {
           margin-top: 2rem;
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
+
           @include tablet {
             justify-content: center;
             gap: 2rem;
           }
+
           @include mobile {
             gap: 1rem;
           }
@@ -1274,6 +1723,7 @@ P {
       }
     }
   }
+
   .copyright {
     text-align: center;
     padding: 1rem;

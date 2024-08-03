@@ -550,7 +550,7 @@ P {
       @include tablet {
         width: 100%;
       }
-      form {
+      .form-main-box {
         background-image: url(../assets/form-search/form-bg.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
