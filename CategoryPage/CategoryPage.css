@@ -718,6 +718,7 @@ P {
 @media (max-width: 767px) {
   .hero-section .hero-left-side .left-side-inner h3 {
     font-size: 20px;
+    line-height: unset;
   }
 }
 .hero-section .hero-left-side .left-side-inner p {
@@ -745,6 +746,7 @@ P {
   .hero-section .hero-left-side .left-side-inner .download-buttons {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2rem;
   }
 }
 .hero-section .hero-left-side .left-side-inner .download-buttons .download-button {
@@ -897,6 +899,10 @@ P {
   height: 65px;
   cursor: pointer;
   font-family: "Cairo";
+}
+.category-main-section .categories-container .categories-left-side .categories-row:hover {
+  background-color: #f0f8ff;
+  transition: 0.3s ease;
 }
 @media (max-width: 1024px) {
   .category-main-section .categories-container .categories-left-side .categories-row {
@@ -1215,6 +1221,7 @@ P {
 .clickable-ovelay .clickable-ovelay-container {
   background-color: white;
   width: 80%;
+  height: 80vh;
   margin: 80px auto;
   position: relative;
   border-radius: 12px;
@@ -1261,21 +1268,29 @@ P {
 .clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0rem 2rem;
-  height: 500px;
+  max-height: 350px;
   overflow: auto;
 }
 @media (max-width: 767px) {
   .clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box {
-    flex-direction: column;
     height: 400px;
   }
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a {
   width: calc(50% - 0.7rem);
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 767px) {
+  .clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a {
+    width: 100%;
+  }
+}
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item {
   border-radius: 5px;
   border: 1px solid #ECF0F3;
   padding: 1rem 0.7rem;
@@ -1283,43 +1298,38 @@ P {
   flex-direction: column;
   gap: 7px;
 }
-@media (max-width: 767px) {
-  .clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item {
-    width: 100%;
-  }
-}
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .date {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .date {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .date span {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .date span {
   font-size: 12px;
   font-family: "Cairo";
   font-weight: 600;
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .city-name-salary {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .city-name-salary {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .city-name-salary .city-name {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .city-name-salary .city-name {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .city-name-salary .city-name img {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .city-name-salary .city-name img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .city-name-salary .city-name span {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .city-name-salary .city-name span {
   font-size: 14px;
   font-family: "Cairo";
   font-weight: 500;
 }
-.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box .city-item .city-name-salary .price {
+.clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item .city-name-salary .price {
   font-family: "Cairo";
   font-weight: 700;
   font-size: 14px;

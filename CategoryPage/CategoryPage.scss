@@ -682,6 +682,7 @@ P {
 
         @include mobile {
           font-size: 20px;
+          line-height: unset;
         }
       }
 
@@ -710,6 +711,7 @@ P {
         @include mobile {
           flex-wrap: wrap;
           justify-content: center;
+          margin-top: 2rem;
         }
 
         .download-button {
@@ -878,6 +880,11 @@ P {
         height: 65px;
         cursor: pointer;
         font-family: "Cairo";
+
+        &:hover {
+          background-color: #f0f8ff;
+          transition: 0.3s ease;
+        }
 
         @include tablet {
           width: 100%;
@@ -1237,10 +1244,12 @@ P {
   .clickable-ovelay-container {
     background-color: white;
     width: 80%;
+    height: 80vh;
     margin: 80px auto;
     position: relative;
     border-radius: 12px;
 
+    // padding-bottom: 2rem;
     .main-header {
       text-align: center;
       padding: 2rem 3rem;
@@ -1286,71 +1295,74 @@ P {
       .overlay-container-box {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         gap: 1rem;
         padding: 0rem 2rem;
-        height: 500px;
+        max-height: 350px;
         overflow: auto;
 
         @include mobile {
-          flex-direction: column;
           height: 400px;
         }
 
-        .city-item {
+        a {
           width: calc(50% - 0.7rem);
-          border-radius: 5px;
-          border: 1px solid #ECF0F3;
-          padding: 1rem 0.7rem;
-          display: flex;
-          flex-direction: column;
-          gap: 7px;
-
+          text-decoration: none;
+          color: inherit;
+          
           @include mobile {
             width: 100%;
           }
+          .city-item {
 
-          .date {
+            border-radius: 5px;
+            border: 1px solid #ECF0F3;
+            padding: 1rem 0.7rem;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-
-            span {
-              font-size: 12px;
-              font-family: "Cairo";
-              font-weight: 600;
-            }
-          }
-
-          .city-name-salary {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .city-name {
+            flex-direction: column;
+            gap: 7px;
+            .date {
               display: flex;
+              justify-content: center;
               align-items: center;
-              gap: 8px;
-
-              img {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%
-              }
+              gap: 5px;
 
               span {
-                font-size: 14px;
+                font-size: 12px;
                 font-family: "Cairo";
-                font-weight: 500;
+                font-weight: 600;
               }
             }
 
-            .price {
-              font-family: "Cairo";
-              font-weight: 700;
-              font-size: 14px;
+            .city-name-salary {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .city-name {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                img {
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%
+                }
+
+                span {
+                  font-size: 14px;
+                  font-family: "Cairo";
+                  font-weight: 500;
+                }
+              }
+
+              .price {
+                font-family: "Cairo";
+                font-weight: 700;
+                font-size: 14px;
+              }
             }
           }
         }
@@ -1358,6 +1370,8 @@ P {
     }
   }
 }
+
+
 
 .footer {
   width: 95%;
