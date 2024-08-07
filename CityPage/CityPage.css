@@ -380,6 +380,7 @@ P {
     margin-left: 10px;
     padding-right: 1rem;
     width: 90%;
+    justify-content: flex-start;
     font-size: 12px;
   }
   .backArrowBox svg:first-child {
@@ -673,7 +674,7 @@ P {
 }
 .hero-section .hero-left-side .left-side-inner .hero-header h3 {
   color: #000c17;
-  font-size: 24px;
+  font-size: 32px;
   font-family: saira-semiBold;
   line-height: 37.78px;
   margin-bottom: 0rem;

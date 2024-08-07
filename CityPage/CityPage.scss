@@ -339,6 +339,7 @@ P {
     margin-left: 10px;
     padding-right: 1rem;
     width: 90%;
+    justify-content: flex-start;
 
     svg:first-child {
       height: 100%;
@@ -633,9 +634,11 @@ P {
           justify-content: center;
         }
 
+
+
         h3 {
           color: #000c17;
-          font-size: 24px;
+          font-size: 32px;
           font-family: saira-semiBold;
           line-height: 37.78px;
           margin-bottom: 0rem;
@@ -658,6 +661,7 @@ P {
         span:last-child {
           font-family: saira-regular;
           margin-left: -0.5rem;
+
         }
       }
 
