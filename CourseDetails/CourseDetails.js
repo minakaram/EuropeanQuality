@@ -1,3 +1,5 @@
+/** @format */
+
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopButton = document.querySelector(".top-arrow-icon");
 
@@ -282,3 +284,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.getElementById("second-svg").addEventListener("click", function () {
+  var textToCopy = document.getElementById("training-course").textContent;
+  var tempTextarea = document.createElement("textarea");
+  tempTextarea.value = textToCopy;
+  document.body.appendChild(tempTextarea);
+  tempTextarea.select();
+  tempTextarea.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(tempTextarea);
+});
