@@ -1,3 +1,4 @@
+/** @format */
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -332,6 +333,267 @@ P {
   transition: background-color 0.5s ease;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.068);
   background-color: rgba(236, 240, 243, 0.945);
+}
+
+.hero-container {
+  margin-top: 150px;
+  width: 90%;
+  margin-inline: auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.hero-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 11, 31, 0.596);
+  border-radius: 20px;
+}
+.hero-container .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.hero-container .content .training-code {
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.hero-container .content .training-code .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px 0px 20px 0px;
+}
+.hero-container .content .training-code .training-course-svg {
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .hero-container .content .training-code .training-course-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.hero-container .content .training-code .training-course-name {
+  font-family: saira-semiBold;
+  font-weight: 700;
+  text-align: left;
+  font-size: 14px;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .hero-container .content .training-code .training-course-name {
+    font-size: 12px;
+  }
+}
+.hero-container .content .course-details {
+  margin-top: 30px;
+  padding-inline: 30px;
+}
+.hero-container .content .course-details .course-cat {
+  font-family: "Cairo";
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-details .course-cat {
+    font-size: 20px;
+  }
+}
+.hero-container .content .course-details .course-name {
+  font-family: saira-semiBold;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .hero-container .content .course-details .course-name {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-details .course-name {
+    font-size: 24px;
+  }
+}
+.hero-container .content .course-details .course-city {
+  display: flex;
+  flex-direction: "row";
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.hero-container .content .course-details .course-city .city-name {
+  font-family: "Cairo";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 10px;
+}
+@media (max-width: 1024px) {
+  .hero-container .content .course-details .course-city .city-name {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-details .course-city .city-name {
+    font-size: 18px;
+  }
+}
+.hero-container .content .course-properties {
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-block: 20px;
+  padding: 20px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .hero-container .content .course-properties {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-properties {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hero-container .content .course-properties .blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.1098039216);
+  border-radius: 12px;
+  z-index: 0;
+}
+.hero-container .content .course-properties .first {
+  border-right: 1px solid rgba(255, 255, 255, 0.3137254902);
+}
+@media (max-width: 1024px) {
+  .hero-container .content .course-properties .first {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+  }
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-properties .first {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+  }
+}
+.hero-container .content .course-properties .second {
+  border-right: 1px solid rgba(255, 255, 255, 0.3137254902);
+}
+@media (max-width: 1024px) {
+  .hero-container .content .course-properties .second {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+  }
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-properties .second {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+  }
+}
+.hero-container .content .course-properties .third {
+  border-right: 1px solid rgba(255, 255, 255, 0.3137254902);
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-properties .third {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3137254902);
+  }
+}
+.hero-container .content .course-properties .properties {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  align-items: center;
+  width: 25%;
+  padding: 25px 25px 10px 25px;
+}
+@media (max-width: 1024px) {
+  .hero-container .content .course-properties .properties {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .hero-container .content .course-properties .properties {
+    width: 90%;
+  }
+}
+.hero-container .content .course-properties .properties .properties-text {
+  font-family: saira-semiBold;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 10px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.apply {
+  width: 25%;
+  margin-inline: auto;
+  margin-block: 40px;
+}
+@media (max-width: 1024px) {
+  .apply {
+    width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .apply {
+    width: 90%;
+  }
+}
+.apply .apply-btn {
+  background-color: #0884f7;
+  border-radius: 40px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+.apply .apply-btn .apply-text {
+  color: #fff;
+  font-family: "Cairo";
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .footer {
