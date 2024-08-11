@@ -348,7 +348,7 @@ P {
 }
 
 .hero-container {
-  margin-top: 150px;
+  margin-top: 30px;
   width: 90%;
   margin-inline: auto;
   background-size: cover;
@@ -653,6 +653,9 @@ P {
         }
       }
     }
+  }
+  @include mobile {
+    width: 90%;
   }
 }
 
