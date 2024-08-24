@@ -14,11 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollToTopButton.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 });
-
 
 // search-navbar --------------------------------------------------------------------------------------------
 $(document).ready(function () {
@@ -36,13 +35,12 @@ $(document).ready(function () {
 
   // Hide search box when clicking outside .navbar-search-box
   $(document).click(function (event) {
-    if (!$(event.target).closest('.navbar-search-box').length) {
+    if (!$(event.target).closest(".navbar-search-box").length) {
       $(".search-absolute-box").fadeOut();
       $("#search-icon-nav").show();
     }
   });
 });
-
 
 // dropdowns ---------------------------------------------------------------------------------
 
@@ -155,8 +153,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 // active row ----------------------------------------------------------------------------------------------
 // window.addEventListener("resize", function () {
 if (window.innerWidth < 1025) {
@@ -217,7 +213,6 @@ function sortCategories(isAscending) {
   rows.forEach((row) => container.appendChild(row));
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const parentElement = document.querySelector(".categories-left-side");
   const children = parentElement.querySelectorAll(".categories-row");
@@ -228,55 +223,45 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
-
-
 //toggling
 
-
 $(document).ready(function () {
-  $('.toggle-arrow').click(function () {
+  $(".toggle-arrow").click(function () {
     // Find the closest parent with the class .toggle-box
-    const parentBox = $(this).closest('.toggle-box');
+    const parentBox = $(this).closest(".toggle-box");
 
     // Slide toggle the .toggle-content inside this parent
-    parentBox.find('.toggle-content').slideToggle();
+    parentBox.find(".toggle-content").slideToggle();
 
     // Optional: Toggle a class on the arrow to indicate the active state
-    $(this).toggleClass('arrow-active');
+    $(this).toggleClass("arrow-active");
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleItems = document.querySelectorAll(".toggle-item");
+  const toggleBoxes = document.querySelectorAll(".toggle-boxes-container"); // Use the correct class
 
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const toggleItems = document.querySelectorAll('.toggle-item');
-  const toggleBoxes = document.querySelectorAll('.toggle-boxes-container'); // Use the correct class
-
-  toggleItems.forEach(item => {
-    item.addEventListener('click', function (event) {
+  toggleItems.forEach((item) => {
+    item.addEventListener("click", function (event) {
       event.preventDefault(); // Prevent default link behavior
 
       // Remove active class from all toggle items
-      toggleItems.forEach(i => i.classList.remove('active'));
+      toggleItems.forEach((i) => i.classList.remove("active"));
 
       // Add active class to clicked item
-      this.classList.add('active');
+      this.classList.add("active");
 
       // Get the target class for the content to show
-      const target = this.getAttribute('data-target');
+      const target = this.getAttribute("data-target");
 
       // Hide all toggle boxes
-      toggleBoxes.forEach(box => box.classList.remove('active'));
+      toggleBoxes.forEach((box) => box.classList.remove("active"));
 
       // Show the targeted toggle box
-      const targetElement = document.querySelector('.' + target);
+      const targetElement = document.querySelector("." + target);
       if (targetElement) {
-        targetElement.classList.add('active');
+        targetElement.classList.add("active");
       } else {
         console.error(`Element with class '${target}' not found.`);
       }
@@ -293,4 +278,57 @@ document.getElementById("second-svg").addEventListener("click", function () {
   tempTextarea.setSelectionRange(0, 99999);
   document.execCommand("copy");
   document.body.removeChild(tempTextarea);
+});
+
+$(document).ready(function () {
+  $(".apply-btn").click(function (event) {
+    event.preventDefault();
+    $("#overlay1").fadeIn();
+    $("#form1").fadeIn();
+  });
+  $(".close-btn, #overlay1").click(function (event) {
+    event.preventDefault();
+    $("#form1").fadeOut();
+    $("#overlay1").fadeOut();
+  });
+  $("#open-form2").click(function (event) {
+    event.preventDefault();
+    $("#overlay2").fadeIn();
+    $("#form2").fadeIn();
+  });
+  $(".close-btn, #overlay2").click(function (event) {
+    event.preventDefault();
+    $("#form2").fadeOut();
+    $("#overlay2").fadeOut();
+  });
+  $("#open-form3").click(function (event) {
+    event.preventDefault();
+    $("#overlay3").fadeIn();
+    $("#form3").fadeIn();
+  });
+  $(".close-btn, #overlay3").click(function (event) {
+    event.preventDefault();
+    $("#form3").fadeOut();
+    $("#overlay3").fadeOut();
+  });
+  $("#open-form4").click(function (event) {
+    event.preventDefault();
+    $("#overlay4").fadeIn();
+    $("#form4").fadeIn();
+  });
+  $(".close-btn, #overlay4").click(function (event) {
+    event.preventDefault();
+    $("#form4").fadeOut();
+    $("#overlay4").fadeOut();
+  });
+  $("#open-form5").click(function (event) {
+    event.preventDefault();
+    $("#overlay5").fadeIn();
+    $("#form5").fadeIn();
+  });
+  $(".close-btn, #overlay5").click(function (event) {
+    event.preventDefault();
+    $("#form5").fadeOut();
+    $("#overlay5").fadeOut();
+  });
 });
