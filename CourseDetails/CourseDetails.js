@@ -286,7 +286,7 @@ $(document).ready(function () {
     $("#overlay1").fadeIn();
     $("#form1").fadeIn();
   });
-  $(".close-btn, #overlay1").click(function (event) {
+  $(".close-btn-1").click(function (event) {
     event.preventDefault();
     $("#form1").fadeOut();
     $("#overlay1").fadeOut();
@@ -296,7 +296,7 @@ $(document).ready(function () {
     $("#overlay2").fadeIn();
     $("#form2").fadeIn();
   });
-  $(".close-btn, #overlay2").click(function (event) {
+  $(".close-btn-2").click(function (event) {
     event.preventDefault();
     $("#form2").fadeOut();
     $("#overlay2").fadeOut();
@@ -306,7 +306,7 @@ $(document).ready(function () {
     $("#overlay3").fadeIn();
     $("#form3").fadeIn();
   });
-  $(".close-btn, #overlay3").click(function (event) {
+  $(".close-btn-3").click(function (event) {
     event.preventDefault();
     $("#form3").fadeOut();
     $("#overlay3").fadeOut();
@@ -316,7 +316,7 @@ $(document).ready(function () {
     $("#overlay4").fadeIn();
     $("#form4").fadeIn();
   });
-  $(".close-btn, #overlay4").click(function (event) {
+  $(".close-btn-4").click(function (event) {
     event.preventDefault();
     $("#form4").fadeOut();
     $("#overlay4").fadeOut();
@@ -326,7 +326,7 @@ $(document).ready(function () {
     $("#overlay5").fadeIn();
     $("#form5").fadeIn();
   });
-  $(".close-btn, #overlay5").click(function (event) {
+  $(".close-btn-5").click(function (event) {
     event.preventDefault();
     $("#form5").fadeOut();
     $("#overlay5").fadeOut();
