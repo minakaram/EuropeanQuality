@@ -251,8 +251,6 @@ $(document).ready(function () {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const toggleItems = document.querySelectorAll('.toggle-item');
   const toggleBoxes = document.querySelectorAll('.toggle-boxes-container'); // Use the correct class
