@@ -635,6 +635,7 @@ P {
   border: none;
   width: 100%;
   padding: 10px;
+  transition: all 0.3s ease-out;
 }
 .apply .apply-btn .apply-text {
   color: #fff;
@@ -642,6 +643,447 @@ P {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+#overlay1,
+#overlay2,
+#overlay3,
+#overlay4,
+#overlay5 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: opacity 500ms ease-in-out;
+  display: none;
+  background-color: rgba(42, 61, 80, 0.8);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  z-index: 10000;
+}
+#overlay1 .form-container,
+#overlay2 .form-container,
+#overlay3 .form-container,
+#overlay4 .form-container,
+#overlay5 .form-container {
+  background-color: #ffffff;
+  width: 70%;
+  z-index: 10000000;
+  margin-inline: auto;
+  margin-block: 65px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  #overlay1 .form-container,
+  #overlay2 .form-container,
+  #overlay3 .form-container,
+  #overlay4 .form-container,
+  #overlay5 .form-container {
+    width: 85%;
+  }
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container,
+  #overlay2 .form-container,
+  #overlay3 .form-container,
+  #overlay4 .form-container,
+  #overlay5 .form-container {
+    width: 85%;
+    margin-block: 40px;
+  }
+}
+#overlay1 .form-container .reg-text,
+#overlay2 .form-container .reg-text,
+#overlay3 .form-container .reg-text,
+#overlay4 .form-container .reg-text,
+#overlay5 .form-container .reg-text {
+  color: #0884f7;
+  font-family: "Cairo";
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 0.5px solid #a1a8ae;
+  width: 95%;
+  margin-inline: auto;
+  padding-block: 30px;
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .reg-text,
+  #overlay2 .form-container .reg-text,
+  #overlay3 .form-container .reg-text,
+  #overlay4 .form-container .reg-text,
+  #overlay5 .form-container .reg-text {
+    font-size: 20px;
+  }
+}
+#overlay1 .form-container .close-btn,
+#overlay2 .form-container .close-btn,
+#overlay3 .form-container .close-btn,
+#overlay4 .form-container .close-btn,
+#overlay5 .form-container .close-btn {
+  background-color: #ea2a2a;
+  height: 38px;
+  width: 38px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+#overlay1 .form-container .form,
+#overlay2 .form-container .form,
+#overlay3 .form-container .form,
+#overlay4 .form-container .form,
+#overlay5 .form-container .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin-inline: auto;
+}
+@media (max-width: 1024px) {
+  #overlay1 .form-container .form,
+  #overlay2 .form-container .form,
+  #overlay3 .form-container .form,
+  #overlay4 .form-container .form,
+  #overlay5 .form-container .form {
+    width: 88%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form,
+  #overlay2 .form-container .form,
+  #overlay3 .form-container .form,
+  #overlay4 .form-container .form,
+  #overlay5 .form-container .form {
+    width: 100%;
+  }
+}
+#overlay1 .form-container .form .title,
+#overlay2 .form-container .form .title,
+#overlay3 .form-container .form .title,
+#overlay4 .form-container .form .title,
+#overlay5 .form-container .form .title {
+  text-align: center;
+  width: 100%;
+  font-family: saira-semiBold;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 0px 20px 0px;
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form .title,
+  #overlay2 .form-container .form .title,
+  #overlay3 .form-container .form .title,
+  #overlay4 .form-container .form .title,
+  #overlay5 .form-container .form .title {
+    font-size: 18px;
+  }
+}
+#overlay1 .form-container .form .form-item,
+#overlay2 .form-container .form .form-item,
+#overlay3 .form-container .form .form-item,
+#overlay4 .form-container .form .form-item,
+#overlay5 .form-container .form .form-item {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+@media (max-width: 1024px) {
+  #overlay1 .form-container .form .form-item,
+  #overlay2 .form-container .form .form-item,
+  #overlay3 .form-container .form .form-item,
+  #overlay4 .form-container .form .form-item,
+  #overlay5 .form-container .form .form-item {
+    width: 100%;
+  }
+}
+#overlay1 .form-container .form .form-item .form-label,
+#overlay2 .form-container .form .form-item .form-label,
+#overlay3 .form-container .form .form-item .form-label,
+#overlay4 .form-container .form .form-item .form-label,
+#overlay5 .form-container .form .form-item .form-label {
+  font-family: "Cairo";
+  font-weight: 600;
+  color: #333d45;
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form .form-item .form-label,
+  #overlay2 .form-container .form .form-item .form-label,
+  #overlay3 .form-container .form .form-item .form-label,
+  #overlay4 .form-container .form .form-item .form-label,
+  #overlay5 .form-container .form .form-item .form-label {
+    font-size: 14px;
+  }
+}
+#overlay1 .form-container .form .form-item .optional,
+#overlay2 .form-container .form .form-item .optional,
+#overlay3 .form-container .form .form-item .optional,
+#overlay4 .form-container .form .form-item .optional,
+#overlay5 .form-container .form .form-item .optional {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#overlay1 .form-container .form .form-item .optional .optional-text,
+#overlay2 .form-container .form .form-item .optional .optional-text,
+#overlay3 .form-container .form .form-item .optional .optional-text,
+#overlay4 .form-container .form .form-item .optional .optional-text,
+#overlay5 .form-container .form .form-item .optional .optional-text {
+  font-family: "Cairo";
+  font-size: 12px;
+  font-weight: 400;
+  color: #a1a8ae;
+}
+#overlay1 .form-container .form .form-item .form-input,
+#overlay2 .form-container .form .form-item .form-input,
+#overlay3 .form-container .form .form-item .form-input,
+#overlay4 .form-container .form .form-item .form-input,
+#overlay5 .form-container .form .form-item .form-input {
+  border-radius: 8px;
+  outline: none;
+  border: 0.5px solid #a1a8ae;
+  padding: 12px 12px 12px 18px;
+}
+#overlay1 .form-container .form .form-item .form-input::-moz-placeholder, #overlay2 .form-container .form .form-item .form-input::-moz-placeholder, #overlay3 .form-container .form .form-item .form-input::-moz-placeholder, #overlay4 .form-container .form .form-item .form-input::-moz-placeholder, #overlay5 .form-container .form .form-item .form-input::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: 500;
+  color: #a1a8ae;
+}
+#overlay1 .form-container .form .form-item .form-input::placeholder,
+#overlay2 .form-container .form .form-item .form-input::placeholder,
+#overlay3 .form-container .form .form-item .form-input::placeholder,
+#overlay4 .form-container .form .form-item .form-input::placeholder,
+#overlay5 .form-container .form .form-item .form-input::placeholder {
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: 500;
+  color: #a1a8ae;
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form .form-item .form-input::-moz-placeholder, #overlay2 .form-container .form .form-item .form-input::-moz-placeholder, #overlay3 .form-container .form .form-item .form-input::-moz-placeholder, #overlay4 .form-container .form .form-item .form-input::-moz-placeholder, #overlay5 .form-container .form .form-item .form-input::-moz-placeholder {
+    font-size: 12px;
+  }
+  #overlay1 .form-container .form .form-item .form-input::placeholder,
+  #overlay2 .form-container .form .form-item .form-input::placeholder,
+  #overlay3 .form-container .form .form-item .form-input::placeholder,
+  #overlay4 .form-container .form .form-item .form-input::placeholder,
+  #overlay5 .form-container .form .form-item .form-input::placeholder {
+    font-size: 12px;
+  }
+}
+#overlay1 .form-container .form .form-item .options,
+#overlay2 .form-container .form .form-item .options,
+#overlay3 .form-container .form .form-item .options,
+#overlay4 .form-container .form .form-item .options,
+#overlay5 .form-container .form .form-item .options {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-image: url(../assets/form-search/select-arrow.svg);
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#overlay1 .form-container .form .text-area,
+#overlay2 .form-container .form .text-area,
+#overlay3 .form-container .form .text-area,
+#overlay4 .form-container .form .text-area,
+#overlay5 .form-container .form .text-area {
+  width: 100%;
+  outline: none;
+  border: 0.5px solid #a1a8ae;
+  border-radius: 8px;
+  resize: none;
+  box-shadow: none;
+  height: 6em; /* Adjust height for approximately 4 lines */
+  overflow-y: auto;
+  padding: 10px;
+}
+#overlay1 .form-container .form .text-area::-moz-placeholder, #overlay2 .form-container .form .text-area::-moz-placeholder, #overlay3 .form-container .form .text-area::-moz-placeholder, #overlay4 .form-container .form .text-area::-moz-placeholder, #overlay5 .form-container .form .text-area::-moz-placeholder {
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+#overlay1 .form-container .form .text-area::placeholder,
+#overlay2 .form-container .form .text-area::placeholder,
+#overlay3 .form-container .form .text-area::placeholder,
+#overlay4 .form-container .form .text-area::placeholder,
+#overlay5 .form-container .form .text-area::placeholder {
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form .text-area::-moz-placeholder, #overlay2 .form-container .form .text-area::-moz-placeholder, #overlay3 .form-container .form .text-area::-moz-placeholder, #overlay4 .form-container .form .text-area::-moz-placeholder, #overlay5 .form-container .form .text-area::-moz-placeholder {
+    font-size: 12px;
+  }
+  #overlay1 .form-container .form .text-area::placeholder,
+  #overlay2 .form-container .form .text-area::placeholder,
+  #overlay3 .form-container .form .text-area::placeholder,
+  #overlay4 .form-container .form .text-area::placeholder,
+  #overlay5 .form-container .form .text-area::placeholder {
+    font-size: 12px;
+  }
+}
+#overlay1 .form-container .form .hr-line,
+#overlay2 .form-container .form .hr-line,
+#overlay3 .form-container .form .hr-line,
+#overlay4 .form-container .form .hr-line,
+#overlay5 .form-container .form .hr-line {
+  height: 1px;
+  color: #a1a8ae;
+  width: 100%;
+  margin: 25px 0px 0px 0px;
+}
+#overlay1 .form-container .form .checkBoxes,
+#overlay2 .form-container .form .checkBoxes,
+#overlay3 .form-container .form .checkBoxes,
+#overlay4 .form-container .form .checkBoxes,
+#overlay5 .form-container .form .checkBoxes {
+  margin-block: 5%;
+  display: flex;
+  flex-direction: column;
+}
+#overlay1 .form-container .form .custom-checkbox,
+#overlay2 .form-container .form .custom-checkbox,
+#overlay3 .form-container .form .custom-checkbox,
+#overlay4 .form-container .form .custom-checkbox,
+#overlay5 .form-container .form .custom-checkbox {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Cairo";
+  font-weight: 500;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form .custom-checkbox,
+  #overlay2 .form-container .form .custom-checkbox,
+  #overlay3 .form-container .form .custom-checkbox,
+  #overlay4 .form-container .form .custom-checkbox,
+  #overlay5 .form-container .form .custom-checkbox {
+    font-size: 12px;
+  }
+}
+#overlay1 .form-container .form .custom-checkbox input,
+#overlay2 .form-container .form .custom-checkbox input,
+#overlay3 .form-container .form .custom-checkbox input,
+#overlay4 .form-container .form .custom-checkbox input,
+#overlay5 .form-container .form .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#overlay1 .form-container .form .checkmark,
+#overlay2 .form-container .form .checkmark,
+#overlay3 .form-container .form .checkmark,
+#overlay4 .form-container .form .checkmark,
+#overlay5 .form-container .form .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ecf0f3;
+  border-radius: 4px;
+}
+#overlay1 .form-container .form .custom-checkbox input:checked ~ .checkmark,
+#overlay2 .form-container .form .custom-checkbox input:checked ~ .checkmark,
+#overlay3 .form-container .form .custom-checkbox input:checked ~ .checkmark,
+#overlay4 .form-container .form .custom-checkbox input:checked ~ .checkmark,
+#overlay5 .form-container .form .custom-checkbox input:checked ~ .checkmark {
+  background-color: #0884f7;
+}
+#overlay1 .form-container .form .checkmark:after,
+#overlay2 .form-container .form .checkmark:after,
+#overlay3 .form-container .form .checkmark:after,
+#overlay4 .form-container .form .checkmark:after,
+#overlay5 .form-container .form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#overlay1 .form-container .form .custom-checkbox input:checked ~ .checkmark:after,
+#overlay2 .form-container .form .custom-checkbox input:checked ~ .checkmark:after,
+#overlay3 .form-container .form .custom-checkbox input:checked ~ .checkmark:after,
+#overlay4 .form-container .form .custom-checkbox input:checked ~ .checkmark:after,
+#overlay5 .form-container .form .custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+#overlay1 .form-container .form .custom-checkbox .checkmark:after,
+#overlay2 .form-container .form .custom-checkbox .checkmark:after,
+#overlay3 .form-container .form .custom-checkbox .checkmark:after,
+#overlay4 .form-container .form .custom-checkbox .checkmark:after,
+#overlay5 .form-container .form .custom-checkbox .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+#overlay1 .form-container .form #sendButton,
+#overlay2 .form-container .form #sendButton,
+#overlay3 .form-container .form #sendButton,
+#overlay4 .form-container .form #sendButton,
+#overlay5 .form-container .form #sendButton {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-inline: auto;
+  margin-bottom: 25px;
+  position: relative;
+  width: 30%;
+  padding: 10px 20px;
+  background-color: #0884f7;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  #overlay1 .form-container .form #sendButton,
+  #overlay2 .form-container .form #sendButton,
+  #overlay3 .form-container .form #sendButton,
+  #overlay4 .form-container .form #sendButton,
+  #overlay5 .form-container .form #sendButton {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  #overlay1 .form-container .form #sendButton,
+  #overlay2 .form-container .form #sendButton,
+  #overlay3 .form-container .form #sendButton,
+  #overlay4 .form-container .form #sendButton,
+  #overlay5 .form-container .form #sendButton {
+    width: 90%;
+  }
 }
 
 .course-options-mini {
@@ -674,7 +1116,7 @@ P {
   .course-options-mini .options button {
     width: calc(50% - 1rem);
     background-color: transparent;
-    border: 1px solid #333D45;
+    border: 1px solid #333d45;
     height: 50px;
     border-radius: 100px;
     font-family: "Cairo";
@@ -760,7 +1202,7 @@ P {
 }
 .course-details-section .course-details-container .course-details-left {
   width: 70%;
-  border-right: 1px solid #A0A7AD;
+  border-right: 1px solid #a0a7ad;
 }
 @media (max-width: 1024px) {
   .course-details-section .course-details-container .course-details-left {
@@ -784,23 +1226,23 @@ P {
 }
 .course-details-section .course-details-container .course-details-left .toggle-row .toggle-item a {
   text-decoration: none;
-  color: #333D45;
+  color: #333d45;
   font-family: saira-regular;
   font-size: 18px;
   height: 100%;
   padding: 0rem 0rem 1.6rem;
   width: 100%;
   display: inline-block;
-  border-bottom: 3px solid #ECF0F3;
+  border-bottom: 3px solid #ecf0f3;
 }
 .course-details-section .course-details-container .course-details-left .toggle-row .toggle-item:hover a {
-  color: #F77B08;
+  color: #f77b08;
   font-family: saira-bold;
   transition: 0.3s all;
 }
 .course-details-section .course-details-container .course-details-left .toggle-row .toggle-item.active a {
-  color: #F77B08;
-  border-bottom: 3px solid #F77B08;
+  color: #f77b08;
+  border-bottom: 3px solid #f77b08;
   font-family: saira-bold;
 }
 .course-details-section .course-details-container .course-details-left .toggle-boxes-container {
@@ -863,7 +1305,7 @@ P {
   margin-top: 0.7rem;
 }
 .course-details-section .course-details-container .course-details-left .toggle-boxes-container .toggle-box .toggle-content p {
-  color: #333D45;
+  color: #333d45;
   font-size: 14px;
   font-family: "Cairo";
   font-weight: 400;
@@ -906,7 +1348,7 @@ P {
 .course-details-section .course-details-container .course-details-right .right-side-inner .actions button {
   width: 90%;
   background-color: transparent;
-  border: 1px solid #333D45;
+  border: 1px solid #333d45;
   height: 50px;
   border-radius: 100px;
   font-family: "Cairo";
@@ -917,7 +1359,7 @@ P {
   gap: 5px;
 }
 .course-details-section .course-details-container .course-details-right .right-side-inner .actions button:hover {
-  background-color: #F9FAFA;
+  background-color: #f9fafa;
   transition: 0.3s;
 }
 .course-details-section .course-details-container .course-details-right .right-side-inner .apply-btn {
@@ -925,9 +1367,9 @@ P {
   height: 52px;
   margin: 2.5rem auto;
   border-radius: 100px;
-  background-color: #0884F7;
-  color: #FFFFFF;
-  border: 1px solid #0884F7;
+  background-color: #0884f7;
+  color: #ffffff;
+  border: 1px solid #0884f7;
   font-weight: 700;
   font-family: "Cairo";
 }
@@ -961,7 +1403,7 @@ P {
   margin: auto;
 }
 .training-section .heading .heading-left {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: saira-bold;
   font-size: 32px;
 }
@@ -971,7 +1413,7 @@ P {
   }
 }
 .training-section .heading .heading-right {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: saira-bold;
   font-size: 20px;
   background-color: rgba(160, 167, 173, 0.1137254902);
@@ -983,7 +1425,7 @@ P {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #202B34;
+  border: 3px solid #202b34;
 }
 .training-section .training-box {
   width: 65%;
@@ -1018,7 +1460,7 @@ P {
   padding: 1rem 0rem;
 }
 .training-section .training-box::-webkit-scrollbar-thumb {
-  background: #E4F1FE;
+  background: #e4f1fe;
   border-radius: 10px;
 }
 .training-section .training-box a {
@@ -1034,7 +1476,7 @@ P {
   background-color: rgba(255, 255, 255, 0.0823529412);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 4px;
   padding: 0.7rem 1rem;
 }
@@ -1487,10 +1929,10 @@ P {
 .clickable-ovelay .clickable-ovelay-container .main-header {
   text-align: center;
   padding: 2rem 3rem;
-  color: #0884F7;
+  color: #0884f7;
   font-family: "Cairo";
   font-weight: 700;
-  border-bottom: 1px solid #A1A8AE;
+  border-bottom: 1px solid #a1a8ae;
 }
 @media (max-width: 767px) {
   .clickable-ovelay .clickable-ovelay-container .main-header {
@@ -1504,7 +1946,7 @@ P {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #EA2A2A;
+  background-color: #ea2a2a;
   position: absolute;
   top: -1.5rem;
   right: -1.5rem;
@@ -1550,7 +1992,7 @@ P {
 }
 .clickable-ovelay .clickable-ovelay-container .overlay-container-boxes .overlay-container-box a .city-item {
   border-radius: 5px;
-  border: 1px solid #ECF0F3;
+  border: 1px solid #ecf0f3;
   padding: 1rem 0.7rem;
   display: flex;
   flex-direction: column;

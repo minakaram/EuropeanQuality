@@ -597,6 +597,7 @@ P {
     border: none;
     width: 100%;
     padding: 10px;
+    transition: all 0.3s ease-out;
 
     .apply-text {
       color: #fff;
@@ -604,6 +605,272 @@ P {
       font-size: 18px;
       font-weight: 700;
       text-align: center;
+    }
+  }
+}
+
+#overlay1,
+#overlay2,
+#overlay3,
+#overlay4,
+#overlay5
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: opacity 500ms ease-in-out;
+  display: none;
+  background-color: rgba($color: #2a3d50, $alpha: 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
+  .form-container {
+    background-color: #ffffff;
+    width: 70%;
+    z-index: 10000000;
+    margin-inline: auto;
+    margin-block: 65px;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    @include tablet {
+      width: 85%;
+    }
+    @include mobile {
+      width: 85%;
+      margin-block: 40px;
+    }
+    .reg-text {
+      color: #0884f7;
+      font-family: "Cairo";
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      border-bottom: 0.5px solid #a1a8ae;
+      width: 95%;
+      margin-inline: auto;
+      padding-block: 30px;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    .close-btn {
+      background-color: #ea2a2a;
+      height: 38px;
+      width: 38px;
+      padding: 10px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      cursor: pointer;
+    }
+
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 93%;
+      margin-inline: auto;
+      @include tablet {
+        width: 88%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @include mobile {
+        width: 100%;
+      }
+
+      .title {
+        text-align: center;
+        width: 100%;
+        font-family: saira-semiBold;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        padding: 30px 0px 20px 0px;
+        @include mobile {
+          font-size: 18px;
+        }
+      }
+
+      .form-item {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        @include tablet {
+          width: 100%;
+        }
+        .form-label {
+          font-family: "Cairo";
+          font-weight: 600;
+          color: #333d45;
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+
+        .optional {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .optional-text {
+            font-family: "Cairo";
+            font-size: 12px;
+            font-weight: 400;
+            color: #a1a8ae;
+          }
+        }
+
+        .form-input {
+          border-radius: 8px;
+          outline: none;
+          border: 0.5px solid #a1a8ae;
+          padding: 12px 12px 12px 18px;
+        }
+
+        .form-input::placeholder {
+          font-size: 14px;
+          font-family: "Cairo";
+          font-weight: 500;
+          color: #a1a8ae;
+          @include mobile {
+            font-size: 12px;
+          }
+        }
+
+        .options {
+          appearance: none;
+          -webkit-appearance: none;
+          position: relative;
+          background-image: url(../assets/form-search/select-arrow.svg);
+          background-position: right 1rem center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+        }
+      }
+
+      .text-area {
+        width: 100%;
+        outline: none;
+        border: 0.5px solid #a1a8ae;
+        border-radius: 8px;
+        resize: none;
+        box-shadow: none;
+        height: 6em; /* Adjust height for approximately 4 lines */
+        overflow-y: auto;
+        padding: 10px;
+      }
+
+      .text-area::placeholder {
+        font-size: 14px;
+        font-family: "Cairo";
+        font-weight: 500;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      .hr-line {
+        height: 1px;
+        color: #a1a8ae;
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+      }
+      .checkBoxes {
+        margin-block: 5%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .custom-checkbox {
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        user-select: none;
+        font-family: "Cairo";
+        font-weight: 500;
+        font-size: 14px;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      .custom-checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #ecf0f3;
+        border-radius: 4px;
+      }
+
+      .custom-checkbox input:checked ~ .checkmark {
+        background-color: #0884f7;
+      }
+
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .custom-checkbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .custom-checkbox .checkmark:after {
+        left: 8px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+
+      #sendButton {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-inline: auto;
+        margin-bottom: 25px;
+        position: relative;
+        width: 30%;
+        padding: 10px 20px;
+        background-color: #0884f7;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        @include tablet {
+          width: 40%;
+        }
+        @include mobile {
+          width: 90%;
+        }
+      }
     }
   }
 }
@@ -638,7 +905,7 @@ P {
       button {
         width: calc((100% / 2) - 1rem);
         background-color: transparent;
-        border: 1px solid #333D45;
+        border: 1px solid #333d45;
         height: 50px;
         border-radius: 100px;
         font-family: "Cairo";
@@ -654,6 +921,7 @@ P {
       }
     }
   }
+
   @include mobile {
     width: 90%;
   }
@@ -726,7 +994,7 @@ P {
 
     .course-details-left {
       width: 70%;
-      border-right: 1px solid #A0A7AD;
+      border-right: 1px solid #a0a7ad;
 
       @include tablet {
         border-right: none;
@@ -748,20 +1016,20 @@ P {
 
           a {
             text-decoration: none;
-            color: #333D45;
+            color: #333d45;
             font-family: saira-regular;
             font-size: 18px;
             height: 100%;
             padding: 0rem 0rem 1.6rem;
             width: 100%;
             display: inline-block;
-            border-bottom: 3px solid #ECF0F3;
+            border-bottom: 3px solid #ecf0f3;
           }
         }
 
         .toggle-item:hover {
           a {
-            color: #F77B08;
+            color: #f77b08;
             font-family: saira-bold;
             transition: 0.3s all;
           }
@@ -769,8 +1037,8 @@ P {
 
         .toggle-item.active {
           a {
-            color: #F77B08;
-            border-bottom: 3px solid #F77B08;
+            color: #f77b08;
+            border-bottom: 3px solid #f77b08;
             font-family: saira-bold;
           }
         }
@@ -810,7 +1078,6 @@ P {
                 background-color: unset;
               }
             }
-
           }
 
           .arrow-active {
@@ -839,15 +1106,13 @@ P {
             margin-top: 0.7rem;
 
             p {
-              color: #333D45;
+              color: #333d45;
               font-size: 14px;
               font-family: "Cairo";
               font-weight: 400;
             }
           }
         }
-
-
       }
 
       .toggle-boxes-container {
@@ -891,7 +1156,7 @@ P {
           button {
             width: 90%;
             background-color: transparent;
-            border: 1px solid #333D45;
+            border: 1px solid #333d45;
             height: 50px;
             border-radius: 100px;
             font-family: "Cairo";
@@ -902,7 +1167,7 @@ P {
             gap: 5px;
 
             &:hover {
-              background-color: #F9FAFA;
+              background-color: #f9fafa;
               transition: 0.3s;
             }
           }
@@ -913,9 +1178,9 @@ P {
           height: 52px;
           margin: 2.5rem auto;
           border-radius: 100px;
-          background-color: #0884F7;
-          color: #FFFFFF;
-          border: 1px solid #0884F7;
+          background-color: #0884f7;
+          color: #ffffff;
+          border: 1px solid #0884f7;
           font-weight: 700;
           font-family: "Cairo";
         }
@@ -951,7 +1216,7 @@ P {
     margin: auto;
 
     .heading-left {
-      color: #FFFFFF;
+      color: #ffffff;
       font-family: saira-bold;
       font-size: 32px;
 
@@ -961,7 +1226,7 @@ P {
     }
 
     .heading-right {
-      color: #FFFFFF;
+      color: #ffffff;
       font-family: saira-bold;
       font-size: 20px;
       background-color: #a0a7ad1d;
@@ -973,7 +1238,7 @@ P {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 3px solid #202B34;
+      border: 3px solid #202b34;
     }
   }
 
@@ -1010,7 +1275,7 @@ P {
     }
 
     &::-webkit-scrollbar-thumb {
-      background: #E4F1FE;
+      background: #e4f1fe;
       border-radius: 10px;
     }
 
@@ -1026,7 +1291,7 @@ P {
         background-color: #ffffff15;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        color: #FFFFFF;
+        color: #ffffff;
         border-radius: 4px;
         padding: 0.7rem 1rem;
 
@@ -1041,7 +1306,6 @@ P {
         .city-price {
           display: flex;
           justify-content: space-between;
-
 
           .city {
             font-size: 14px;
@@ -1072,9 +1336,7 @@ P {
       }
     }
   }
-
 }
-
 
 .category-main-section {
   width: 90%;
@@ -1317,7 +1579,6 @@ P {
 
       &::-webkit-scrollbar-thumb:hover {
         border: 2px solid #f1f1f1;
-        ;
       }
 
       @include tablet {
@@ -1457,8 +1718,6 @@ P {
     align-items: center;
     gap: 5px;
 
-
-
     a:first-child {
       background-color: #f3f5f7;
       width: 40px;
@@ -1496,7 +1755,6 @@ P {
         align-items: center;
       }
     }
-
   }
 
   .pages {
@@ -1542,10 +1800,10 @@ P {
     .main-header {
       text-align: center;
       padding: 2rem 3rem;
-      color: #0884F7;
+      color: #0884f7;
       font-family: "Cairo";
       font-weight: 700;
-      border-bottom: 1px solid #A1A8AE;
+      border-bottom: 1px solid #a1a8ae;
 
       @include mobile {
         padding: 2rem 1rem;
@@ -1559,7 +1817,7 @@ P {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #EA2A2A;
+      background-color: #ea2a2a;
       position: absolute;
       top: -1.5rem;
       right: -1.5rem;
@@ -1605,9 +1863,8 @@ P {
           }
 
           .city-item {
-
             border-radius: 5px;
-            border: 1px solid #ECF0F3;
+            border: 1px solid #ecf0f3;
             padding: 1rem 0.7rem;
             display: flex;
             flex-direction: column;
@@ -1639,7 +1896,7 @@ P {
                 img {
                   width: 20px;
                   height: 20px;
-                  border-radius: 50%
+                  border-radius: 50%;
                 }
 
                 span {
