@@ -499,7 +499,9 @@ P {
     padding-bottom: 0rem;
 
     @include mobile {
-        margin-bottom: 2rem;
+        width: 100%;
+        margin-bottom: 0rem;
+        border-radius: 30px 30px 0 0;
     }
 
     .absolute-icon {
@@ -535,6 +537,7 @@ P {
 
             @include mobile {
                 padding: 0rem;
+                padding-bottom: 3rem;
             }
 
             img {
