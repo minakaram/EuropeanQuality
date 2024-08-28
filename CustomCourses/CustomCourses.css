@@ -645,21 +645,21 @@ P {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.form-container .submit-button {
+.form-container .form-submission .submit-button {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   margin-top: 50px;
   position: relative;
 }
-.form-container .submit-button svg {
+.form-container .form-submission .submit-button svg {
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
 }
-.form-container .submit-button input {
+.form-container .form-submission .submit-button input {
   background-color: var(--primary--color);
   color: #fff;
   text-transform: capitalize;

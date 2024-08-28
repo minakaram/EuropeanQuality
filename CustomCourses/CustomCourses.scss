@@ -529,30 +529,31 @@ P {
         }
       }
     }
-  }
-  .submit-button {
-    width: fit-content;
-    margin: auto;
-    margin-top: 50px;
-    position: relative;
-    svg {
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
+    .submit-button {
+      width: fit-content;
+      margin: auto;
+      margin-top: 50px;
+      position: relative;
+      svg {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      input {
+        background-color: var(--primary--color);
+        color: #fff;
+        text-transform: capitalize;
+        border: none;
+        padding: 0.7rem 6rem;
+        border-radius: 35px;
+        font-family: "Cairo";
+        font-weight: 700;
+      }
     }
-    input {
-      background-color: var(--primary--color);
-      color: #fff;
-      text-transform: capitalize;
-      border: none;
-      padding: 0.7rem 6rem;
-      border-radius: 35px;
-      font-family: "Cairo";
-      font-weight: 700;
-    }
   }
+
 }
 .footer {
   width: 95%;
