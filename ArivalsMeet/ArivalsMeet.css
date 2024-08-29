@@ -248,6 +248,11 @@ P {
   font-weight: 700;
 }
 @media (max-width: 767px) {
+  .formContainer .form-section .form-section-header p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
   .formContainer .form-section .form-section-header svg {
     width: 70%;
   }
@@ -323,6 +328,11 @@ P {
 .formContainer .form-section .form-inputs .form-single-input input::placeholder {
   color: #99A0A6;
 }
+@media (max-width: 767px) {
+  .formContainer .form-section .form-inputs .form-single-input input {
+    font-size: 12px;
+  }
+}
 .formContainer .form-section .form-inputs .form-single-input input[type=number]::-webkit-outer-spin-button,
 .formContainer .form-section .form-inputs .form-single-input input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -342,11 +352,32 @@ P {
 .formContainer .form-section .form-inputs .date-type input::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
+@media (max-width: 767px) {
+  .formContainer .form-section .form-inputs .date-type input {
+    font-size: 12px;
+    padding-left: 5.1rem !important;
+  }
+}
+.formContainer .form-section .form-inputs .date-type #arival-date {
+  padding-left: 5.9rem;
+}
+@media (max-width: 767px) {
+  .formContainer .form-section .form-inputs .date-type #arival-date {
+    padding-left: 5.6rem !important;
+  }
+}
 .formContainer .form-section .form-inputs .date-type span {
   position: absolute;
   left: 4rem;
   font-size: 14px;
   color: #99A0A6;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .formContainer .form-section .form-inputs .date-type span {
+    font-size: 12px;
+  }
 }
 .formContainer .form-section .form-inputs .time-type input {
   padding-left: 5.3rem;
@@ -380,6 +411,7 @@ P {
 @media (max-width: 767px) {
   .formContainer .form-section textarea {
     height: 185px;
+    font-size: 12px;
   }
 }
 .formContainer .form-section textarea::-webkit-scrollbar {
