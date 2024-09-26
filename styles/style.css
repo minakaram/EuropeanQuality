@@ -738,7 +738,8 @@ P {
   }
 }
 .hero-search-form .search-container .search-right-side .form-main-box div select option {
-  background-color: #f9fafa; /* Default option background */
+  background-color: #f9fafa;
+  /* Default option background */
   color: var(--neutral-black);
 }
 .hero-search-form .search-container .search-right-side .form-main-box div select option:disabled:checked {
