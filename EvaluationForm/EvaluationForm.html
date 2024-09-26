@@ -17,13 +17,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
     <script defer src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="TraineeCard.css">
-    <script src="TraineeCard.js" defer></script>
+    <link rel="stylesheet" href="EvaluationForm.css">
+    <script src="EvaluationForm.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
-
 
     <svg class="top-arrow-icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -114,16 +113,16 @@
     </div>
     <div class="main-header">
         <div class="main-header-top">
-            <p>Trainee Business Card</p>
+            <p>Evaluation Form</p>
             <svg width="80" height="6" viewBox="0 0 80 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="12" y1="5" x2="68" y2="5" stroke="#000C17" stroke-width="2" />
                 <line y1="1" x2="80" y2="1" stroke="#000C17" stroke-width="2" />
             </svg>
         </div>
         <p class="main-header-bottom">
-            We all at <span>European Quality</span> are happy to be our trainee, and we would like to meet and greet you
-            personally,
-            and build your trainee business card, so please fill in the next form to help us doing that.
+            We are all in the <span>European Quality</span> happy to be our trainee, and we would like to get your
+            opinion about your
+            previous course you joined in order to improve more and more of our education services.
         </p>
     </div>
     <form action="" class="formContainer">
@@ -296,19 +295,328 @@
                     <input type="date" placeholder="">
                     <span>End date -</span>
                 </div>
-
+                <!-- lecturer-name -->
+                <div class="form-single-input">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.2301 16.9435C18.9559 16.4668 19.9093 16.9868 19.9093 17.8535V19.251C19.9093 20.6268 18.8368 22.1002 17.5476 22.5335L14.0918 23.6818C13.4851 23.8877 12.4993 23.8877 11.9034 23.6818L8.4476 22.5335C7.1476 22.1002 6.08594 20.6268 6.08594 19.251V17.8427C6.08594 16.9868 7.03927 16.4668 7.75427 16.9327L9.98594 18.3843C10.8418 18.9585 11.9251 19.2402 13.0084 19.2402C14.0918 19.2402 15.1751 18.9585 16.0309 18.3843L18.2301 16.9435Z"
+                            fill="#333D45" />
+                        <path
+                            d="M21.6442 6.99844L15.155 2.74094C13.985 1.97177 12.0567 1.97177 10.8867 2.74094L4.365 6.99844C2.27417 8.3526 2.27417 11.4184 4.365 12.7834L6.09833 13.9101L10.8867 17.0301C12.0567 17.7993 13.985 17.7993 15.155 17.0301L19.9108 13.9101L21.395 12.9351V16.2501C21.395 16.6943 21.7633 17.0626 22.2075 17.0626C22.6517 17.0626 23.02 16.6943 23.02 16.2501V10.9201C23.4533 9.5226 23.0092 7.8976 21.6442 6.99844Z"
+                            fill="#333D45" />
+                    </svg>
+                    <input type="text" id="lecturer-name" name="lecturer-name" placeholder="Enter lecturer name">
+                </div>
             </div>
         </div>
+        <p class="split-header">
+            Please give us your evaluation for all of what is coming in the next 4 sections
+        </p>
         <div class="form-section">
             <div class="form-section-header">
-                <p>Candidate Special Needs</p>
+                <p>Lecturer Evaluation</p>
                 <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
                     <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
                 </svg>
             </div>
-            <textarea placeholder="Please mention here any special needs and requirements you would require before stating the training program
-        " name="" id=""></textarea>
+            <div class="eval-row">
+                <p>1) The lecturer scientific ability and his ability to the subject of the program :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-ability" name="scientific-ability">
+                        <label for="excellent-ability">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-ability" name="scientific-ability">
+                        <label for="verGood-ability">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-ability" name="scientific-ability">
+                        <label for="good-ability">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-ability" name="scientific-ability">
+                        <label for="acceptable-ability">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-ability" name="scientific-ability">
+                        <label for="week-ability">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>2) The style of the trainer in presentation and evaluation :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-presentation" name="trainer-presentation">
+                        <label for="excellent-presentation">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-presentation" name="trainer-presentation">
+                        <label for="verGood-presentation">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-presentation" name="trainer-presentation">
+                        <label for="good-presentation">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-presentation" name="trainer-presentation">
+                        <label for="acceptable-presentation">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-presentation" name="trainer-presentation">
+                        <label for="week-presentation">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>3) Interact with and respond to the participants :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-interact" name="lecturer-interact">
+                        <label for="excellent-interact">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-interact" name="lecturer-interact">
+                        <label for="verGood-interact">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-interact" name="lecturer-interact">
+                        <label for="good-interact">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" name="lecturer-interact" id="acceptable-interact">
+                        <label for="acceptable-interact">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" name="lecturer-interact" id="week-interact">
+                        <label for="week-interact">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>4) Comments or notes ?</p>
+                <textarea placeholder="Please mention here any special needs and requirements you would require before stating the training program
+            " name="" id=""></textarea>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-header">
+                <p>Scientific Material Evaluation</p>
+                <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
+                    <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="eval-row">
+                <p>1) Coherence of themes :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-Coherence" name="Coherence">
+                        <label for="excellent-Coherence">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-Coherence" name="Coherence">
+                        <label for="verGood-Coherence">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-Coherence" name="Coherence">
+                        <label for="good-Coherence">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-Coherence" name="Coherence">
+                        <label for="acceptable-Coherence">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-Coherence" name="Coherence">
+                        <label for="week-Coherence">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>2) How relevant is the scientific material to your work assignments :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-material" name="scientific-material">
+                        <label for="excellent-material">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-material" name="scientific-material">
+                        <label for="verGood-material">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-material" name="scientific-material">
+                        <label for="good-material">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-material" name="scientific-material">
+                        <label for="acceptable-material">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-material" name="scientific-material">
+                        <label for="week-material">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>3) Acquired knowledge and skills :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-knowledge" name="Acquired-knowledge">
+                        <label for="excellent-knowledge">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-knowledge" name="Acquired-knowledge">
+                        <label for="verGood-knowledge">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-knowledge" name="Acquired-knowledge">
+                        <label for="good-knowledge">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-knowledge" name="Acquired-knowledge">
+                        <label for="acceptable-knowledge">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-knowledge" name="Acquired-knowledge">
+                        <label for="week-knowledge">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>4) Comments or notes ?</p>
+                <textarea placeholder="Please mention here any special needs and requirements you would require before stating the training program
+            " name="" id=""></textarea>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-header">
+                <p>The Organizational Benefits</p>
+                <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
+                    <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="eval-row">
+                <p>1) Possibility of applying the acquired knowledge and skills in the field of work :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-possibility" name="applying-possibility">
+                        <label for="excellent-possibility">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-possibility" name="applying-possibility">
+                        <label for="verGood-possibility">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-possibility" name="applying-possibility">
+                        <label for="good-possibility">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-possibility" name="applying-possibility">
+                        <label for="acceptable-possibility">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-possibility" name="applying-possibility">
+                        <label for="week-possibility">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>2) Overall evaluation of the program :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-overall" name="overall-evaluation">
+                        <label for="excellent-overall">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-overall" name="overall-evaluation">
+                        <label for="verGood-overall">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-overall" name="overall-evaluation">
+                        <label for="good-overall">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-overall" name="overall-evaluation">
+                        <label for="acceptable-overall">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-overall" name="overall-evaluation">
+                        <label for="week-overall">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>3) Comments or notes ?</p>
+                <textarea placeholder="Please mention here any special needs and requirements you would require before stating the training program
+            " name="" id=""></textarea>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-section-header">
+                <p>The Course In General</p>
+                <svg width="400" height="5" viewBox="0 0 400 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="400" y2="0.5" stroke="#A1A8AE" />
+                    <line x1="100" y1="4.5" x2="300" y2="4.5" stroke="#A1A8AE" />
+                </svg>
+            </div>
+            <div class="eval-row">
+                <p>1) Program duration and dates :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-duration" name="program-duration">
+                        <label for="excellent-duration">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-duration" name="program-duration">
+                        <label for="verGood-duration">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-duration" name="program-duration">
+                        <label for="good-duration">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-duration" name="program-duration">
+                        <label for="acceptable-duration">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-duration" name="program-duration">
+                        <label for="week-duration">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>2) Place of program contract and services provided :</p>
+                <div class="eval-selectboxes">
+                    <div class="radio-box">
+                        <input type="radio" id="excellent-contract" name="program-contract">
+                        <label for="excellent-contract">Excellent</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="verGood-contract" name="program-contract">
+                        <label for="verGood-contract">Very Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="good-contract" name="program-contract">
+                        <label for="good-contract">Good</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="acceptable-contract" name="program-contract">
+                        <label for="acceptable-contract">Acceptable</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="week-contract" name="program-contract">
+                        <label for="week-contract">Week</label>
+                    </div>
+                </div>
+            </div>
+            <div class="eval-row">
+                <p>3) Comments or notes ?</p>
+                <textarea placeholder="Please mention here any special needs and requirements you would require before stating the training program
+            " name="" id=""></textarea>
+            </div>
         </div>
         <div class="form-submission">
             <div class="submit-item">
